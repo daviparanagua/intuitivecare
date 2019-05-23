@@ -13,12 +13,15 @@ function processFile(file) {
 
     pdf(dataBuffer).then(function(data) {
         let exportedText = data.text;
-
         let splittedText = exportedText.split(/(?:\r\n|\r|\n)/g);
+        let started = false;
 
         for(row of splittedText){
-            if (row.match('Quadro 31')){
-                console.log(row);
+            if (row.match('Quadro 31')){ started = true; console.log(row); }
+
+            if(started) {                
+                if(row.match(/([0-9]+) (.+)/)) {console.log(row);}
+                if (row.match('Fonte: Elaborado pelos autores.')){ break; }
             }
         }
 
