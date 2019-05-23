@@ -13,10 +13,16 @@ function processFile(file) {
 
     pdf(dataBuffer).then(function(data) {
         let exportedText = data.text;
+
+        let splittedText = exportedText.split(/(?:\r\n|\r|\n)/g);
+
+        for(row of splittedText){
+            if (row.match('Quadro 31')){
+                console.log(row);
+            }
+        }
+
         fs.writeFile('./file.txt', exportedText, () => {});
-
-        
-
     });
     
 }
