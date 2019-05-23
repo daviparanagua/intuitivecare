@@ -1,0 +1,4017 @@
+
+
+Fevereiro 2019
+PADRÃO TISS
+organizacional
+
+            
+1 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+  
+
+            
+2 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Sumário 
+I. Versão do Componente Organizacional .............................................. 5 
+II. Componente organizacional .......................................................... 5 
+Finalidade ........................................................................................... 5 
+Definição ............................................................................................ 5 
+III. Exposição de motivos da atualização ............................................. 5 
+IV. Histórico das alterações ............................................................... 6 
+V. Metodologia ...............................................................................18 
+VI. Entidades de referência ...............................................................18 
+VII. Padrão TISS ..............................................................................19 
+Finalidade ..........................................................................................19 
+Diretriz ..............................................................................................19 
+Escopo ..............................................................................................20 
+VIII. Componente de Conteúdo e Estrutura ........................................22 
+Definição ...........................................................................................22 
+Formato de apresentação ....................................................................22 
+Identificação do arquivo que dispõe o componente .................................23 
+Processos padronizados no Padrão TISS ................................................23 
+Trocas de informações estabelecidas no padrão TISS ..............................24 
+Entre operadoras e prestadores de serviços de saúde..............................24 
+Entre operadoras e beneficiários ...........................................................25 
+Entre operadoras e ANS ......................................................................26 
+Do prestador solicitante para o beneficiário ............................................26 
+Lista de mensagens por processo padronizado .......................................26 
+Padronização de biometria de impressão digital ......................................29 
+Vinculação entre as guias ....................................................................31 
+Utilização de código de barras ..............................................................36 
+IX. Componente de Representação de Conceitos em Saúde ..................37 
+Definição ...........................................................................................37 
+
+            
+3 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Formato de apresentação ....................................................................37 
+Especificidades da TUSS de Material e OPME (Tabela 19) .........................37 
+Identificação do arquivo que dispõe o componente .................................39 
+Lista de Terminologias.........................................................................39 
+Controle de alteração das terminologias ................................................39 
+Tabela própria da operadora ................................................................41 
+X. Componente de Segurança e Privacidade ......................................42 
+Definição ...........................................................................................42 
+Formato de apresentação ....................................................................43 
+Identificação do arquivo que dispõe o componente .................................43 
+XI. Componente de Comunicação ......................................................43 
+Definição ...........................................................................................43 
+Formato de apresentação ....................................................................45 
+Identificação do arquivo que dispõe o componente .................................46 
+Validação dos arquivos XML .................................................................46 
+Assinatura Digital ...............................................................................46 
+Senhas – formato de transmissão .........................................................47 
+HASH MD-5 .......................................................................................48 
+Lista de mensagens ............................................................................49 
+Plano de contingência .........................................................................53 
+Versionamento dos Componentes do Padrão TISS ..................................56 
+Identificação da vigência dos Componentes do Padrão TISS .....................56 
+Validação da versão dos Componentes do Padrão TISS ...........................56 
+Outras regras operacionais ..................................................................58 
+XII. Regras para o envio de dados à ANS ............................................58 
+Formas de remuneração dos eventos de atenção à saúde ........................58 
+Regras gerais para o envio de dados à ANS ...........................................62 
+Regras para informação dos eventos/guias de atendimento .....................66 
+Regras para informação de contratação por valor pré-estabelecido ...........77 
+
+            
+4 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Regras  para  informação  de  fornecimento  de  medicamentos  e  materiais 
+diretamente aos beneficiários .........................................................................80 
+Regras para informação de despesas assistenciais referentes a outras formas 
+de remuneração ...........................................................................................82 
+XIII. Acompanhamento dos dados enviados à ANS pelas operadoras ....83 
+XIV. Prazos ...................................................................................83 
+XV. Penalidades ...............................................................................84 
+XVI. Atualização do Padrão TISS ......................................................84 
+Regras de solicitação de alteração do Padrão TISS ..................................84 
+Processo de Alteração do Padrão TISS ...................................................96 
+Divulgação de novas versões ............................................................. 101 
+XVII. Disposições Transitórias ......................................................... 102 
+XVIII. Glossário .............................................................................. 102 
+ 
+ 
+ 
+Figura 1 - Diagrama dos Componentes do Padrão TISS ...................................21 
+Figura 2 – Troca de informações em diferentes versões dos Componentes ............57 
+Figura 3 – Modelo de Ofício de solicitação de aprimoramento do Padrão TISS ........86 
+Figura 4 – Modelo de Documento de Solicitação de Alteração do Padrão TISS ........87 
+
+            
+5 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+I.    Versão do Componente Organizacional 
+1.  Esta versão do componente organizacional é identificada por 201902.  
+ 
+2.  Data de publicação: 28/02/2019 
+II.    Componente organizacional 
+ 
+Finalidade 
+3.  A  finalidade  do  componente  organizacional  é  estabelecer  o  conjunto  de  regras 
+operacionais do Padrão TISS. 
+Definição 
+4.  O componente organizacional do Padrão TISS contém: 
+-   Nomeação da versão e data de publicação; 
+-   Exposição de motivos da atualização e histórico de alteração; 
+-   Definições e regras de uso;  
+-   Definições das regras de atualização; 
+-   Outras regras operacionais. 
+III.    Exposição de motivos da atualização 
+5.  Atualização  dos  componentes  Organizacional,  de  Comunicação,  de  Conteúdo  e 
+Estrutura  e  de  Representação  de  Conceitos  em  Saúde  para  contemplar  as 
+alterações  nos  processos  de  elegibilidade,  autorização  e  cobrança  referentes  à 
+padronização da biometria digital e à introdução do código de validação de presença 
+do beneficiário (token). 
+ 
+6.  Atualização dos componentes de Comunicação e de Conteúdo e Estrutura para 
+contemplar a identificação unívoca de procedimentos e itens assistenciais cobrados 
+pelos prestadores. 
+ 
+7.  Atualização dos componentes de Comunicação e de Conteúdo e Estrutura para 
+alterar  a  condição  de  preenchimento  dos  campos  sexo,  data  de  nascimento  e 
+
+            
+6 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+município de residência do beneficiário, que passam a ser obrigatórios no envio de 
+dados das operadoras para a ANS.  
+ 
+8.  Atualização do componente de Representação de Conceitos em Saúde alterando a 
+descrição  do  CBO  999999  na  tabela  nº  24;  alteração  da  forma  de  envio  de 
+procedimentos e itens assistenciais na tabela nº 64, referentes a itens das tabelas 
+TUSS 19, 20 e 22 e inclusões e alterações de termos TUSS na Tabela 64.  
+ 
+9.  Atualização  do  componente  de  comunicação  para  adequar  ao  novo  modelo  de 
+versionamento  que,  ao  invés  de  único,  será  separado  em  dois  pacotes/blocos 
+independentes: versão 3.04.00, da troca entre prestadores e operadoras, e versão 
+1.00.00, do envio de dados das operadoras para a ANS (monitoramento). 
+ 
+10. Retorno da obrigatoriedade de utilização da TUSS de Materiais e OPME. 
+IV.   Histórico das alterações 
+11. As alterações na versão de FEV/2019 são: 
+Inclusões 
+11.1. No componente organizacional, no item “XII – Regras para o envio de dados à 
+ANS  –  Regras  para  informação  dos  eventos/guias  de  atendimento”,  foram 
+incluídas  as  seguintes  orientações  relacionadas  ao  envio  de  dados  das 
+operadoras para a ANS: 
+11.1.1.  No primeiro envio dos dados das operadoras para a ANS, devem ser 
+incluídas todas as informações que caracterizaram o atendimento (códigos 
+CID, número da Declaração de Nascido Vivo e da Declaração de Óbito, 
+código de tabela, do grupo de procedimentos ou dos procedimentos, código 
+do dente, região da boca e face do dente, identificador de contratação por 
+valor  preestabelecido,  registro  da  operadora  intermediária,  tipo  de 
+atendimento por operadora intermediária, CBO do profissional executante, 
+número do Cartão Nacional de Saúde do beneficiário, Número da Guia de 
+Solicitação de Internação). 
+11.1.2. Para  guias  de  consulta  e  SP/SADT  utilizadas  em  consulta:  “O 
+preenchimento do CBO do prestador executante é obrigatório no envio dos 
+dados do Padrão TISS à ANS. Caso a operadora envie essa informação 
+
+            
+7 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+com o código 999999 o lançamento será rejeitado, pois esse código só 
+deve ser utilizado, na troca entre operadoras e prestadores, quando não for 
+possível para o prestador executante obter o CBO do prestador solicitante.” 
+Caso  o  profissional  executante  possua  mais  de  um  CBO  deve  ser 
+informado  aquele que refletir o  atendimento  efetivamente  prestado  pelo 
+profissional, e para o qual ele seja habilitado. Ou seja, deve ser informado 
+apenas  o  CBO  correspondente  à  natureza  da consulta que  está sendo 
+informada pela operadora à ANS (clínica médica, cardiologia, geriatria, etc), 
+ainda que o profissional possua mais de uma especialização ou habilitação. 
+11.1.3. O campo Indicador de CPF ou CNPJ em guias de resumo de internação 
+deve ser obrigatoriamente igual a 1-CNPJ. Caso contrário o lançamento 
+será rejeitado. 
+11.1.4. O  campo  Número  da guia  de  solicitação  de  internação  não  pode  ser 
+preenchido em guias de consulta e nas guias de tratamento odontológico. 
+11.1.5. A informação da Declaração de Nascido Vivo só pode constar em guias 
+de Resumo de Internação. 
+11.1.6. A  informação  da  Declaração  de  Óbito  só  pode  constar  em  guias  de 
+Resumo de Internação. 
+11.1.7. O  campo  Data  final  do  período  de  atendimento  ou  data  do  fim  do 
+faturamento  é  de  preenchimento  obrigatório  nas  guias  de  Resumo  de 
+Internação. 
+11.1.8. Os  campos:  Diagnóstico  principal  CID,  Diagnóstico  secundário  CID, 
+Terceiro  diagnóstico  CID  e  Quarto  diagnóstico  CID  só  podem  ser 
+preenchidos em guias de Resumo de Internação. 
+11.1.9. O  campo  Número  da  guia  principal  de  SP/SADT  ou  de  tratamento 
+odontológico só pode ser informado em uma guia de SP/SADT ou guia de 
+tratamento odontológico. 
+11.1.10.  A partir dos lançamentos incorporados à base de dados do TISS, a 
+ANS  estrutura  os  bancos  de  guias  e  eventos  de  atenção  à  saúde 
+resultantes  dos  atendimentos.  As  informações  desses  bancos  são 
+utilizadas como base para cumprir as finalidades do Padrão TISS quanto a 
+subsidiar as ações da ANS de avaliação e acompanhamento econômico-
+financeiro e assistencial das operadoras de planos privados de assistência 
+à saúde e compor o registro eletrônico dos dados de atenção à saúde dos 
+beneficiários de planos privados de assistência à saúde. 
+11.1.11.  Para a formação das guias é utilizada a lógica descrita abaixo a partir 
+dos campos chave de cada lançamento: 
+
+            
+8 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Consideram-se  todos  os  “dados  básicos”  da  guia  enviados  no  primeiro 
+lançamento; 
+Consideram-se  todos  os  itens/procedimentos  enviados  no  primeiro 
+lançamento  agregando-se  as  informações  posteriores  (pagamentos  e 
+glosas) enviados nos lançamentos seguintes. 
+11.1.12.  O  Evento  de  Internação  tem  sua  origem  na  Guia  de  Resumo  de 
+Internação enviada pelo prestador hospitalar onde ocorreu o atendimento. 
+As demais Guias que compõem o evento são vinculadas à esta Guia de 
+Resumo de Internação através do número de solicitação de internação. 
+Caso  esse  número  de  solicitação  de  internação  não  seja  informado 
+corretamente pela operadora, o evento pode não conter todas as guias que 
+deveriam fazer parte dele. 
+11.1.13.   Caso a Guia de Resumo de Internação não tenha sido encaminhada 
+para a ANS o evento de internação não será formado. 
+ 
+11.2. No componente organizacional, no item XIV. Prazos, foram alterados os prazos 
+para implantação da versão. 
+ 
+11.3. No componente organizacional, no item “Processos padronizados no Padrão 
+TISS”,  foi  incluída  orientação  sobre  o  uso  de  novas  tecnologias  e  os 
+mecanismos de regulação. 
+ 
+11.4.  No item, vinculação entre as guias, foi incluído esclarecimento sobre o Número 
+da Guia de Solicitação de Internação. 
+ 
+11.5. No item vinculação entre as guias – SP/SADT foi incluído o texto: 
+A  cobrança  em  separado  de  honorários  de  médicos  ou  outros  profissionais 
+(anestesistas,  auxiliares  etc)  decorrentes  dos  procedimentos  discriminados  na  guia 
+principal de SP/SADT deve ser feita por outra guia de SP/SADT; deve-se informar o 
+número da guia de SP/SADT principal no campo “3-Número da Guia Principal”. 
+11.6. No componente de Representação de Conceitos em Saúde foram incluídos 
+3.066 termos na terminologia de medicamentos. 
+ 
+11.7. No componente de Representação de Conceitos em Saúde foram incluídos 
+472.553 termos na terminologia de material e OPME. 
+
+            
+9 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+11.8. No componente de Representação de Conceitos em Saúde foram incluídos 3 
+termos novos na Relação das terminologias unificadas da saúde suplementar. 
+ 
+11.9. No componente de Representação de Conceitos em Saúde foi incluída a tabela 
+Terminologia de tipo de identificação do beneficiário com 8 termos. 
+ 
+11.10.  No componente de Representação de Conceitos em Saúde foi incluído 1 
+termo na terminologia de versão do componente de comunicação do padrão.  
+ 
+11.11.  No componente de Representação de Conceitos em Saúde foi incluída a 
+tabela Terminologia de etapas de autorização com 2 termos. 
+ 
+11.12.  No componente de Representação de Conceitos em Saúde foi incluída a 
+tabela  Terminologia de motivos  de  ausência  do código  de validação  com  7 
+termos. 
+ 
+11.13.  No componente de Representação de Conceitos em Saúde, foram  inseridos 
+4 termos na Terminologia de Mensagens (glosas, negativas e outras). 
+ 
+11.14.  No componente de Representação de Conceitos em Saúde, foram incluídos 
+475.619 na Tabela de forma de envio de dados para a ANS. 
+ 
+11.15.  No  componente  de  Comunicação  foi  incluída  uma tag, chamada 
+sequencialItem, de preenchimento obrigatório, com 4 posições numéricas nas 
+seguintes estruturas: 
+ct_procedimentoExecutadoSadt 
+ct_outrasDespesas 
+ct_procedimentoExecutadoInt 
+ct_procedimentoExecutadoHonorIndiv 
+cto_guiaOdontologia em procedimentosExecutados 
+ct_guiaRecursoLote;    ctm_recursoGlosa;    opcaoRecurso;    recursoGuia; 
+opcaoRecursoGuia em itensGuia 
+
+            
+10 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ct_guiaRecursoLote; ctm_recursoGlosaOdonto; opcaoRecurso; recursoGuia em 
+recursoProcedimento 
+ct_procedimentoExecutado 
+ct_procedimentoExecutadoOdonto 
+ct_recursoGlosaRecebimento; guiasRecurso; opcaoRecursoGuia em itensGuia 
+ct_contaMedicaResumo; relacaoGuias em detalhesGuia 
+ct_procedimentoAutorizado 
+cto_autorizacaoServico em procedimentosAutorizados 
+cto_demonstrativoOdontologia 
+ct_respostaGlosaItemMedico 
+ct_respostaGlosaItemOdonto 
+cto_recursoGlosaOdonto  
+11.16. No componente de Comunicação foi incluída uma tag, chamada tipoIdent, 
+com 2 posições alfanuméricas. Esta tag identifica o tipo de identificação do 
+beneficiário na tag identificadorBeneficiario e deve ter conteúdo informado, nas 
+estruturas  abaixo.  sempre  que  a tag identificadorbeneficiário  tiver  conteúdo 
+informado. 
+ct_beneficiarioDados 
+ct_solicitacaoProcedimento; ctm_prorrogacaoSolicitacaoGuia em 
+dadosBeneficiario 
+cto_odontoSolicitacaoGuia  
+ct_elegibilidadeVerifica 
+ct_guiaDadosOdonto   
+cto_autorizacaoServico 
+ct_elegibilidadeRecibo 
+11.17.  No  componente  de  Comunicação  foi  incluída  uma tag,  chamada 
+codValidacao, com 10 posições alfanuméricas e de preenchimento opcional, 
+nas seguintes estruturas: 
+
+            
+11 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ct_elegibilidadeVerifica 
+ct_autorizacaoSADT  
+ct_autorizacaoInternacao 
+ctm_consultaGuia após a tag numeroGuiaOperadora 
+cto_guiaOdontologia após a tag numeroGuiaOperadora 
+ctm_sp-sadtSolicitacaoGuia após a tag numeroGuiaPrincipal 
+ctm_internacaoSolicitacaoGuia após a tag numeroGuiaPrestador 
+cto_odontoSolicitacaoGuia após a tag numeroGuiaPrincipal 
+ct_guiaDados após a tag numeroGuiaOperadora 
+ct_guiaDadosOdonto após a tag numeroGuiaOperadora 
+ct_autorizacaoDados após numeroGuiaOperadora 
+ct_elegibilidadeRecibo após numeroCarteira 
+11.18. No  componente  de  Comunicação  foi  incluída  uma tag,  chamada 
+tipoEtapaAutorizacao com 1 posição alfanumérica. Esta tag identifica o tipo de 
+solicitação  de  autorização  e  é  de  preenchimento  obrigatório  nas  estruturas 
+abaixo: 
+ctm_sp-sadtSolicitacaoGuia 
+ctm_internacaoSolicitacaoGuia 
+ctm_autorizacaoServico 
+11.19.   No componente de comunicação foram incluídos schemas para refletir a 
+mudança da nomenclatura dos arquivos tissSimpleTypes e tissComplexTypes 
+que comporão a mensagem de Monitoramento e a consequente adaptação em 
+tissMonitoramentoV1_00_00 adequando as cláusulas include. 
+ 
+11.20.  No Componente de Conteúdo e Estrutura foi incluído o campo Sequencial 
+de referência do procedimento ou item assistencial nas mensagens: 
+Autorização para realização de procedimentos; 
+Situação do status de autorização; 
+Envio de lote de anexos; 
+Envio de lote de guias para cobrança; 
+
+            
+12 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Recebimento de lote de guias de cobrança; 
+Situação do protocolo; 
+Recurso de glosa; 
+Recebimento do recurso de glosa; 
+Resposta ao recurso de glosa; e 
+Demonstrativos de retorno para o prestador. 
+11.21.   No  Componente  de  Conteúdo  e  Estrutura  foi  incluído  o  campo  Item 
+vinculado nas mensagens: 
+Envio de lote de guias para cobrança (Outras Despesas). 
+11.22.  No Componente de Conteúdo e Estrutura foram incluídos os campos Tipo 
+de identificação do beneficiário e Template biométrico nas mensagens: 
+Verificação de elegibilidade; 
+Resposta à verificação de elegibilidade; 
+Comunicação de internação ou alta do beneficiário; 
+Resposta à comunicação de internação ou alta do beneficiário; 
+Solicitação de autorização para realização de procedimentos; 
+Autorização para realização de procedimentos; 
+Solicitação de status de autorização; 
+Situação do status de autorização; 
+Envio de lote de anexos; 
+Recebimento de lote de anexos; 
+Envio de lote de guias para cobrança; 
+Recebimento de lote de guias de cobrança; e 
+Situação do protocolo. 
+11.23.   No  Componente  de  Conteúdo  e  Estrutura  foram  incluídos  os  campos 
+Código de validação e Ausência de código de validação nas mensagens: 
+
+            
+13 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Verificação de elegibilidade; 
+Resposta à verificação de elegibilidade; 
+Solicitação de autorização para realização de procedimentos; 
+Autorização para realização de procedimentos; 
+Situação do status de autorização; 
+Envio de lote de anexos; 
+Recebimento de lote de anexos; 
+Envio de lote de guias para cobrança; 
+Recebimento de lote de guias de cobrança; e 
+Situação do protocolo. 
+11.24.   No Componente de Conteúdo e Estrutura foi incluído o campo Etapa da 
+autorização nas mensagens: 
+Solicitação de autorização para realização de procedimentos; 
+Autorização para realização de procedimentos; e 
+Situação do status de autorização. 
+Alterações 
+ 
+11.25.   No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para ANS, foram alteradas as descrições ou condições de preenchimento dos 
+campos,  visando  a  adequação  às  críticas  na  recepção  dos  dados  e/ou 
+aperfeiçoamento das orientações: 
+-  Tipo  da  identificação  do  prestador  executante, Tipo  de  atendimento  por 
+operadora intermediária, Número de identificação do plano do beneficiário na 
+ANS, Número da guia no prestador, Número da guia atribuído pela operadora, 
+Número  da  guia  de  solicitação  de  internação,  Número  da  guia  principal  de 
+SP/SADT ou de Tratamento Odontológico, Data final do período de atendimento 
+ou  data  do  fim  do  faturamento,  Código  na  Classificação  Brasileira  de 
+Ocupações  do  executante,  Diagnóstico  principal,  Diagnóstico  secundário, 
+Terceiro diagnóstico, Quarto diagnóstico, Valor total pago em tabela própria da 
+operadora, Número da Declaração de Nascido Vivo, Número da Declaração de 
+
+            
+14 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Óbito, Identificação do dente (em Informações do Atendimento) ; Código no 
+Cadastro  Nacional  de  Estabelecimentos  de  Saúde  do  executante,  Cartão 
+Nacional de Saúde e Número de identificação do plano do beneficiário na ANS 
+(em Informações de contratação por valor pré-estabelecido). 
+ 
+11.26.  No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para ANS, a condição de preenchimento dos campos Sexo do beneficiário, Data 
+de  nascimento  do  beneficiário  e  Município  de  residência  do  beneficiário  foi 
+alterada para “Obrigatório”. 
+ 
+11.27.   No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para a ANS, a condição de preenchimento do campo Município de localização 
+do prestador executante foi alterada para “Obrigatório”, para compatibilização 
+com o especificado no arquivo xsd monitoramentoTISS. 
+ 
+11.28.  No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para a ANS, a condição de preenchimento do campo Valor pago diretamente 
+ao fornecedor foi alterada  
+ 
+De: “Obrigatório. Quando não houver valor pago aos fornecedores, o campo 
+deve ser preenchido com zero 
+ 
+Atendimentos em rede própria da operadora (mesmo CNPJ): o campo deve ser 
+preenchido com zero. 
+ 
+O saldo final, considerando os valores de todos os lançamentos da mesma guia, 
+deve ser maior ou igual a zero.” 
+ 
+Para: “Obrigatório. Quando não houver valor pago aos fornecedores, o campo 
+deve ser preenchido com zero 
+ 
+O saldo final, considerando os valores de todos os lançamentos da mesma guia, 
+deve ser maior ou igual a zero.” 
+ 
+11.29.  No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para ANS, na condição de preenchimento dos campos Tabela de referência do 
+procedimento ou item assistencial realizado que compõe o pacote e Código do 
+
+            
+15 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+procedimento  realizado  ou  item  assistencial  utilizado  que  compõe  o  pacote 
+foram retiradas as referências a código de tabela própria da operadora (00). 
+ 
+11.30.  No componente de Conteúdo e Estrutura, na mensagem de envio de dados 
+para  a  ANS,  foi  alterada  a  descrição  do  número  da  guia  de  solicitação  de 
+internação: 
+De: “Número da Guia de Solicitação de Internação que deu origem a internação 
+do beneficiário.” 
+Para:  “Número  da  Guia  de  Solicitação  de  Internação  que  deu  origem  a 
+internação do beneficiário. Esse número é usado para vincular todas as guias de uma 
+mesma internação, formando assim o evento de internação.” 
+11.31.  No  componente  Organizacional  foi  alterado  o  texto  no  item  Usos  – 
+SP/SADT: 
+De:  
+“Caso seja necessário cobrar em separado os honorários de médicos ou outros 
+profissionais   (anestesistas,   auxiliares   etc)   decorrentes   dos   procedimentos 
+discriminados  na  guia  de  SP/SADT,  deve  ser  usado  o  quadro  que  identifica  os 
+profissionais informando o Grau de Participação de cada profissional no atendimento.” 
+Para:  
+“Caso seja necessário cobrar os honorários de médicos ou outros profissionais 
+(anestesistas, auxiliares etc) decorrentes dos procedimentos discriminados na guia de 
+SP/SADT, deve ser usado o quadro que identifica os profissionais informando o Grau 
+de Participação de cada profissional no atendimento.” 
+11.32.   No componente Organizacional foi alterado o texto no item Vinculação entre 
+as guias – Solicitação de Internação: 
+De:  
+Solicitação de autorização de internação em regime hospitalar e hospital-dia. 
+Vinculação com outras guias 
+-Deve ser referenciada pela guia de Resumo de Internação; 
+
+            
+16 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-Pode ser referenciada pela guia de honorários, anexo de solicitação de OPME, 
+anexo de solicitação de quimioterapia e anexo de solicitação de radioterapia. 
+ 
+Para: 
+Solicitação de autorização de internação em regime hospitalar, hospital-dia e 
+internação domiciliar. 
+Vinculação com outras guias: 
+-Deve  ser  referenciada  pela  guia  de  Resumo  de  Internação  e  pela  guia  de 
+honorários, caso haja cobrança de honorários diretamente pelo profissional, e sempre 
+que houver Solicitação de Prorrogação/Complemento; 
+-Pode ser referenciada pelo anexo de solicitação de OPME, anexo de solicitação 
+de quimioterapia e anexo de solicitação de radioterapia. 
+11.33.  No componente de Representação de Conceitos em Saúde, foram alterados 
+278 termos na terminologia de medicamentos. 
+ 
+11.34.  No componente de Representação de Conceitos em Saúde, foram alterados 
+7.419 termos na terminologia de material e OPME. 
+ 
+11.35.  No componente de Representação de Conceitos em Saúde, foi alterado 1 
+termo na Terminologia do código brasileiro de ocupação (CBO). 
+ 
+11.36.  No componente de Representação de Conceitos em Saúde, foi alterado 1 
+termo na Relação das terminologias unificadas da saúde suplementar.  
+ 
+11.37.  No componente de Representação de Conceitos em Saúde, foram alterados 
+4 termos na Terminologia de Procedimentos e Eventos em Saúde.   
+  
+11.38.  No componente de Representação de Conceitos em Saúde, foi alterada 
+para individualizada, a forma de envio para a ANS de 109 procedimentos, na 
+TUSS 64. No total, foram alterados 21.568 termos. 
+ 
+11.39.  No  componente  de  comunicação  foi  alterada  a  estrutura  no  schema 
+tissMonitoramento  do  envio  dos  dados  para  a  ANS  da  identificação  do 
+beneficiário,  colocando  a  tag  numerocartaoNacionalSaude  como  opcional 
+
+            
+17 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+seguida das três tags de identificação do beneficiário como obrigatórias (sexo, 
+dataNascimento e municipioResidencia) conforme esquema abaixo: 
+ 
+11.40.  No  componente  de  comunicação foi  retirado o valor  “00” do domínio  de 
+dm_tabelaPacote. 
+Exclusões 
+11.41.  No componente Organizacional foram excluídos os itens abaixo da Lista de 
+mensagens  por  processo  padronizado,  Processo  de  Autorização  de 
+Procedimentos: 
+   Cancelamento de guia: é a mensagem do prestador para a operadora que 
+solicita o cancelamento de uma guia enviada anteriormente; 
+   Recibo  do  cancelamento  de  guia:  é  a  mensagem  da  operadora  para  o 
+prestador com a confirmação, ou não, do cancelamento de uma guia. 
+ 
+11.42.  No componente Organizacional, no exemplo referente ao Quadro 16, foi 
+excluído o trecho abaixo: 
+Aqui também devem ser enviados de forma individualizada os procedimentos e 
+eventos  em  saúde  de  tabela  própria  da  operadora  que  ainda  não  estão 
+codificados na TUSS. 
+ 
+11.43.  No Componente Organizacional foi excluído o Anexo com o histórico de 
+alterações nas versões do Padrão, que passará a ser disponibilizado junto com 
+os demais arquivos auxiliares no site da ANS. 
+ 
+
+            
+18 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+11.44.  No  componente  de  Representação  de  Conceitos  em  Saúde,  foram 
+inativados 3.646 termos na terminologia de medicamentos.    
+        
+11.45.  No  componente  de  Representação  de  Conceitos  em  Saúde,  foram 
+inativados 10.610 termos na terminologia de material e OPME. 
+ 
+11.46.  No  componente  de  Representação  de  Conceitos  em  Saúde,  foram 
+inativados 8 termos na terminologia de Procedimentos e Eventos em Saúde. 
+V.    Metodologia 
+12. A  metodologia  para  a  construção  do  Padrão  TISS  foi  definida  e  executada  em 
+conjunto com o Comitê de Padronização de Informações da Saúde Suplementar 
+(COPISS) e seus grupos de trabalho (GT). 
+ 
+13. As solicitações de alteração acatadas pela ANS resultaram em novas versões dos 
+componentes: 
+-   Versão 201902 do componente Organizacional; 
+-   Versão 201902do componente de Conteúdo e Estrutura; 
+-   Versão 201902do componente de Representação de Conceitos em Saúde; 
+-   Versão  03.04.00  do  componente  de  Comunicação  para  a  troca  entre 
+prestadores e operadoras; 
+-   Versão  01.00.00  do  componente  de  Comunicação  para  a  troca  entre 
+operadoras e ANS. 
+VI.   Entidades de referência 
+14. As  entidades  de  referência  são  aquelas  destinadas  a  validar  proposições  de 
+alterações do Padrão TISS e dirimir dúvidas técnicas de questões do padrão TISS. 
+Quadro 1 - Entidades de referência do Padrão TISS. 
+Entidades Sigla Termos/Requisitos 
+Associação Médica Brasileira AMB    Termos de medicina 
+Conselho Federal de Odontologia CFO    Termos de odontologia 
+
+            
+19 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Agência Nacional de Vigilância Sanitária   ANVISA 
+Termos de medicamentos, 
+materiais, próteses e órteses 
+Confederação Nacional de Saúde CNS 
+Termos de diárias, taxas e 
+gases medicinais 
+Sociedade Brasileira de Informática em 
+Saúde 
+SBIS 
+Requisitos de segurança e 
+privacidade das informações 
+Fonte: Elaborado pelos autores. 
+ 
+VII.   Padrão TISS 
+ 
+Finalidade 
+15. O  Padrão  TISS  compreende  as  trocas  dos  dados  de  atenção  à  saúde  dos 
+beneficiários de Plano Privado de Assistência à Saúde, com a finalidade de: (RN 
+305) 
+-   Padronizar  as  ações  administrativas  de  verificação,  solicitação,  autorização, 
+cobrança, demonstrativos de pagamento e recursos de glosas; 
+-   Subsidiar  as  ações  da  ANS  de  avaliação  e  acompanhamento  econômico, 
+financeiro e assistencial das operadoras de planos privados de assistência à 
+saúde; e 
+-   Compor o registro eletrônico dos dados de atenção à saúde dos beneficiários 
+de planos privados de assistência à saúde. 
+Diretriz 
+16. O padrão TISS tem por diretriz a interoperabilidade entre os sistemas de informação 
+em  saúde  preconizados  pela  Agência  Nacional  de  Saúde  Suplementar  e  pelo 
+Ministério  da  Saúde,  e  ainda  a  redução  da  assimetria  de  informações  para  o 
+beneficiário de plano privado de assistência à saúde. (RN 305). 
+ 
+17. A diretriz de interoperabilidade do Padrão TISS com os sistemas de informação em 
+saúde  da  Agência  Nacional  de  Saúde  Suplementar  se  aplica  com  os  seguintes 
+sistemas: 
+-   Sistema de Registro de Plano de Saúde (RPS); 
+-   Sistema de Informações de Beneficiários (SIB); 
+-   Sistema de Informações de Produto (SIP); 
+
+            
+20 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   Sistema de Documento de Informações Periódicas das Operadoras de Planos 
+de Assistência à Saúde (DIOPS). 
+ 
+18. A diretriz de interoperabilidade do Padrão TISS com os sistemas de informação em 
+saúde do Ministério da Saúde se aplica com os seguintes sistemas: 
+-   Sistema de Comunicação de informações hospitalares e ambulatoriais do SUS 
+(CIHA); 
+-   Sistema do Cartão Nacional de Saúde (CNS); 
+-   Sistema do Cadastro Nacional de Estabelecimentos de Saúde (SCNES); 
+-   Sistema de informações hospitalares do SUS (SIH); 
+-   Sistema de informações ambulatoriais do SUS (SIA); 
+-   Sistema de Mortalidade (SIM); 
+-   Sistema de Nascidos Vivos (SINASC). 
+Escopo 
+19. O  Padrão  TISS  abrange  a  troca  de  informações  de  atenção  à  saúde  entre  os 
+seguintes agentes da Saúde Suplementar: (RN 305) 
+-   Operadora de Planos Privados de Assistência à Saúde; 
+-   Prestador de Serviços de Saúde; 
+-   Contratante  de  Plano  Privado  de  Assistência  à  Saúde  familiar/individual, 
+coletivo por adesão e coletivo empresarial; 
+-   Beneficiário de Plano Privado de Assistência à Saúde ou seu responsável legal 
+ou ainda terceiros formalmente autorizados por ele; 
+-   Agência Nacional de Saúde Suplementar. 
+ 
+20. O Padrão TISS refere-se às trocas de dados decorrentes de ações de atenção à 
+saúde em beneficiário de plano privado de assistência à saúde. 
+ 
+21. O  Padrão  TISS  abrange  as  trocas  dos  dados  de  atenção  à  saúde  prestada  ao 
+beneficiário  de  plano  privado  de  assistência  à  saúde,  gerados  na  rede  de 
+prestadores de serviços de saúde da operadora de planos privados de assistência 
+à saúde. Entende-se como rede de prestadores de serviços de saúde da operadora 
+de planos privados de assistência à saúde: (RN 305) 
+-   Rede de serviços de saúde contratada, referenciada ou credenciada, de forma 
+direta ou indireta; e  
+
+            
+21 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   Rede própria da operadora; de entidade ou empresa controlada pela operadora; 
+de entidade ou empresa controladora da operadora e profissional assalariado 
+ou cooperado da operadora. 
+ 
+22. O Padrão TISS também abrange a troca dos dados de atenção à saúde, gerados na 
+modalidade reembolso das despesas assistenciais ao beneficiário de plano privado 
+de assistência à saúde, no envio de informação das operadoras de planos privados 
+de assistência à saúde para a ANS. (RN 305). 
+ 
+23. O Padrão TISS não abrange o envio de informação do beneficiário de plano privado 
+de assistência à saúde para a operadora privada de assistência à saúde com a 
+finalidade de solicitação de reembolso das despesas assistenciais. (RN 305). 
+ 
+24. O Padrão TISS não abrange os dados referentes aos eventos de atenção à saúde 
+oriundos de ressarcimento ao Sistema Único de Saúde. (RN 305). 
+ 
+25. É vedado às operadoras de plano privado de assistência à saúde alterar o Padrão 
+TISS. (RN 305). 
+ 
+26. É  vedado  às  operadoras  de  plano  privado  de  assistência  à  saúde  solicitar  dos 
+demais agentes da saúde suplementar o envio em papel do equivalente ao conteúdo 
+trocado  por  via  eletrônica  no  Padrão  TISS,  com  certificado  digital  emitido  por 
+Autoridade Certificadora credenciada junto à ICP-Brasil. (RN 305). 
+ 
+27. O certificado digital ICP-Brasil a que se refere o item anterior se destina a realização 
+de assinatura digital das mensagens eletrônicas, a fim de garantir a integridade, 
+identificar a autoria e origem das mesmas. 
+ 
+28. O padrão TISS  é composto  por  cinco componentes representados  no diagrama 
+abaixo, com as seguintes estruturas de organização. 
+  
+Figura 1 - Diagrama dos Componentes do Padrão TISS 
+
+            
+22 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+VIII.   Componente de Conteúdo e Estrutura 
+ 
+Definição 
+29. O componente de conteúdo e estrutura estabelece a arquitetura dos dados utilizados 
+nas  mensagens  eletrônicas  e  nos formulários, para  coleta  e  disponibilidade  dos 
+dados de atenção à saúde (RN 305). 
+Formato de apresentação 
+30. A apresentação da arquitetura dos dados é feita pela lista de mensagens, pelo layout 
+dos formulários e suas respectivas legendas. 
+ 
+31. As legendas contêm os itens abaixo descritos: 
+-   O nome do termo é a chave única de identificação do mesmo no padrão TISS; 
+-   O número do campo na guia identifica a posição do termo na guia em papel; 
+-   O nome do campo na guia identifica como está impresso a identificação do 
+termo na guia em papel; 
+-   O tipo de dado informa se o termo é representado por um campo do tipo data, 
+hora com sete dígitos para milissegundos, string ou numérico; 
+-   O  tamanho  informa  a  quantidade  máxima  de  dígitos/caracteres  para  a 
+representação do dado; 
+-   O formato informa a representação do dado, em determinados tipos de dados. 
+Exemplo: DDMMAAAA para datas ou HH:MM para hora; 
+-   A descrição do termo na legenda é um texto com o significado do termo; 
+
+            
+23 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   A condição de preenchimento identifica quando e como deve ser informado o 
+conteúdo do termo. 
+ 
+32. As condições de preenchimento da legenda são: 
+-   Obrigatório:   a   situação   na   qual   o   termo   deve   ser   preenchido, 
+incondicionalmente; 
+-   Condicional: a situação de obrigatoriedade de preenchimento do termo está 
+vinculada à ocorrência de uma determinada condição; 
+-   Opcional: a situação em que o agente gerador da informação define se irá, ou 
+não, informar o conteúdo do dado. 
+Identificação do arquivo que dispõe o componente 
+33. O  nome  do  arquivo  que  dispõe  a  arquitetura  dos  dados  do  Padrão  TISS  é 
+PadrãoTISS_ConteudoeEstruturaAAAAMM.ZIP, onde AAAAMM indicam o ano e 
+o mês de início de vigência. O arquivo está disponível no site da ANS no endereço 
+www.ans.gov.br. 
+Processos padronizados no Padrão TISS 
+34. Fica vedada a exigência por parte das operadoras de planos privados de assistência 
+à saúde, em quaisquer circunstâncias, o preenchimento do Código Internacional de 
+Doenças – CID nas guias de Troca de Informações em Saúde Suplementar – TISS, 
+em decorrência de decisão judicial. (IN DIDES 40 de 27/04/2010). 
+ 
+35. A  utilização  de  qualquer  tecnologia  por  parte  das  operadoras,  destinada  à 
+identificação ou comprovação da presença do beneficiário no local de atendimento, 
+por meio da apresentação de códigos de validação ou similares, é livre nas situações 
+em que tal prática não configura mecanismo de regulação. Nos casos em que a 
+tecnologia  empregada  configura  algum  tipo  de  mecanismo  de  regulação,  sua 
+utilização  deve  respeitar  o  disposto  nos  normativos  da  Agência.  Nesse  sentido, 
+destaca-se que, de acordo com o disposto no art. 4º da resolução do Conselho de 
+Saúde Suplementar – CONSU n° 08, de 3 de novembro de 1998, as operadoras de 
+planos  ou  seguros  privados  de  assistência  à  saúde,  quando  da  utilização  de 
+mecanismos de regulação, deverão atender às seguintes exigências: 
+
+            
+24 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+I - informar clara e previamente ao consumidor, no material publicitário do plano ou 
+seguro, no instrumento de contrato e no livro ou indicador de serviços da rede: 
+a)  os  mecanismos  de  regulação  adotados,  especialmente  os  relativos  a  fatores 
+moderadores ou de co-participação e de todas as condições para sua utilização;  
+b)  os  mecanismos  de  "porta  de  entrada",  direcionamento,  referenciamento  ou 
+hierarquização de acesso. 
+36. A  utilização  de  tecnologias  caracterizadas  como  mecanismos  de  regulação,  em 
+desacordo aos pressupostos da CONSU nº 08/1998 ou à legislação que a substitua, 
+configura infração ao regramento setorial. 
+ 
+37. Os processos padronizados no Padrão TISS são: 
+-   Verificação de elegibilidade; 
+-   Autorização de procedimentos; 
+-   Cobrança de serviços; 
+-   Comunicação de internação ou alta de beneficiário; 
+-   Recurso de glosa; 
+-   Demonstrativos de retorno; 
+-   Informações para a ANS; 
+-   Informações para o beneficiário; 
+-   Comprovante Presencial. 
+Trocas de informações estabelecidas no padrão TISS 
+ 
+Entre operadoras e prestadores de serviços de saúde 
+38. Entre  operadoras  e  prestadores  de  serviços  de  saúde  são  padronizados  os 
+seguintes processos: 
+-   Verificação de Elegibilidade;  
+-   Autorização de procedimentos; 
+-   Comunicação de internação ou alta do beneficiário;  
+-   Cobrança de serviços de saúde; 
+-   Demonstrativos de retorno;  
+-   Recurso de glosa;  
+-   Comprovante presencial. 
+ 
+
+            
+25 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+39. Entre operadoras e prestadores de serviços de saúde, os processos padronizados 
+para troca eletrônica de implantação obrigatória são:  
+-   Cobrança de serviços de saúde; 
+-   Autorização de serviços (somente a mensagem de lote de anexos); 
+-   Demonstrativos de retorno; 
+-   Recurso de glosas. 
+ 
+40. Entre operadoras e prestadores de serviços de saúde, os processos padronizados 
+para troca eletrônica de implantação opcional são:  
+-   Verificação de elegibilidade;  
+-   Autorização de procedimentos (exceto a mensagem de lote de anexos); 
+-   Comunicação de internação ou alta do beneficiário. 
+ 
+41. Entre operadoras e prestadores de serviços de saúde, os processos padronizados 
+para troca em papel conforme o contrato entre as partes são: 
+-   Comprovante presencial; 
+-   Cobrança  de  serviços  de  saúde  (Guia  de  Tratamento  Odontológico–
+comprovante de atendimento). 
+ 
+42. Nos processos de implantação opcional não há imposição de um agente de troca 
+sobre o outro. 
+ 
+43. Os  processos  de  implantação  opcional,  quando  adotados  pela  operadora  em 
+formato eletrônico, deverão ser os estabelecidos no Padrão TISS. 
+Entre operadoras e beneficiários 
+44. Entre  operadoras  e  beneficiários  os  processos  de  troca  de  informações 
+padronizados são: 
+-   Envio de dados de utilização;  
+-   Informações acerca da negativa de autorização; 
+-   Informações acerca dos procedimentos de parto. 
+ 
+45. As operadoras de planos privados de assistência à saúde e seus prestadores de 
+serviços  de  saúde  devem  disponibilizar  sem  qualquer  ônus,  as  informações  de 
+
+            
+26 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+dados de atenção à saúde do Padrão TISS, solicitadas pelo beneficiário, por seu 
+responsável legal ou ainda por terceiros formalmente autorizados por eles. (RN 305) 
+Entre operadoras e ANS 
+46. Entre operadoras e ANS são padronizados os processos de troca de informações 
+de dados de atenção à saúde dos beneficiários da Saúde Suplementar denominado 
+Envio  de  dados  para  a  ANS  e  de  monitoramento  da  qualidade  dos  dados 
+incorporados  na  ANS  denominado Monitoramento  da  qualidade  dos  dados 
+incorporados na ANS. 
+ 
+47. Os dados do Padrão TISS serão enviados à ANS em conformidade ao estabelecido 
+nos componentes do Padrão TISS. (RN 305). 
+48. O envio dos dados do padrão TISS à ANS não exime as operadoras de planos 
+privados  de  assistência  à  saúde  da  obrigação  de  apresentar  documentação 
+comprobatória da veracidade das informações prestadas, bem como de quaisquer 
+outros documentos e informações que a ANS vier a requisitar. (RN 305). 
+ 
+49. O detalhamento do envio de dados à ANS encontra-se no tópico Regras para o envio 
+de dados à ANS deste Componente. 
+Do prestador solicitante para o beneficiário 
+50. O prestador solicitante deve entregar ao beneficiário, em papel, a solicitação de 
+exames, terapias ou internação mesmo quando houver encaminhamento eletrônico 
+da solicitação para a operadora. 
+Lista de mensagens por processo padronizado 
+51. Processo de verificação de elegibilidade do beneficiário. 
+ 
+51.1. Elegibilidade:  é  a  mensagem  enviada  pelo  prestador  para  a  operadora 
+solicitando a situação de determinado beneficiário junto à operadora quanto aos 
+seus direitos contratuais; 
+51.2. Resposta da elegibilidade: é a mensagem de resposta da operadora para o 
+prestador,  informando  a  situação  do  beneficiário  quanto  aos  seus  direitos 
+
+            
+27 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+contratuais. Caso a resposta seja negativa para o processo de elegibilidade, a 
+operadora deve identificar o motivo da negativa. 
+ 
+52. Processo de autorização de procedimentos. 
+ 
+52.1. Solicitação  de  autorização:  é  a  mensagem  enviada  pelo  prestador  para  a 
+operadora solicitando autorização para realização de algum serviço de saúde; 
+ 
+52.2. Autorização  de  serviços:  é  a  mensagem  de  resposta  da  operadora  para  o 
+prestador a um pedido de autorização para execução de serviço de saúde. 
+Todos  os  procedimentos  e  itens  assistenciais  enviados  na  Solicitação  de 
+autorização  devem  constar  na  respectiva  Autorização  de  serviços,  inclusive 
+aqueles que não tiverem sido autorizados; 
+ 
+52.3. Solicitação  de  status  de  autorização:  é  a  mensagem  do  prestador  para  a 
+operadora solicitando uma resposta a uma solicitação de autorização enviada 
+anteriormente; 
+ 
+52.4. Lote de anexos: é a mensagem do prestador para a operadora para o envio de 
+solicitação de autorização de procedimentos de quimioterapia, radioterapia e 
+OPME. E ainda, o envio do anexo de situação inicial de odontologia se houver 
+necessidade do envio deste anexo e em separado da guia principal de cobrança 
+de odontologia; 
+ 
+52.5. Situação  da  autorização  é  a  mensagem  da  operadora  para  o  prestador 
+informando se a autorização do serviço de saúde foi ou não concedida ou ainda 
+se encontra em análise pela operadora; 
+ 
+52.6. Recebimento  anexos:  é  a  mensagem  da  operadora  para  o  prestador 
+fornecendo um protocolo de recebimento da mensagem de lote de anexos. 
+ 
+53. Processo de cobrança de serviços de saúde. 
+ 
+53.1. Cobrança de guias: é a mensagem do prestador para a operadora de um lote 
+de cobrança dos serviços de saúde realizados; 
+ 
+
+            
+28 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+53.2. Recebimento  de  lote  de  cobrança:  é  a  mensagem  da  operadora  para  o 
+prestador com um protocolo de recebimento do lote de cobrança dos serviços 
+de saúde enviado pelo prestador; 
+ 
+53.3. Solicitação  de  status  de  protocolo:  é  a  mensagem  do  prestador  para  a 
+operadora solicitando a situação do protocolo de um lote enviado anteriormente; 
+ 
+53.4. Situação do protocolo: é a mensagem da operadora para o prestador com a 
+situação de um protocolo com todas as guias contidas neste; 
+ 
+53.5. Cancelamento de guia: é a mensagem do prestador para a operadora que 
+solicita o cancelamento de uma guia enviada anteriormente; 
+ 
+53.6. Recibo do cancelamento de guia: é a mensagem da operadora para o prestador 
+com a confirmação, ou não, do cancelamento de uma guia. 
+ 
+54. Processo de comunicação de internação ou alta de beneficiário. 
+ 
+54.1. Comunicação de internação/alta: é a mensagem do prestador para a operadora 
+com a informação da data de internação ou alta de um beneficiário; 
+ 
+54.2. Recibo de comunicação: é a mensagem da operadora para o prestador de 
+recebimento da comunicação de internação ou alta de um beneficiário. 
+ 
+55. Processo de emissão de demonstrativos de retorno. 
+ 
+55.1. Solicitação de demonstrativo de retorno: é a mensagem do prestador para a 
+operadora solicitando o demonstrativo de pagamento ou o demonstrativo de 
+análise de conta de um lote de cobrança enviado. O prestador deve informar o 
+número  do  protocolo,  gerado  pela  operadora,  de  recebimento  do  lote  de 
+cobrança de guias; 
+ 
+55.2. Demonstrativos  de  retorno:  é  a  mensagem  da  operadora  para  o  prestador 
+enviando o demonstrativo solicitado ou a informação que o demonstrativo ainda 
+não está disponível. 
+
+            
+29 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Padronização de biometria de impressão digital 
+56. Minúcias: conforme ISO 19794-2:2005. 
+ 
+57. Imagem de digital: 
+a. ISO-19794-4:2011/Amd 2:2015 
+b. ANSI/NIST ITL 1-2011e ANSI/NIST ITL 2-2008 
+c. Resolução mínima de 500 dpi. 
+d. 8-bit para tons de cinza 
+e. NFIQ de 1 a 3 
+58. Compressão WSQ. 
+ 
+59. Coleta pousada. 
+60. Transmissão da imagem obrigatória, e da minúcia opcional, para atender a fase de 
+transição das operadoras que já usam minúcia. 
+ 
+61. Processo de recurso de glosa. 
+ 
+61.1. Recurso de glosa: é a mensagem do prestador para a operadora questionando 
+a aplicação de uma glosa em sua cobrança; 
+ 
+61.2. Recebimento  do  recurso  de  glosa:  é  a  mensagem  da  operadora  para  o 
+prestador com um protocolo de recebimento do recurso de glosa enviado pelo 
+prestador; 
+ 
+61.3. Solicitação de status de recurso de glosa: é a mensagem do prestador para a 
+operadora solicitando resposta a um recurso de glosa enviado anteriormente; 
+ 
+61.4. Resposta ao recurso de glosa: é a mensagem da operadora para o prestador 
+acatando, ou não, o recurso de glosa ou, caso em análise, enviando um novo 
+protocolo do recebimento do recurso. 
+ 
+62. Processo de envio de dados para a ANS. 
+ 
+
+            
+30 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+62.1. Envio de dados à ANS: é a mensagem, obrigatória e exclusivamente eletrônica, 
+da operadora para a ANS com envio de informações dos dados de atenção à 
+saúde, realizados nos beneficiários de planos privados de assistência à saúde. 
+ 
+63. Processo de envio de informações para o beneficiário. 
+ 
+63.1. Utilização de serviços: é a definição das informações que devem ser enviadas 
+pela  operadora  aos  beneficiários  em  cumprimento  ao  estabelecido  pela 
+Resolução Normativa nº 389, de 26 de novembro de 2015. 
+ 
+63.2. Informações  acerca  da  negativa  de  autorização:  é  a  definição  do  conjunto 
+mínimo  de  informações  que  devem  ser  enviadas  pela  operadora  aos 
+beneficiários em cumprimento ao estabelecido pela Resolução Normativa nº 
+319, de 05 de março de 2013. 
+ 
+63.3. Informações sobre partos: é a definição do conjunto de informações que devem 
+ser  fornecidas  pelas  operadoras  às  beneficiárias  em  cumprimento  ao 
+estabelecido pela Resolução Normativa nº 368, de 6 de janeiro de 2015. 
+ 
+64. Processo de monitoramento da qualidade dos dados incorporados na ANS. 
+ 
+64.1. Monitoramento  da  qualidade  dos  dados:  é  rotina  de  identificação  dos 
+lançamentos que estão em desacordo com os critérios de qualidade definidos 
+pela ANS. 
+ 
+65. A comprovação de recebimento das mensagens abaixo é realizada pelo número de 
+protocolo  gerado  pela  operadora,  seguido  da  relação  dos  números  de  guias 
+enviadas pelo prestador e do respectivo número de guia gerado pela operadora 
+quando for o caso: 
+-    Mensagem de lote guias; 
+-    Mensagem de lote anexos; 
+-    Mensagem de recurso de glosas. 
+ 
+66. No Demonstrativo de Análise de Contas devem ser apresentadas todas as guias 
+que compõem o lote enviado pelo prestador. No caso das guias já analisadas pela 
+operadora, devem ser listados apenas os procedimentos e itens assistenciais para 
+
+            
+31 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+os quais houver glosa. No caso das guias que não tiveram a análise concluída, deve 
+ser informada a situação da mesma. 
+Vinculação entre as guias 
+67. O vínculo entre as guias será realizado pelo número da guia atribuído pelo prestador 
+de serviços. No envio de dados para a ANS, para as guias de SP/SADT de paciente 
+internado, guias de honorário e guias resumo de internação o vínculo entre as guias 
+será  realizado  pelo  número  de  solicitação  de  internação.  Cabe  às  operadoras 
+garantir  que  esse  número  seja  o  mesmo  entre  guias  de  um  mesmo  evento  de 
+internação e que possa identificar univocamente cada evento. Abaixo estão listadas 
+as guias de cobrança de serviços, solicitação de autorização e de comprovante 
+presencial  utilizadas  no  Padrão  TISS  e  suas  possibilidades  de  vinculação  com 
+outras guias de cobrança e de solicitação de autorização do padrão. 
+Guia de Consulta 
+Uso: 
+67.1. Cobrança de consultas eletivas. 
+Vinculação com outras guias: 
+67.2. Não há. 
+Guia de SP/SADT 
+Usos: 
+67.3. Solicitação de autorização de consultas com ou sem procedimento e/ou itens 
+assistenciais; 
+67.4. Solicitação de autorização de procedimentos ou itens assistenciais em paciente 
+não internado; 
+67.5. Solicitação  de  autorização  de  procedimentos  ou  itens  assistenciais  em 
+pacientes internados se realizado por serviço terceirizado; 
+67.6. Cobrança de consultas com ou sem procedimento e/ou despesas; 
+67.7. Cobrança dos serviços profissionais, exames e procedimentos realizados em 
+paciente não internado; 
+67.8. Cobrança dos serviços profissionais, exames e procedimentos realizados em 
+pacientes internados se realizado por serviço terceirizado; 
+
+            
+32 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+67.9. Caso seja necessário cobrar os honorários de médicos ou outros profissionais 
+(anestesistas, auxiliares etc) decorrentes dos procedimentos discriminados na 
+guia  de  SP/SADT,  deve  ser  usado  o  quadro  que  identifica  os  profissionais 
+informando o Grau de Participação de cada profissional no atendimento. 
+ 
+Vinculação com outras guias: 
+67.10.  O  campo  “3-Número  da  Guia  Principal”  só  deve  ser  utilizado  para  se 
+referenciar  a  uma  guia  de  Solicitação  de  Internação  ou  a  outra  guia  de 
+SP/SADT; 
+67.11.   A cobrança em separado de honorários de médicos ou outros profissionais 
+(anestesistas, auxiliares, etc) decorrentes dos procedimentos discriminados na 
+guia principal de SP/SADT deve ser feita por outra guia de SP/SADT; deve-se 
+informar o número da guia de SP/SADT principal no campo “3-Número da Guia 
+Principal”; 
+67.12.  A cobrança das despesas ocorridas durante o procedimento deverá ser feita 
+pelo anexo de Outras Despesas. Neste caso, no anexo de outras despesas, 
+deve-se informar o número da guia de SP/SADT no campo “2-Número da Guia 
+Referenciada”; 
+67.13.  As  despesas  com  materiais,  medicamentos,  aluguéis,  gases  medicinais, 
+taxas diversas e OPME, decorrentes dos atendimentos informados na guia de 
+SP/SADT, deverão ser detalhadas no anexo de Outras Despesas, cujo campo 
+“2-Número da Guia Referenciada” conterá o número da guia de SP/SADT onde 
+foi feita a cobrança; 
+67.14.  As solicitações de OPME, Quimioterapia e Radioterapia, decorrentes dos 
+atendimentos informados na guia de SP/SADT deverão ser feitos através de 
+seus respectivos anexos, cujo campo “3-Número da Guia Referenciada” conterá 
+o número da guia de SP/SADT onde foi feita a solicitação. 
+Solicitação de Internação 
+Uso: 
+67.15.  Solicitação de autorização de internação em regime hospitalar, hospital-dia 
+e internação domiciliar. 
+Vinculação com outras guias: 
+67.16.  Deve ser referenciada pela guia de Resumo de Internação e pela guia de 
+honorários, caso haja cobrança de honorários diretamente pelo profissional, e 
+sempre que houver Solicitação de Prorrogação/Complemento; 
+
+            
+33 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+67.17.  Pode  ser  referenciada  pelo  anexo  de  solicitação  de  OPME,  anexo  de 
+solicitação de quimioterapia e anexo de solicitação de radioterapia. 
+Resumo de Internação 
+Usos: 
+67.18.  Cobrança de internação em regime hospitalar, hospital-dia ou domiciliar; 
+67.19.  A cobrança de honorários dos procedimentos e exames deverá ser realizada 
+por meio da guia de Resumo de Internação quando efetuados diretamente pelo 
+hospital.  
+Vinculação com outras guias: 
+67.20.  O  campo  “3-Número  da  Guia  de  Solicitação  de  Internação”  conterá  o 
+número da guia de Solicitação de Internação que originou a cobrança; 
+67.21.  As  despesas  com  materiais,  medicamentos,  aluguéis,  gases  e  taxas 
+diversas e OPME, decorrentes dos atendimentos deverão ser detalhadas no 
+Anexo  de  Outras  Despesas,  cujo  campo  “2-Número  da  Guia  Referenciada” 
+conterá o número da guia de Resumo de Internação; 
+67.22.  Caso seja necessário cobrar em separado os honorários de médicos ou de 
+outros profissionais, deve ser usada uma guia de honorários. Para vinculá-la à 
+guia  que  a  originou  será  necessário  que  campo  “3-Número  da  Guia  de 
+Solicitação  de  Internação”  contenha  o  número  da  guia  de  Solicitação  de 
+Internação. 
+Solicitação de Prorrogação de Internação ou Complementação do Tratamento 
+Uso: 
+67.23.  Solicitação de prorrogação de internação e de novos procedimentos.  
+Vinculação com outras guias: 
+67.24.  No  campo  “3-Número  da  Guia  de  Solicitação  de  Internação”  deve  ser 
+informado o número da guia inicial de solicitação da internação mesmo que já 
+tenha  sido  efetuada  alguma  cobrança  utilizando  a  guia  de  Resumo  de 
+Internação. 
+Guia de Honorários 
+Uso: 
+67.25.  Cobrança de honorários diretamente pelo profissional. 
+
+            
+34 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Vinculação com outras guias: 
+67.26.  A  guia  de  honorários  só  pode  ser  vinculada  à  guia  de  Solicitação  de 
+Internação. 
+Guia de Tratamento Odontológico 
+Uso: 
+67.27.  Cobrança, solicitação de autorização de tratamento odontológico e pode ser 
+utilizada para comprovação de presença do beneficiário. 
+ 
+Vinculação com outras guias: 
+67.28.  No campo “3-Número da Guia Principal” deve ser informado o número de 
+outra guia de tratamento odontológico quando a cobrança ou solicitação de 
+autorização for continuidade de uma guia já enviada para cobrança. 
+Anexo de Outras Despesas 
+Uso: 
+67.29.  Cobrança de despesas com gases medicinais, medicamentos, materiais, 
+OPME, taxas, aluguéis e diárias, decorrentes dos atendimentos realizados na 
+guia de SP/SADT e na guia de Resumo de Internação. 
+Vinculação com outras guias: 
+67.30.  No campo “2-Número da Guia Referenciada” deve ser informado o número 
+da guia de SP/SADT ou de Resumo de Internação vinculada a esta guia; 
+   Este anexo não tem número próprio de guia, ou seja, sempre está 
+vinculada a uma guia referenciada. 
+Anexo de Solicitação de OPME 
+Uso: 
+67.31.  Solicitação de autorização para utilização de órteses, próteses e materiais 
+especiais. 
+Vinculação com outras guias: 
+67.32.  No campo “3-Número da Guia Referenciada” deve ser informado o número 
+da guia de solicitação da internação ou da guia de SP/SADT a qual o anexo 
+está vinculado. 
+ 
+
+            
+35 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Anexo de Solicitação de Quimioterapia 
+Uso: 
+67.33.  Solicitação de autorização para utilização de tratamento quimioterápico. 
+Vinculação com outras guias: 
+67.34.  No campo “3-Número da Guia Referenciada” deve ser informado o número 
+da guia de solicitação da internação ou da guia de SP/SADT a qual o anexo 
+está vinculado. 
+Anexo de Solicitação de Radioterapia 
+Uso: 
+67.35.  Solicitação de autorização para utilização de tratamento de radioterapia. 
+Vinculação com outras guias: 
+67.36.  No campo “3-Número da Guia Referenciada” deve ser informado o número 
+da guia de solicitação da internação ou da guia de SP/SADT a qual o anexo 
+está vinculado. 
+Anexo de Guia de Tratamento Odontológico – Situação Inicial 
+Uso: 
+67.37.  Informar a situação inicial do paciente antes da realização do tratamento 
+odontológico. 
+Vinculação com outras guias: 
+67.38.  No campo “3-Número da Guia Principal de Tratamento Odontológico” deve 
+ser informado o número da guia de tratamento odontológico a qual o anexo está 
+vinculado. 
+Guia de Comprovante Presencial 
+Uso: 
+67.39.  Comprovação da presença do beneficiário no prestador em referida data 
+através de sua assinatura. 
+ 
+Vinculação com outras guias: 
+67.40.  No campo “14 – Número da guia principal” deve ser informado o número da 
+guia principal onde será cobrado o atendimento ao beneficiário. 
+
+            
+36 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Utilização de código de barras 
+68. É  facultada  às  operadoras  e  prestadores  de  serviços  a  utilização  de  código  de 
+barras, impressos imediatamente abaixo da numeração, para representar o número 
+da guia no prestador. 
+ 
+69. O código de barras descrito no item acima deve seguir o padrão CODE 39 de alta 
+densidade conforme definição abaixo: 
+-   Code 39: é um código unidimensional simples de ser gerado, aceita letras e 
+números e dispensa o uso de dígito verificador (que é usado nos outros padrões 
+para garantir que a leitura foi feita corretamente). O código 3 de 9, além de letras 
+e números, também imprime espaço, $ (cifrão), % (porcentagem), + (mais), | 
+(“pipe”), . (ponto), - (hífen) e / (barra); 
+-   Alta densidade: todos os códigos de barras são baseados na mesma dimensão 
+“X”.  A  dimensão  “X”  é  a  proximidade  das  barras  ou  espaço  num  código. 
+Designado por “mils” (milésimos de uma polegada) os padrões dos símbolos 
+especificam  normalmente  um  valor  mínimo  para  o  valor  “X”  para  garantir  a 
+compatibilidade entre os equipamentos de leitura e impressão utilizados em 
+sistemas abertos. A dimensão “X” define a densidade de um código de barras, 
+que se refere à quantidade de informação que pode ser lida no código num 
+determinado espaço, normalmente uma polegada linear. Um código de barras 
+de  alta  densidade  tem  números  baixos  (5  mils),  e  os  de  baixa  densidade 
+números altos (55 mils). Isto se deve ao fato de que a representação de cada 
+caractere consiste numa combinação de barras e espaços que são múltiplos do 
+valor “X”. Quando o valor “X” é baixo, a área necessária para representar cada 
+caractere é menor quando o valor de “X” é maior; desta forma são suportados 
+mais códigos por polegada e diz-se serem de alta densidade. De uma forma 
+semelhante, aumentando a largura de cada elemento (“X”) aumenta o espaço 
+necessário para representar cada caractere e reduz-se o número de caracteres 
+por polegada. 
+
+            
+37 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+IX.   Componente de Representação de Conceitos em Saúde 
+ 
+Definição 
+70. O componente de representação de conceitos em saúde estabelece o conjunto de 
+termos  para  identificar  os  eventos  e  itens  assistenciais  da  saúde  suplementar, 
+consolidados na Terminologia Unificada da Saúde Suplementar - TUSS. (RN 305) 
+ 
+71. No uso dos termos, as operadoras de planos privados de assistência à saúde e os 
+prestadores de serviços de saúde devem obrigatoriamente atender as normas de 
+aplicabilidade  vigentes  e  definidas  pelos  órgãos  que  regulamentam  o  exercício 
+profissional,  pela  Agência  Nacional  de  Vigilância  Sanitária  e  demais  órgãos  do 
+Ministério da Saúde. (RN 305) 
+ 
+72. Compete à ANS estabelecer a TUSS e suas posteriores atualizações. (RN 305) 
+Formato de apresentação 
+73. Todas as terminologias do Padrão TISS são disponibilizadas em tabelas contendo:  
+-   Código do termo: codificação numérica atribuída pela ANS; 
+-   Termo: texto de identificação do termo; 
+-   Descrição do termo: é um texto com a descrição detalhada do termo; 
+-   Data de início de vigência: informa a data a partir da qual iniciou a validade do 
+termo no padrão TISS; 
+-   Data de fim de vigência: informa a última data de validade do termo;  
+-   Data limite para implantação do termo: informa a data a partir da qual todos os 
+agentes de troca de informações deverão utilizar o termo. 
+Especificidades da TUSS de Material e OPME (Tabela 19) 
+74. A Terminologia de Materiais e OPME – Tabela 19 é estruturada em 3 (três) níveis 
+de informação: 
+-   Código TUSS para cada nome técnico da ANVISA; 
+-   Código TUSS para cada registro ANVISA, sem especificação de modelo ou 
+referência; 
+- Código TUSS para cada modelo/referência do registro ANVISA. 
+ 
+
+            
+38 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+75. Os termos para cada nome técnico e registro ANVISA não possuem referência ou 
+fabricante, apresentando na Tabela 19 a indicação “Não se aplica*”. 
+Quadro 2 – Exemplo de termos na TUSS de Materiais e OPME 
+Código 
+do Termo 
+Termo 
+Referência no 
+fabricante 
+Fabricante 
+Registro 
+Anvisa 
+71447180 STENT PARA ARTÉRIAS CORONÁRIAS Não se aplica* Não se aplica* Não se aplica* 
+71126619   STENT CORONÁRIANO BLUE MEDICAL Não se aplica* 
+NEOMEX HOSPITALAR LTDA 80152120014 
+71126627 
+STENT CORONÁRIANO BLUE MEDICAL - 
+XT2010S 
+XT2010S 
+NEOMEX HOSPITALAR LTDA 80152120014 
+71413057 
+COROFLEX - STENT CORONARIO EM BALAO 
+EXPANSIVEL MONTADA EM CATÉTER DE PTCA 
+DE TROCA RAPIDA 
+Não se aplica* 
+LABORATÓRIOS B. BRAUN 
+S/A 
+10008530399 
+70726663 
+COROFLEX - STENT CORONARIO EM BALAO 
+EXPANSIVEL MONTADA EM CATÉTER DE PTCA 
+DE TROCA RAPIDA - 5020040 
+5020040 
+LABORATÓRIOS B. BRAUN 
+S/A 
+10008530399 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro 3 – Exemplo de termos na TUSS de Materiais e OPME 
+Código 
+do Termo 
+Termo 
+Referência no 
+fabricante 
+Fabricante 
+Registro 
+Anvisa 
+71447199 STENT PARA ARTÉRIAS PERIFÉRICAS Não se aplica* Não se aplica* Não se aplica* 
+70960500 
+XPERT PRO PERIPHERAL SELF-EXPANDING 
+STENT 
+DIVERSAS 
+ABBOTT LABORATÓRIOS 
+DO BRASIL LTDA 
+80146501826 
+70960518 
+XPERT PRO PERIPHERAL SELF-EXPANDING 
+STENT - 17525-100 
+17525-100 
+ABBOTT LABORATÓRIOS 
+DO BRASIL LTDA 
+80146501826 
+70960526 
+XPERT PRO PERIPHERAL SELF-EXPANDING 
+STENT - 17525-20 
+17525-20 
+ABBOTT LABORATÓRIOS 
+DO BRASIL LTDA 
+80146501826 
+70960534 
+XPERT PRO PERIPHERAL SELF-EXPANDING 
+STENT - 17525-30 
+17525-30 
+ABBOTT LABORATÓRIOS 
+DO BRASIL LTDA 
+80146501826 
+70990476   STENT VASCULAR LIFESTENT 
+Não se aplica* 
+BARD BRASIL INDÚSTRIA E 
+COMÉRCIO DE PRODUTOS 
+PARA A SAÚDE LTDA. 
+80689090071 
+70990484   STENT VASCULAR LIFESTENT - EX050201C 
+EX050201C 
+BARD BRASIL INDÚSTRIA E 
+COMÉRCIO DE PRODUTOS 
+PARA A SAÚDE LTDA. 
+80689090071 
+Fonte: Elaborado pelos autores. 
+76. A ANVISA, entidade de referência para termos de materiais, próteses e órteses, está 
+realizando  a  revisão  dos  nomes  técnicos  e  a  reclassificação  dos  registros  dos 
+produtos para saúde. Desta forma, à medida que os novos termos e classificações 
+forem publicados pela ANVISA, uma versão atualizada da Terminologia de Materiais 
+e OPME será disponibilizada. 
+
+            
+39 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+77. As solicitações de inclusão de termos na TUSS de Materiais e OPME enviadas à 
+ANS previamente a esta versão do Padrão TISS serão acatadas parcialmente, uma 
+vez que a nova estrutura da terminologia acompanhará as diretrizes acima descritas. 
+ 
+78. A Terminologia de Materiais e OPME – Tabela 19 é vigente desde a publicação da 
+versão  de  outubro/2012  do  Padrão  TISS.  A  obrigatoriedade  de  adoção  desta 
+terminologia foi excetuada, temporariamente, pela Diretoria Colegiada, em sua 408ª 
+Reunião  Ordinária,  realizada  em  22/10/2014. O  retorno  da  obrigatoriedade  de 
+adoção da terminologia foi deliberado pela Diretoria Colegiada da ANS em sua 501ª 
+Reunião Ordinária, realizada em 14/02/2019, passando a valer a partir da presente 
+versão. 
+Identificação do arquivo que dispõe o componente 
+79. O    nome    do    arquivo    que    dispõe    as    tabelas    TUSS    é 
+PadrãoTISS_RepresentaçãodeConceitosAAAAMM.ZIP, onde AAAAMM indicam o 
+ano e o mês de início de vigência do componente de representação e conceitos em 
+saúde. O arquivo está disponível no site da ANS no endereço www.ans.gov.br. 
+Lista de Terminologias 
+80. O componente de Representação de Conceitos de Saúde é composto pelas tabelas 
+listadas na Relação das terminologias unificadas na saúde suplementar com seus 
+respectivos códigos de identificação no padrão TISS (Tabela 87). 
+Controle de alteração das terminologias 
+81. As  alterações  nas terminologias  unificadas da saúde  suplementar (TUSS)  estão 
+dispostas  na  planilha  eletrônica  “Padrão  TISS  _histórico  TUSS_AAAAMM.ZIP”, 
+onde  AAAAMM  indicam  o  ano  e  o  mês  de  início  de  vigência.  O  arquivo  está 
+disponível  no  site  da  ANS  no  endereço  www.ans.gov.br  e  possui  a  seguinte 
+estrutura: 
+-   Código da terminologia; 
+-   Nome da terminologia; 
+-   Código do termo; 
+-   Termo; 
+
+            
+40 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   Data de início de vigência; 
+-   Data de fim de vigência; 
+-   Data de fim de implantação; 
+-   Tipo de ação. 
+ 
+81.1. Inclusão de termos 
+ 
+81.1.1. Quando é incluído um termo em uma das tabelas de terminologia, os 
+campos  “data  início  de  vigência”,  “data  fim  de  vigência”  e  “data  fim  de 
+implantação” são preenchidos conforme abaixo: 
+     Data  de  início  de  vigência  -  primeiro  dia  do  mês  subsequente  à 
+disponibilização  da  versão  do  componente  de  representação  de 
+conceitos em saúde; 
+     Data de fim de vigência - não preenchida; 
+     Data de fim de implantação - preenchida conforme o estabelecido - 
+mínimo de 3 meses da data de início de vigência. 
+ 
+81.1.2. Na tabela de histórico das terminologias, é incluído um registro do termo 
+com a coluna Tipo de Ação = Incluído. 
+81.2. Alteração de termos 
+ 
+81.2.1. Quando é alterado um termo em uma das tabelas de terminologia, os 
+campos  “data  início  de  vigência”,  “data  fim  de  vigência”  e  “data  fim  de 
+implantação” são preenchidos conforme abaixo: 
+     Data  de  início  de  vigência  -  primeiro  dia  do  mês  subsequente  à 
+disponibilização  da  versão  do  componente  de  representação  de 
+conceitos em saúde; 
+     Data de fim de vigência - não preenchida; 
+     Data de fim de implantação – mantém a data original da implantação 
+do código. 
+ 
+81.2.2. Na  tabela  de  histórico  das  terminologias  são  incluídos  dois  registros, 
+sendo o primeiro com a Data de fim de vigência igual ao dia anterior ao 
+início da vigência do registro com a alteração e o Tipo de Ação igual a 
+“Inativado por alteração”. 
+ 
+
+            
+41 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+81.2.3. E  o  segundo registro  identificando  a  alteração realizada  com Tipo  de 
+Ação igual a “Alterado”. 
+ 
+81.3. Inativação de termos 
+ 
+81.3.1. Quando é inativado um termo em uma das tabelas de terminologia, os 
+campos  “data  início  de  vigência”,  “data  fim  de  vigência”  e  “data  fim  de 
+implantação” são preenchidos conforme abaixo: 
+     Data de início de vigência – mantida a data já existente; 
+     Data de fim de vigência –  
+o Para os termos vinculados à ANVISA, será a data de inativação 
+do registro na ANVISA; 
+o Para  os  termos  não  vinculados  e  que  façam  parte  do 
+componente de comunicação, a data de fim de vigência será a 
+data de início do componente de comunicação; 
+o Para os termos não vinculados à ANVISA e que não façam parte 
+do componente de comunicação, a data de fim de vigência será 
+de, no mínimo, 3 meses após a disponibilização da versão do 
+componente de representação de conceitos em saúde. 
+ 
+81.3.2. Data de fim de implantação – não preenchida - a data de implantação 
+original estará disponível apenas no histórico das terminologias. 
+ 
+81.3.3. Na tabela de histórico das terminologias é incluído um registro com Tipo 
+de Ação igual a “Inativado”. 
+Tabela própria da operadora 
+82. À operadora de planos privados de assistência à saúde é facultado estabelecer, em 
+tabela  própria,  o  código  para  um  termo  não  constante  nas  terminologias  de 
+procedimentos e eventos em saúde; medicamentos; materiais e órteses, próteses e 
+materiais especiais e; diárias, taxas e gases medicinais. (RN 305) 
+ 
+83. A  operadora  de  planos  privados  de  assistência  à  saúde,  imediatamente  após 
+estabelecer  o  código  de  um  termo  em  tabela  própria,  deverá  solicitar  à  ANS  a 
+inclusão do mesmo na TUSS (RN 305). Essa previsão não se aplica aos pacotes 
+criados  pelas  operadoras, uma  vez  que  os itens incluídos  dentro  de um  pacote 
+
+            
+42 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+devem possuir código TUSS ou código de tabela própria para os quais será feita 
+solicitação de inclusão na TUSS.  
+ 
+84. À operadora de planos privados de assistência à saúde é vedado manter vigente, 
+em tabela  própria,  código  para  um termo constante  na TUSS, findo  o  prazo  de 
+implantação. (RN 305) 
+ 
+85. A operadora não poderá utilizar um código próprio na troca de informações quando 
+este termo estiver contido na TUSS e sua data limite para implantação já estiver 
+vencida. 
+ 
+86. As tabelas próprias para registro dos termos estabelecidos pelas operadoras são: 
+-   00-Tabela própria das operadoras; 
+-   90-Tabela própria para pacotes de odontologia; 
+-   98-Tabela própria para pacotes de medicina. 
+ 
+87. A  ANS  recomenda  que  o  código  criado  em  tabela  própria  da  operadora  seja 
+atribuído, preferencialmente, iniciando-se com os dois dígitos do código da tabela 
+de domínio definido no padrão TISS a que se refere o termo. 
+ 
+Exemplo: Caso a operadora utilize um material com código da tabela própria (00), o 
+código atribuído pela operadora deve iniciar com 19, que é o código da TUSS de 
+material. 
+ 
+88. O código criado em tabela própria deve ter no máximo 10 caracteres. 
+X.    Componente de Segurança e Privacidade 
+ 
+Definição 
+89. O componente de segurança e privacidade estabelece os requisitos de proteção dos 
+dados de atenção à saúde. (RN 305) 
+ 
+90. O padrão de segurança e privacidade visa assegurar o direito individual ao sigilo, à 
+privacidade e à confidencialidade dos dados de atenção à saúde. (RN 305) 
+ 
+
+            
+43 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+91. O padrão de segurança e privacidade baseia-se no sigilo profissional e segue a 
+legislação vigente no país.  (RN 305) 
+ 
+92. As  operadoras  de  planos  privados  de  assistência  à  saúde  deverão  manter 
+protegidas  as  informações  assistenciais  oriundas  do  Padrão  TISS,  quando 
+acompanhadas de dados que possibilitem a sua individualização, não podendo as 
+mesmas serem divulgadas ou fornecidas a terceiros, salvo em casos expressamente 
+previstos na legislação vigente no país. (RN 305) 
+Formato de apresentação 
+93. A apresentação do componente de segurança e privacidade é uma lista de requisitos 
+contendo: 
+-   Identificação do requisito; 
+-   Descrição do requisito; e 
+-   Condição de utilização do requisito. 
+ 
+94. As condições de utilização dos requisitos de segurança e privacidade são:  
+-   Obrigatório; 
+-   Opcional; e 
+-   Recomendado. 
+Identificação do arquivo que dispõe o componente 
+95. O  nome  do  arquivo  que  dispõe  todos  os  requisitos  de  segurança  é 
+PadrãoTISS_SegurançaAAAAMM.ZIP, onde AAAAMM indicam o ano e o mês de 
+início de vigência do componente de segurança e privacidade, e está disponível no 
+site da ANS no endereço www.ans.gov.br. 
+XI.   Componente de Comunicação 
+ 
+Definição 
+96. O componente de comunicação estabelece os meios e os métodos de comunicação 
+das mensagens eletrônicas definidas no componente de conteúdo e estrutura. (RN 
+305) 
+ 
+
+            
+44 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+97. O  padrão  de  comunicação  adota  a  linguagem  de  marcação  de  dados  XML  - 
+Extensible Markup Language. (RN 305) 
+ 
+98. As  operadoras  de  planos  privados  de  assistência  à  saúde  devem  dispor  aos 
+prestadores de sua rede de serviço de saúde as tecnologias de webservices e de 
+portal, para a troca dos dados de atenção à saúde prestada nos seus beneficiários 
+de planos privados de assistência à saúde. (RN 305) 
+ 
+99. Os prestadores de serviços de saúde têm a prerrogativa de escolher a forma de 
+comunicação para a troca eletrônica, entre webservices ou portal. (RN 305) 
+ 
+100.  O portal corporativo na Internet em sua área destinada à rede credenciada da 
+operadora de planos privados de assistência à saúde deverá disponibilizar, de forma 
+atualizada,  orientações  sobre  o  processo  de  implantação  do  Padrão  TISS, 
+denominado ‘Portal TISS’. (RN 305) 
+ 
+101.  No  Portal  TISS  deverão  estar  disponíveis,  considerando  os  requisitos 
+estabelecidos no componente de segurança e privacidade do padrão, no mínimo: 
+(RN 305)  
+I.   as instruções para implantação e utilização do Padrão TISS; 
+II.  nome do Coordenador TISS e de seu suplente com informações para contato 
+telefônico e por correio eletrônico; 
+III.  o endereço dos webservices disponibilizados pela operadora de plano privado 
+de assistência à saúde; 
+IV.  os mecanismos de upload e download de arquivos; 
+V.  a entrada de dados para o processo de cobrança de serviços de saúde do 
+Padrão TISS; e 
+VI.  o atalho para acesso ao conteúdo sobre o Padrão TISS disponibilizado pela 
+ANS. 
+ 
+102.  A entrada de dados disponibilizada no portal para o processo de cobrança de 
+serviços de saúde do Padrão TISS, deve conter a mesma sequência dos campos 
+conforme disponibilizada nas guias que fazem parte do Plano de Contingência. 
+ 
+103.  Todos  os  agentes  componentes  do  padrão  devem  utilizar,  na  geração  dos 
+arquivos XML, o namespace estabelecido nos schemas XSD e descritores WSDL 
+do componente de comunicação. 
+
+            
+45 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+104.  Qualquer solução tecnológica poderá ser utilizada desde que consiga atender na 
+íntegra as normas de todos os componentes do padrão TISS. (RN 305) 
+ 
+105.  Na ocorrência de interrupção do serviço de troca eletrônica de informações de 
+atenção  à  saúde,  os  agentes  de  trocas  de  informações  na  Saúde  Suplementar 
+deverão utilizar o estabelecido no Plano de Contingência do Padrão TISS. (RN 305) 
+ 
+106.  A  interrupção  do  serviço  de  troca  eletrônica  não  pode  importar  em 
+descontinuidade no atendimento assistencial ao beneficiário de plano privado de 
+assistência à saúde, devendo os agentes garantir a segurança e a privacidade dos 
+dados. (RN 305) 
+Formato de apresentação 
+107.  O componente de comunicação é apresentado na forma de arquivos de schemas 
+XML e descritores WSDL que devem ser utilizados para gerar e validar os arquivos 
+de dados para troca eletrônica de informações do padrão. 
+ 
+108.  O conjunto de arquivos de schemas XML padronizados são os seguintes: 
+-   tissSimpleTypesV3_04_00.xsd=arquivo contendo os tipos simples utilizados no 
+padrão; 
+-   tissComplexTypesV3_04_00.xsd=arquivo  contendo  os  tipos  compostos 
+utilizados no padrão; 
+-   tissGuiasV3_04_00.xsd= arquivo contendo os tipos que identificam as guias 
+utilizadas no padrão; 
+-   tissV3_04_00.xsd= arquivo contendo a estrutura principal das mensagens do 
+padrão; 
+-   tissWebServicesV3_04_00.xsd= arquivo contendo a estrutura das mensagens 
+utilizadas nos webservices; 
+-   tissAssinaturaDigital_v1.01.xsd  e  xmldsig-core-schema.xsd=  são  arquivos 
+utilizados na definição da assinatura digital nas mensagens de cobrança de 
+serviços prestados do padrão; 
+-   tissMonitoramentoQualidadeV3_03_01.xsd=  arquivo  contendo  a  estrutura  do 
+retorno da ANS para as operadoras resultante da avaliação de qualidade dos 
+dados incluídos no banco de dados nacional de eventos de saúde. 
+
+            
+46 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   tissMonitoramentoV1_00_00.xsd= arquivo contendo a estrutura para o envio de 
+informações das operadoras para a ANS 
+-   tissSimpleTypesMonitoramentoV1_00_00.xsd 
+-   tissCmplexTypeMonitoramentoV1_00_00.xsd 
+ 
+109.  Os arquivos abaixo são utilizados para definir os webservices do padrão: 
+-   tissCancelaGuiaV3_04_00.wsdl 
+-   tissComunicacaoBeneficiarioV3_04_00.wsdl 
+-   tissLoteAnexoV3_04_00.wsdl 
+-   tissLoteGuiasV3_04_00.wsdl 
+-   tissRecursoGlosaV3_04_00.wsdl 
+-   tissSolicitacaoDemonstrativoRetornoV3_04_00.wsdl 
+-   tissSolicitacaoProcedimentoV3_04_00.wsdl 
+-   tissSolicitacaoStatusAutorizacaoV3_04_00.wsdl 
+-   tissSolicitacaoStatusProtocoloV3_04_00.wsdl 
+-   tissVerificaElegibilidadeV3_04_00.wsdl 
+-   tissSolicitacaoStatusRecursoGlosaV3_04_00.wsdl 
+Identificação do arquivo que dispõe o componente 
+110.  O  nome  dos  arquivos  que  dispõem  todos  os  schemas  XML  do  padrão  são 
+PadrãoTISS_Comunicação030400.ZIP,  para  troca  de  informações  entre  as 
+operadoras    e    os    prestadores    de    serviços    de    saúde    e 
+PadrãoTISS_Monitoramento010000.ZIP,   para   envio   das   informações   das 
+operadoras para a ANS. Os arquivos estão disponíveis no site da ANS no endereço 
+www.ans.gov.br. 
+Validação dos arquivos XML 
+111.  Todos os arquivos com as definições do padrão encontram-se disponíveis no site 
+da ANS, no endereço www.ans.gov.br. 
+Assinatura Digital 
+112.  A assinatura deverá utilizar o padrão XAdES, no formato “Enveloped”, deverá 
+assinar integralmente a mensagem (de guia e/ou de lote), e deverá seguir a política 
+
+            
+47 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+‘POLÍTICA-PADRÃO  AD-RB  BASEADA  EM  XADES’,  conforme  definida  no 
+documento DOC-ICP-15.03 Versão 6.1. 
+ 
+Referências: 
+-   DOC-ICP-15 – Versão 2.1 
+-   DOC-ICP-15.01 – Versão 2.1 
+-   DOC-ICP-15.02 – Versão 2.1 
+-   DOC-ICP-15.03 – Versão 6.1 
+ 
+113.  Antes  da  realização  de  uma  assinatura  digital,  o  sistema  deve  verificar  se  o 
+certificado digital a ser utilizado possui propósito de uso de assinatura digital, ou 
+seja,  se  possui  o  campo  key  usage  definido  como  Digital  Signature  e 
+NonRepudiation e verificar se é certificado digital ICP-Brasil de assinatura tipo A1, 
+A2, A3 ou A4. 
+ 
+114.  Incluir  em  toda  assinatura  realizada  a  propriedade  XMLDSIG/XAdES 
+SigningTime.  Este  atributo  representa  o  instante  de  assinatura  acordado  com  o 
+signatário. 
+ 
+115.  Realizar a validação da assinatura no momento de sua geração (a assinatura deve 
+ser validada imediatamente após sua geração) e na recepção de uma mensagem 
+assinada.  A  validação  de  uma  assinatura  inclui:  a  verificação  do  certificado  do 
+signatário e dos certificados da cadeia de certificação e a verificação do estado de 
+revogação do certificado do signatário e dos certificados da cadeia de certificação, 
+utilizando LCR (Lista de Certificados Revogados) [RFC 5280] ou Resposta OCSP 
+(Online  Certificate  Status  Protocol)  [RFC  2560].  No  caso  de  recepção  de  uma 
+mensagem assinada digitalmente, recomenda-se que a instituição, operadora ou 
+prestador, proceda sua devida validação antes do processamento da mensagem, a 
+fim de evitar possíveis contestações e reprocessamentos futuros. 
+Senhas – formato de transmissão 
+116.  Sempre que forem informados login e senha no cabeçalho de qualquer mensagem 
+(principalmente em webservices), a senha deverá ser informada obrigatoriamente 
+na  forma  de  hash  MD5,  acrescentando  um  nível  a  mais  na  segurança  nas 
+transações. 
+
+            
+48 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+HASH MD-5 
+117.  Um hash é uma sequência de bits gerada por um algoritmo de dispersão que 
+permite  a  visualização  em  letras  e  números,  representando  1/2  byte  cada.  O 
+conceito teórico diz que “hash é a transformação de uma grande quantidade de 
+informações em uma pequena quantidade de informações”. 
+Essa  sequência  busca  identificar  um  arquivo  ou  informação  unicamente.  Por 
+exemplo, uma mensagem de correio eletrônico, uma senha, uma chave criptográfica 
+ou mesmo um arquivo. É um método para transformar dados de tal forma que o 
+resultado seja quase exclusivo. Além disso, funções usadas em criptografia garantem 
+que não é possível a partir de um valor de hash retornar à informação original. 
+Como  a sequência  do hash  é  limitada,  muitas  vezes  não passando  de  512  bits, 
+existem  colisões  (sequências  iguais  para  dados  diferentes).  Quanto  maior  for  a 
+dificuldade de se criar colisões intencionais, melhor é o algoritmo. 
+Uma função de hash recebe um valor de um determinado tipo e retorna um código 
+para  ele.  Enquanto  o  ideal  seria gerar  identificadores  únicos  para  os  valores  de 
+entrada, isso normalmente não é possível: na maioria dos casos, o contra-domínio 
+de nossa função é muito menor do que o seu domínio, ou seja, x (o tipo de entrada) 
+pode assumir uma gama muito maior de valores do que hash(x). 
+O MD5 (Message-Digest algoritm 5) é um algoritmo de hash de 128 bits unidirecional 
+desenvolvido  pela  RSA  Data  Secutiry Inc., descrito  na  RFC  1321  e  utilizado  em 
+softwares com protocolo ponto-a-ponto, verificação de integridade e logins. 
+Por  ser  um  algoritmo  unidirecional,  um  hash  MD5  não  pode  ser  transformado 
+novamente  no  texto  que  lhe  deu  origem.  O  método  de  verificação  é  feito  pela 
+comparação das duas hash (uma da base de dados e a outra da tentativa de login). 
+O MD5 também é usado para verificar a integridade de um arquivo através, por 
+exemplo, do programa md5sum que cria a hash de um arquivo. Isto pode se tornar 
+muito útil para downloads de grandes arquivos e para programas P2P que constroem 
+o arquivo através de pedaços e estão sujeitos à corrupção dos mesmos. 
+No  Padrão  TISS  o  cálculo  do  hash  deve  considerar  apenas  a  concatenação  do 
+conteúdo das tags desprezando as tags XML propriamente ditas. O conteúdo das 
+tags deve ser concatenado e considerado de forma literal, desde o primeiro caracter 
+à  esquerda  até  o  último  caracter  à  direita,  sem  qualquer  inserção,  supressão, 
+modificação ou ajuste, respeitando maiúsculas e minúsculas, pontuação, acentuação 
+
+            
+49 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+e caracteres especiais, mesmo invisíveis que eventualmente existam (CR,LF,tabs 
+etc). O encoding a ser utilizado será sempre o ISO-8859-1. 
+O epílogo das mensagens do Padrão TISS contém o hash das informações. Esse 
+campo contém o hash apenas dos valores contidos nas transações, não incluindo as 
+tags XML. O objetivo do hash é garantir que o dado, uma vez gravado, não seja 
+alterado. O hash de uma transação deve conter, em hexadecimal, a representação 
+MD5 dos valores contidos na transação, justapostos, lidos da esquerda para a direita. 
+Não devem ser incluídos no cálculo os nomes dos elementos ou dos atributos da 
+transação. 
+ 
+Lista de mensagens 
+118. LoteGuias:  Apresentação  de  cobrança  de  consultas,  SP/SADT,  resumo  de 
+internação, honorários e odontologia. 
+ 
+119. LoteAnexos:  Apresentação  do  anexo  de  situação  inicial  de  odontologia  e 
+solicitação de autorização de tratamento de quimioterapia, radioterapia e OPME.  
+ 
+120. SolicitacaoDemonstrativoRetorno: Solicitação de demonstrativo de análise de 
+conta de medicina, demonstrativo de pagamento de medicina e odontologia. 
+ 
+121. SolicitacaoStatusProtocolo: Solicita informação de lote de cobrança recebido 
+pela operadora. 
+ 
+122. SolicitacaoStatusRecursoGlosa:  Solicita  informação  sobre  recurso  de  glosa 
+enviado pelo prestador à operadora. 
+ 
+123. SolicitacaoProcedimento: Solicitação de autorização de serviços de SP/SADT, 
+internação, prorrogação de internação e tratamento em odontologia. 
+ 
+124. SolicitaStatusAutorizacao: Solicita status sobre pedido de autorização recebido 
+pela operadora 
+ 
+125. VerificaElegibilidade:  Solicita  informação  sobre  a  elegibilidade  de  um 
+beneficiário da operadora. 
+ 
+
+            
+50 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+126. CancelaGuia: Envia solicitação de cancelamento de uma ou mais guias. 
+ 
+127. ComunicacaoInternacao:  Envia  comunicado  de  internação  ou  alta  de  um 
+beneficiário. 
+ 
+128. RecursoGlosa: Envia recurso sobre glosa ocorrida em um lote ou em guias do 
+prestador. 
+ 
+129. RecebimentoLote: Envia um protocolo de recebimento de um lote de guias de 
+cobranças enviado pelo prestador. 
+ 
+130. RecebimentoAnexo: Envia um protocolo de recebimento de um lote de anexos 
+enviado pelo prestador. 
+ 
+131. RecebimentoRecursoGlosa: Envia um protocolo de recebimento do recurso de 
+glosa enviado pelo prestador. 
+ 
+132. DemonstrativosRetorno:  Envia  o  demonstrativo  de  análise  de  conta  de 
+medicina, demonstrativo de pagamento de medicina, demonstrativo de pagamento 
+de odontologia ou situação do demonstrativo caso este ainda não esteja pronto para 
+ser enviado ao prestador. 
+ 
+133. SituacaoProtocolo: Informa a situação de um protocolo enviado pelo prestador. 
+ 
+134. AutorizacaoServicos: Informa a autorização ou negativa para as solicitações de 
+internação,  tratamento  odontológico,  prorrogação  de  internação  e  SP/SADT, 
+quimioterapia, radioterapia e OPME. 
+ 
+135. SituacaoAutorizacao:  Informa  a  situação  sobre  pedidos  pendentes  de 
+autorização de prorrogação de internação, tratamento odontológico, quimioterapia, 
+radioterapia, SP/SADT e OPME. 
+ 
+136. RespostaElegibilidade:  Envia  resposta  sobre  a  elegibilidade  de  determinado 
+beneficiário. 
+ 
+137. ReciboCancelaGuia: Envia recibo sobre recebimento de cancelamento de guia. 
+ 
+
+            
+51 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+138. ReciboComunicacao:  Envia  recibo  de  recebimento  de  comunicação  de 
+internação ou alta de beneficiário. 
+ 
+139. RespostaRecursoGlosa: Envia resposta sobre recurso de glosa enviado pelo 
+prestador. 
+ 
+140. Utilização de serviços (envio de informações para o beneficiário): não há schema 
+XML padronizado pela ANS para envio das informações. 
+ 
+141. Negativa de autorização (envio  de  informações  para  o  beneficiário):  não  há 
+schema XML padronizado pela ANS para envio das informações. 
+ 
+142. Informações sobre partos (envio de informações para o beneficiário): não há 
+schema XML padronizado pela ANS para envio das informações. 
+ 
+143. Envio de dados à ANS: envio obrigatório e de forma eletrônica, das operadoras 
+para a ANS, das informações sobre os atendimentos realizados pelos prestadores 
+de serviços a seus beneficiários. 
+ 
+144. Recibo  de  envio  de  dados  para  a  ANS:  o  recibo  do  envio  dos  dados  das 
+operadoras  para  a  ANS  será  o  protocolo  gerado  pelo  programa  transmissor  de 
+arquivos (PTA) da ANS. 
+ 
+145. TissMonitoramentoQualidade: Disponibiliza  para  as  operadoras  arquivo  com 
+indicação dos lançamentos em desacordo com os critérios de qualidade definidos 
+pela ANS e motivos das inconsistências. 
+Quadro 4 - Resumo das mensagens no Padrão TISS 
+Origem da 
+mensagem 
+Nome da mensagem no 
+schema 
+Descrição 
+Prestador    LoteGuias 
+Apresentação de cobrança de consultas, 
+SP/SADT, resumo de internação, honorários e 
+odontologia. Esta mensagem deve ter no máximo 
+cem guias de cobrança de um mesmo tipo. 
+Prestador    LoteAnexos 
+Apresentação do anexo de situação inicial de 
+odontologia e solicitação de autorização de 
+tratamento de quimioterapia, radioterapia e 
+OPME. Esta mensagem deve ter no máximo cem 
+anexos de um mesmo tipo. 
+
+            
+52 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Prestador 
+SolicitaçãoDemonstrativo
+Retorno 
+Solicitação de demonstrativo de análise de conta 
+de medicina, demonstrativo de pagamento de 
+medicina e odontologia. 
+Prestador 
+SolicitaçãoStatusProtocol
+o 
+Solicita informação de lote de cobrança recebido 
+pela operadora. 
+Prestador 
+SolicitacaoStatusRecurso
+Glosa 
+Solicita informação sobre recurso de glosa 
+enviado pelo prestador à operadora. 
+Prestador    SolicitaçãoProcedimento 
+Solicitação de autorização de serviços de 
+SP/SADT, internação, prorrogação de internação 
+e tratamento em odontologia. 
+Prestador    SolicitaStatusAutorização 
+Solicita status sobre pedido de autorização 
+recebido pela operadora. 
+Prestador    VerificaElegibilidade 
+Solicita informação sobre a elegibilidade de um 
+beneficiário da operadora. 
+Prestador    CancelaGuia 
+Envia solicitação de cancelamento de uma ou 
+mais guias. 
+Prestador    ComunicaçãoInternação 
+Envia comunicado de internação ou alta de um 
+beneficiário. 
+Prestador    RecursoGlosa 
+Envia recurso sobre glosa ocorrida em um lote ou 
+em guias do prestador. 
+Operadora    RecebimentoLote 
+Envia um protocolo de recebimento de um lote de 
+guias de cobranças enviado pelo prestador. 
+Operadora    RecebimentoAnexo 
+Envia um protocolo de recebimento de um lote de 
+anexos enviado pelo prestador. 
+Operadora 
+RecebimentoRecursoGlo
+sa 
+Envia um protocolo de recebimento do recurso de 
+glosa enviado pelo prestador. 
+Operadora    DemonstrativosRetorno 
+Envia o demonstrativo de análise de conta de 
+medicina, demonstrativo de pagamento de 
+medicina, demonstrativo de pagamento de 
+odontologia ou situação do demonstrativo caso 
+este ainda não esteja pronto para ser enviado ao 
+prestador. Esta mensagem deve conter no 
+máximo trinta demonstrativos. 
+Operadora    SituaçãoProtocolo 
+Informa a situação de um protocolo enviado pelo 
+prestador. 
+Operadora    AutorizaçãoServiços 
+Informa a autorização ou negativa para as 
+solicitações de internação, tratamento 
+odontológico, prorrogação de internação e 
+SP/SADT, quimioterapia, radioterapia e OPME. 
+Operadora    SituaçãoAutorização 
+Informa a situação sobre pedidos pendentes de 
+autorização de prorrogação de internação, 
+tratamento odontológico, quimioterapia, 
+radioterapia, SP/SADTe OPME. 
+Operadora    RespostaElegibilidade 
+Envia resposta sobre a elegibilidade de 
+determinado beneficiário. 
+Operadora    ReciboCancelaGuia 
+Envia recibo sobre recebimento de cancelamento 
+de guia. 
+Operadora    ReciboComunicação 
+Envia recibo de recebimento de comunicação de 
+internação ou alta de beneficiário. 
+Operadora    RespostaRecursoGlosa 
+Envia resposta sobre recurso de glosa enviado 
+pelo prestador. 
+
+            
+53 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Operadora    Não se aplica 
+Envia ao beneficiário as informações de serviços 
+de sua utilização (Utilização de Serviços). 
+Operadora    Não se aplica 
+Envia ao beneficiário as informações acerca da 
+negativa de autorização. 
+Operadora    Não se aplica 
+Envio à beneficiária as informações relativas aos 
+procedimentos de parto. 
+ANS 
+TissMonitoramentoQualid
+ade 
+Disponibiliza arquivo com indicação dos 
+lançamentos inconsistentes e motivos. 
+Fonte: Elaborado pelos autores. 
+ 
+Plano de contingência 
+146.  O Plano de Contingência é o conjunto de regras e formulários estabelecidos para 
+dar  continuidade  ao  processo  de  trabalho  na  interrupção  temporária  das  trocas 
+eletrônicas. (RN 305) 
+ 
+147.  Na ocorrência de interrupção do serviço de troca eletrônica dos dados de atenção 
+à saúde, os agentes de troca de informações na saúde suplementar deverão utilizar 
+o estabelecido no Plano de Contingência do Padrão TISS. (RN 305) 
+ 
+148.  Os  formulários  utilizados  por  ocasião  da  interrupção  da  troca  eletrônica  de 
+informações devem ser fornecidos pelas operadoras de planos privados de saúde. 
+ 
+149.  A mensagem Lote de Guias (cobrança de serviços de saúde) tem as seguintes 
+guias padronizadas no plano de contingência:  
+-   Consulta;  
+-   SP/SADT;  
+-   Resumo de Internação; 
+-   Honorários;  
+-   Tratamento Odontológico;  
+-   Anexo de Situação Inicial de Odontologia; e  
+-   Outras Despesas. 
+ 
+150.  A mensagem de Recebimento do Lote de Guias não tem guia padronizada no 
+plano de contingência. 
+ 
+151.  A mensagem Lote de Anexos tem as seguintes guias padronizadas no plano de 
+contingência:  
+-   Anexo de Quimioterapia; 
+
+            
+54 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-   Anexo de Radioterapia; 
+-   Anexo de OPME; e  
+-   Anexo de Situação Inicial de Odontologia. 
+ 
+152.  A mensagem de Recebimento do Lote de Anexos não tem guia padronizada no 
+plano de contingência. 
+ 
+153.  A  mensagem  de  Solicitação  de  Demonstrativo  de  Retorno  não  tem  guia 
+padronizada no plano de contingência. 
+ 
+154.  A mensagem de Demonstrativos de Retorno tem como contingência o Relatório 
+de Demonstrativo de Retorno. 
+ 
+155.  A mensagem de Solicitação de Status de Protocolo não tem guia padronizada no 
+plano de contingência. 
+ 
+156.  A mensagem de Situação do Protocolo não tem guia padronizada no plano de 
+contingência. 
+ 
+157.  A mensagem Solicitação de Autorização para Realização de Procedimentos tem 
+as seguintes guias padronizadas no plano de contingência:  
+-   SP/SADT; 
+-   Solicitação de Internação; 
+-   Solicitação de Prorrogação de Internação; e  
+-   Solicitação de Tratamento Odontológico. 
+ 
+158.  A mensagem de Solicitação do Status do Pedido de Autorização não tem guia 
+padronizada no plano de contingência. 
+ 
+159.  A mensagem de Situação do Pedido de Autorização não tem guia padronizada no 
+plano de contingência. 
+ 
+160.  A  mensagem  de  Verificação  de  Elegibilidade  do  Beneficiário  não  tem  guia 
+padronizada no plano de contingência. 
+ 
+
+            
+55 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+161.  A  mensagem  de  Resposta  de  Elegibilidade  do  Beneficiário  não  tem  guia 
+padronizada no plano de contingência. 
+ 
+162.  A mensagem de Solicitação de Cancelamento de Guia de Cobrança não tem guias 
+padronizadas para serem utilizadas em contingência. 
+ 
+163.  A mensagem de Recibo do Cancelamento de Guia de Cobrança não tem guia 
+padronizada no plano de contingência. 
+ 
+164.  A mensagem de Comunicação de Internação ou Alta de Beneficiário não tem guia 
+padronizada no plano de contingência. 
+ 
+165.  A mensagem de Protocolo de Recebimento da Comunicação de Internação ou 
+Alta de Beneficiário não tem guia padronizada no plano de contingência. 
+ 
+166.  A mensagem de envio de Recurso de Glosa tem as seguintes guias padronizadas 
+no plano de contingência: 
+-   Recurso de Glosa; e  
+-   Recurso de Glosa Odontológica. 
+ 
+167.  A  mensagem  Recebimento  do  Recurso  de  Glosa,  com  a  análise  do  recurso 
+realizado pela operadora, tem as seguintes guias para contingência: 
+-   Recurso de Glosa; e  
+-   Recurso de Glosa Odontológica. 
+ 
+168.  A  mensagem  de  Solicitação  do  Status  do  Recurso  de  Glosa  não  tem  guia 
+padronizada no plano de contingência. 
+ 
+169.  A  mensagem  de  Resposta  do  Status  do  Recurso  de  Glosa  não  tem  guia 
+padronizada no plano de contingência. 
+ 
+170.  A mensagem de Envio de Dados à ANS não tem guia padronizada no plano de 
+contingência. 
+
+            
+56 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Versionamento dos Componentes do Padrão TISS 
+ 
+Identificação da vigência dos Componentes do Padrão TISS 
+171.  O  Padrão  TISS  é  identificado  pela  versão  de  cada  um  dos  seus  cinco 
+componentes. 
+-   A  versão  do  componente  organizacional  é  identificada  pelo  ano/mês  de 
+publicação. 
+-   A versão do componente de conteúdo e estrutura é identificada pelo ano/mês 
+de publicação.  
+-   A versão do componente de representação de conceitos de saúde é identificada 
+pelo ano/mês de publicação.  
+-   A  versão  do  componente  de  segurança  e  privacidade  é  identificada  pelo 
+ano/mês de publicação.  
+-   A  versão  do  componente  de  Comunicação  do  Padrão  TISS  é  descrita  no 
+formato XX.YY.ZZ., onde: 
+    A 1ª e 2ª posições (XX) indicam o primeiro bloco da identificação da versão, 
+e  será  modificado  quando  ocorrer  a  inclusão  de  uma  nova 
+mensagem/legenda; 
+    A 3ª e 4ª posições (YY) indicam o segundo bloco da indicação da versão e 
+será  modificado  quando  ocorrer  alteração  nas  mensagens/legendas 
+existentes; 
+    A 5ª e 6ª posições (ZZ) indicam o último bloco da identificação da versão e 
+será modificado na correção de um erro em qualquer mensagem/legenda. 
+Validação da versão dos Componentes do Padrão TISS 
+172.  A vigência do Componente de Comunicação deverá sempre ser observada no 
+momento da troca de mensagens entre os agentes abrangidos pelo padrão. Sempre 
+haverá no mínimo uma e no máximo duas versões do Componente de Comunicação 
+vigentes em determinado momento de troca de informações entre os agentes e 
+somente estas versões poderão ser utilizadas. 
+ 
+173.  A  versão  a  ser utilizada, quando  houver mais  de  uma  versão  vigente, será  a 
+acordada entre as partes. 
+ 
+
+            
+57 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+174.  O conteúdo do Componente de Representação de Conceitos (terminologias de 
+procedimentos e eventos em saúde; medicamentos; materiais e órteses, próteses e 
+materiais especiais e diárias, taxas e gases medicinais) deverá ser vigente na data 
+do atendimento ao beneficiário de plano de saúde, não podendo nenhum agente 
+alegar que determinado termo não é válido no momento da transmissão se o mesmo 
+era válido no momento do atendimento ao beneficiário. 
+ 
+175.  O  esquema  abaixo  ilustra  a  troca  de  informações  em  diferentes  versões  dos 
+Componentes do Padrão TISS. Destacamos que as datas colocadas no esquema 
+abaixo são apenas para exemplificar o processo: 
+ 
+Figura 2 – Troca de informações em diferentes versões dos Componentes 
+ 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+ 
+•Cirurgia realizada em maio/2014.
+•Componente de Representação versão 201405: código TUSS da cirurgia "XYZ".
+•Componente de Comunicação versão 03.02.00.
+Atendimento ao beneficiário - Maio/2014
+•Componente de Representação versão 201512: código TUSS "XYZ" da cirurgia inativado.
+•Componente de Comunicação versão 03.02.01.
+Atualização do Padrão TISS - Dezembro/2015
+•Cobrança enviada em janeiro/2016.
+•Componente de Representação versão 201405: código TUSS da cirurgia "XYZ", vigente à 
+época do atendimento.
+•Componente de Comunicação versão 03.02.01, vigente no momento da cobrança.
+Envio da cobrança - Janeiro/2016
+
+            
+58 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Outras regras operacionais 
+176.  A mensagem LoteGuias deve ter, no máximo, 100 guias em cada lote. 
+ 
+177.  A mensagem LoteAnexo deve ter, no máximo, 1 guia em cada lote. 
+ 
+178.  A mensagem RecursoGlosa deve ter, no máximo, 1 guia em cada lote. 
+XII.   Regras para o envio de dados à ANS 
+179.  Devem ser informados os eventos e despesas exclusivamente de beneficiários 
+que mantêm contrato com a operadora de planos de saúde, independentemente de 
+compartilhamento  de  risco/repasse  continuado  da  assistência  para  outras 
+operadoras de planos de saúde e das formas de remuneração dos prestadores de 
+serviços praticadas pela operadora. 
+ 
+180.  A informação sobre o Número de identificação do plano do beneficiário na ANS 
+compreende os planos anteriores ou posteriores à Lei 9656/98. Aqueles anteriores 
+à lei devem estar cadastrados no Sistema de Cadastro de Plano Antigo – SCPA e a 
+informação enviada no Monitoramento TISS deve ser idêntica àquela apresentada 
+nesse  cadastro,  incluindo  caracteres  especiais  e  espaços  que  porventura 
+componham  o  nome  do  produto  no  cadastro.  Da  mesma  forma,  o  número  de 
+produtos posteriores à lei deve ser idêntico àquele registrado no RPS.  
+Formas de remuneração dos eventos de atenção à saúde 
+181.  Para fins de envio de dados para a ANS, as diferentes formas de remuneração 
+dos eventos de atenção à saúde podem ser classificadas em cinco grupos distintos: 
+(1) pagamento por evento ou procedimento realizado, (2) contratação de prestador 
+ou outra operadora por valor pré-estabelecido, (3) fornecimento de medicamentos e 
+materiais  diretamente  aos  beneficiários,  (4)  atendimentos  em  rede  própria  da 
+operadora,  de  mesmo  CNPJ,  em  que  não  há  pagamento  direto  pelos  serviços 
+prestados e (5) Informação de despesas assistenciais referentes a outras formas de 
+remuneração. 
+ 
+182.  Pagamento por evento ou procedimento: 
+
+            
+59 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Esta forma de remuneração abrange as situações em que os pagamentos estão 
+diretamente vinculados à realização de procedimentos ou eventos: 
+   Pagamento aos prestadores por evento ou procedimento realizado: por tabela 
+de  preços  por  procedimento,  pacote  ou  quaisquer  outros  modelos  de 
+precificação baseados na realização de procedimentos;  
+   Pagamento a operadora intermediária, nos casos de intercâmbio eventual ou 
+rede indireta (atendimento continuado); 
+   Reembolso aos beneficiários por eventos ou procedimentos realizados por 
+prestadores não credenciados pela operadora. 
+Devem ser preenchidos os seguintes blocos da mensagem Envio de dados para 
+ANS  (operadoraParaANS),  conforme  descrito  no  componente  de  Conteúdo  e 
+Estrutura:  
+   Informações do atendimento; 
+   Informações de nascimento e óbito; 
+   Informações dos procedimentos e itens assistenciais. 
+ 
+183.  Contratação de prestador ou outra operadora por valor pré-estabelecido; 
+Nesta  forma  de  remuneração,  a  operadora  contrata  um  prestador  ou  outra 
+operadora  para  atendimento  a  seus  beneficiários,  por  determinado  período,  e 
+paga o valor contratado independentemente da efetiva realização de eventos. Em 
+alguns casos pode haver pagamento adicional por procedimento realizado, a título 
+de complemento ou bonificação. 
+Cada contratação por valor pré-estabelecido entre a operadora e um prestador ou 
+outra operadora deve ter um número que a identifique durante toda a vigência do 
+contrato. 
+Devem ser preenchidos os seguintes blocos da mensagem Envio de dados para 
+ANS  (operadoraParaANS),  conforme  descrito  no  componente  de  Conteúdo  e 
+Estrutura:  
+   Informações de contratação por valor pré-estabelecido; 
+   Informações do atendimento; 
+   Informações de nascimento e óbito; 
+
+            
+60 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+   Informações dos procedimentos e itens assistenciais. 
+No  bloco  “Informações  de  contratação  por  valor  pré-estabelecido”,  além  do 
+número de identificação da contratação (campo “Identificador de contratação por 
+valor pré-estabelecido”) e do prestador ou operadora intermediária contratada, 
+deve  ser  informado  o  valor  da  cobertura  contratada,  referente  ao  período  de 
+competência (mês e ano) informado. 
+Nos blocos “Informações do atendimento”, “Informações de nascimento e óbito” e 
+“Informações dos procedimentos e itens assistenciais” devem ser informados os 
+eventos de atenção à saúde, reconhecidos na competência, vinculados à referida 
+contratação por valor pré-estabelecido.  
+A  vinculação  entre  o  bloco  “Informações  de  contratação  por  valor  pré-
+estabelecido” e os eventos de atenção à saúde informados nos demais blocos se 
+dá pelo campo “Identificador de contratação por valor pré-estabelecido”. 
+Os campos de valor dos blocos “Informações do atendimento” e “Informações dos 
+procedimentos  e  itens  assistenciais”  só  devem  ser  preenchidos  no  caso  de 
+pagamento  adicional  por  procedimento  realizado,  a  título  de  complemento  ou 
+bonificação. 
+ 
+IMPORTANTE:  
+1- O “Identificador de contratação por valor pré-estabelecido” deve ser o mesmo 
+para todas as competências, durante a vigência da contratação por valor pré-
+estabelecido.  
+2-  A  operadora  não  deve  fazer  rateio  do  valor  da  cobertura  contratada  na 
+competência entre os eventos de atenção à saúde reconhecidos. Se não houver 
+valor de complementação ou bonificação para algum procedimento específico, os 
+valores  dos  blocos  “Informações  do  evento/guia”  e  “Informações  dos 
+procedimentos e itens assistenciais” devem ser preenchidos com ZERO. 
+184.  Fornecimento de medicamentos e materiais diretamente aos beneficiários: 
+Por disposições contratuais ou por força da regulamentação da ANS, como nos 
+casos  dos  medicamentos  oncológicos  de  uso  domiciliar  e  dos  equipamentos 
+coletores  para  colostomia,  a  operadoras  têm  que  fornecer  materiais  ou 
+medicamentos  diretamente  a  seus  beneficiários.  O  fornecimento  pode  ser 
+
+            
+61 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+realizado após compra, pela operadora, do medicamento ou material no mercado, 
+ou através de reembolso, quando o próprio beneficiário adquire o medicamento 
+ou material. 
+Devem ser preenchidos os seguintes blocos da mensagem Envio de dados para 
+ANS  (operadoraParaANS),  conforme  descrito  no  componente  de  Conteúdo  e 
+Estrutura: 
+   Informações do fornecimento; 
+   Informações dos itens fornecidos. 
+A  cada  fornecimento  de  material  ou  medicamento  devem  ser  informados:  a 
+identificação  do beneficiário,  da operação,  datas  e  valores  do fornecimento, e 
+quantidade e valor dos itens fornecidos. 
+ 
+IMPORTANTE:  
+Não devem ser informados nestes blocos os materiais (como órteses e próteses, 
+por  exemplo)  adquiridos  pelas  operadoras  diretamente  dos  fornecedores  e 
+utilizados por prestadores na assistência aos beneficiários. Estes materiais devem 
+ser informados juntamente com os demais itens das respectivas contas médicas. 
+185.  Atendimentos em rede própria da operadora, de mesmo CNPJ: 
+Nessa situação não há pagamento uma vez que os serviços são prestados pela 
+própria  operadora.  Entretanto,  os  atendimentos  devem  ser  identificados  e 
+informados à ANS. 
+Devem ser preenchidos os seguintes blocos da mensagem Envio de dados para 
+ANS  (operadoraParaANS),  conforme  descrito  no  componente  de  Conteúdo  e 
+Estrutura:  
+   Informações do atendimento; 
+   Informações de nascimento e óbito; 
+   Informações dos procedimentos e itens assistenciais. 
+
+            
+62 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Os valores informados devem corresponder ao apurado através de rateio dos 
+custos do serviço próprio, conforme o estabelecido no Anexo da RN nº 290 e suas 
+atualizações.  Os valores pagos devem ser preenchidos com zero. 
+186.  Informação  de  despesas  assistenciais  referentes  a  outras  formas  de 
+remuneração: 
+Essa forma de remuneração abrange todos os eventos de assistência à saúde 
+que devem ser informados à ANS, conforme estabelecido na RN nº 305, que não 
+se enquadrem em nenhuma das formas de remuneração descritas acima. 
+Deve ser preenchido o seguinte bloco da mensagem Envio de dados para ANS 
+(operadoraParaANS), conforme descrito no componente de Conteúdo e Estrutura:  
+   Informação  de  despesas  assistenciais  referentes  a  outras  formas  de 
+remuneração. 
+Devem ser informadas a identificação do recebedor e os valores informado, de 
+glosa e pago. 
+ 
+Regras gerais para o envio de dados à ANS   
+187.  O envio de dados das operadoras para ANS, estabelecido pelo Padrão TISS, 
+ocorre exclusivamente de forma eletrônica. 
+ 
+188.  Protocolo  de  recebimento:  o  protocolo  de  recebimento  do  arquivo  com  as 
+informações das operadoras será dado pelo Programa Transmissor de Arquivos 
+(PTA)  da  ANS.  Esse  protocolo  não  significa  que  houve  processamento  e/ou 
+incorporação dos arquivos, mas garante apenas sua recepção pela ANS. 
+ 
+189.  A operadora poderá enviar um conjunto de arquivos XML na forma compactada 
+no  padrão  ZIP.  Ao  enviar  um  arquivo  compactado,  a  operadora  receberá  um 
+protocolo de recebimento do arquivo compactado. 
+ 
+190.  Protocolo  de  recebimento:  o  protocolo  de  recebimento  de  envio  de  arquivo 
+compactado não informará quantos arquivos XML foram recebidos. 
+ 
+
+            
+63 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+191.  Os arquivos de dados a serem enviados pela operadora para a ANS devem seguir 
+o padrão de nomenclatura REGANSAAAAMM9999.YYY, onde: 
+-   REGANS – número do registro da operadora na ANS com 6 posições; 
+-   AAAA – ano da competência dos dados; 
+-   MM – mês da competência dos dados; 
+-   9999 – número sequencial do arquivo no ano/mês de competência dos dados; 
+    .YYY – extensão do arquivo, onde: 
+    XTE quando tratar-se de um arquivo XML enviado pela operadora para a 
+ANS; 
+    ZTE quando tratar-se de um arquivo compactado no padrão ZIP enviado 
+pela operadora para a ANS; 
+    XTR quando tratar-se de um arquivo de retorno do tipo XML disponibilizado 
+pela ANS para a operadora; 
+    ZTR quando tratar-se de um arquivo de retorno do tipo ZIP disponibilizado 
+pela ANS para a operadora. 
+ 
+192.  Dentro de um arquivo ZTE somente serão considerados válidos os arquivos que 
+possuam a extensão XTE. 
+ 
+193.  Arquivos  que  forem  descompactados  devem  possuir  no  seu  nome  a  mesma 
+competência informada no nome do seu arquivo ZTE de origem. 
+ 
+194.  Caso a operadora envie um arquivo ZTE que não possua nenhum arquivo a ser 
+descompactado, o arquivo será rejeitado. 
+ 
+195.  Caso a operadora envie um arquivo ZTE que possua um formato de compactação 
+diferente de ZIP e um método de compressão diferente de DEFLATE, o arquivo será 
+rejeitado. 
+ 
+196.  Não serão aceitos pela ANS arquivos com nomenclatura duplicada. 
+ 
+197.  Caso o nome do arquivo enviado pela operadora possua mais de 100 caracteres, 
+apenas os 100 primeiros serão inseridos no banco de dados. 
+ 
+
+            
+64 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+198.  O  acompanhamento  do  resultado  do  processamento  dos  arquivos  estará 
+disponível  no  endereço eletrônico  www.ans.gov.br em área de acesso restrito à 
+operadora. 
+ 
+199.  Para o acompanhamento do resultado do processamento dos dados à ANS, os 
+arquivos recebidos serão classificados nos status abaixo: 
+Quadro 5 - Status dos arquivos recebidos no envio de dados à ANS 
+Status Descrição 
+Aguardando processamento  O arquivo foi recebido e ainda não foi processado pela ANS. 
+Nome do arquivo fora do 
+padrão 
+A nomenclatura do arquivo enviado não atende ao descrito na 
+regra de formação do nome do arquivo. 
+Processado  
+O arquivo foi processado e todos os registros foram incluídos 
+no banco de dados da ANS. 
+Processado parcialmente 
+O arquivo foi processado pela ANS e há uma quantidade de 
+registros que não foram incluídos no banco de dados da ANS 
+por erros identificados. 
+Rejeitado 
+O arquivo não foi processado e nenhum registro foi incluído 
+no banco de dados da ANS. 
+Sequência já enviada 
+O arquivo foi enviado, dentro de um arquivo compactado, com 
+um nome enviado anteriormente. 
+Erro de transmissão 
+O arquivo foi transmitido porém não chegou de forma íntegra. 
+Deve-se enviar o arquivo novamente com outro nome. 
+Em transmissão O arquivo está sendo transmitido no momento da consulta. 
+Fonte: Elaborado pelos autores. 
+200.  Caso possua erros de validação na estrutura o arquivo será rejeitado. 
+ 
+201.  Caso um elemento seja de preenchimento obrigatório e em seu conteúdo seja 
+informado apenas espaços em branco, quebra de linha ou tabulação, o lançamento 
+em validação será rejeitado. 
+ 
+202.  Caso haja erros de validação no código hash, o arquivo será rejeitado. 
+ 
+
+            
+65 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+203.  A  correção  dos  erros  identificados  nos  arquivos  processados  deverá  ser  pelo 
+envio eletrônico de novo arquivo. 
+ 
+204.  Os dados deverão ser enviados pelas operadoras para a ANS até o dia 25 do 
+segundo mês subsequente à competência informada. 
+ 
+205.  A competência informada em um arquivo deve ser maior ou igual ao ano e mês 
+da data de registro da operadora. Caso a competência informada seja anterior a esta 
+data, o arquivo será rejeitado. 
+ 
+206.  A  competência  que  constar  no  cabeçalho  do  arquivo  deve  ser  equivalente  à 
+competência informada no nome do arquivo enviado pela operadora. 
+ 
+207.  Caso a operadora envie um arquivo com uma competência que não exista no 
+sistema, o arquivo será rejeitado. 
+ 
+208.  Caso a competência informada no nome do arquivo não esteja aberta para envio 
+de dados, o arquivo será rejeitado. 
+ 
+209.  Caso a operadora tenha a obrigatoriedade, porém não tenha enviado arquivo na 
+competência anterior ou tenha enviado e o mesmo esteja com o status “rejeitado”, 
+o arquivo da competência atual será rejeitado. 
+ 
+210.  É obrigatório o envio de arquivo em todas as competências, mesmo que não tenha 
+havido movimento. Nesse caso, a operadora deve enviar arquivo à ANS informando 
+a situação de não ter nenhum movimento em determinada competência, conforme 
+schema definido no componente de comunicação. 
+ 
+211.  A operadora terá o arquivo informando que não há movimento em determinada 
+competência  rejeitado,  caso  haja  alguma  informação  da  operadora  na  base  de 
+dados da ANS desta competência. 
+ 
+212.  A operadora terá o arquivo informando que não há movimento em determinada 
+competência  ignorado,  caso  envie  após  este  alguma  movimentação  da  mesma 
+competência. 
+ 
+
+            
+66 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+213.  Em  cada  competência  a  operadora  deverá  enviar  tantos  arquivos  quanto 
+necessários para informar toda a movimentação devida. Cada arquivo pode ter no 
+máximo 10.000 registros. 
+ 
+214.  Cada registro do arquivo enviado à ANS conterá a indicação do tipo de transação 
+que será realizada, a saber: 
+-   Inclusão: indica à ANS que o registro deve ser incluído na base de dados; 
+-   Alteração:  indica  à  ANS  que  o  registro  deve  substituir  um  registro  enviado 
+anteriormente pela operadora identificado pela chave de acesso à informação; 
+-   Exclusão: indica à ANS que o registro deve ser excluído da base de dados 
+considerando a chave de acesso à informação. 
+Regras para informação dos eventos/guias de atendimento 
+215.  Sempre que houver qualquer processamento de uma conta, o resultado deve ser 
+informado à ANS através do envio de um lançamento de inclusão, alteração ou 
+exclusão.  Deve  ser  entendido  como  processamento  o  ato  de  alterar  qualquer 
+informação após o recebimento de uma conta pela operadora.  
+ 
+216.  A chave de acesso aos lançamentos enviados à ANS, referente aos eventos/guias 
+de atendimento, bloco “Informações do atendimento”, é composta pelos seguintes 
+campos: 
+ 
+-   Número do registro da operadora na ANS; 
+-   Identificação do prestador de serviços: 
+     CNES; 
+     Tipo de identificação (1 para CNPJ ou 2 para CPF); 
+     CNPJ ou CPF. 
+-   Número da guia atribuído pela operadora; 
+-   Número da guia no prestador de serviços;  
+-   Número de identificação de reembolso atribuído pela operadora; 
+-   Data de processamento. 
+ 
+217.  Em  cada  arquivo  enviado  todos  os  lançamentos  com  tipo  de  registro  igual  a 
+“inclusão” devem ter o mês/ano da data de processamento igual ao mês/ano da 
+competência do arquivo. Caso contrário, o arquivo será rejeitado. 
+
+            
+67 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+218.  O ano e mês da data de processamento do lançamento informada no arquivo 
+devem corresponder a uma competência vigente na base de dados de competências 
+na data em que o arquivo foi recepcionado na base de dados do PTA. 
+ 
+219.  Caso a operadora tente incluir um lançamento que já esteja ativo no banco de 
+dados o mesmo será rejeitado. 
+ 
+220.  Caso a operadora tente alterar ou excluir um lançamento que não exista ou não 
+esteja ativo no banco de dados o mesmo será rejeitado. 
+ 
+221.  A operadora não poderá excluir um lançamento caso ele tenha sido o primeiro 
+lançamento para aquela guia e existam outros lançamentos ativos para a mesma 
+guia cadastrados no banco de dados. 
+ 
+222.  No  primeiro  envio  dos  dados  para  a  ANS,  devem  ser  incluídas  todas  as 
+informações  que  caracterizaram  o  atendimento  (códigos  CID,  número  da 
+Declaração de Nascido Vivo e da Declaração de Óbito, código de tabela, do grupo 
+de procedimentos ou dos procedimentos, código do dente, região da boca e face do 
+dente, identificador de contratação por valor preestabelecido, registro da operadora 
+intermediária, tipo de atendimento por operadora intermediária, CBO do profissional 
+executante, número do Cartão Nacional de Saúde do beneficiário, Número da Guia 
+de Solicitação de Internação). 
+ 
+223.  No primeiro envio das informações para a ANS, devem ser incluídos todos os 
+procedimentos e itens assistenciais que compõem a conta, independente de terem 
+sido  pagos  ou  não.  A  partir  do  segundo  lançamento  só  podem  constar 
+procedimentos ou itens assistenciais que sofreram alteração em relação ao envio 
+inicial. 
+ 
+224.  Nos demais lançamentos de inclusão referentes a uma conta já enviada, ou seja, 
+nos processamentos subsequentes da conta, somente deverão constar linhas de 
+procedimentos e itens assistenciais que tenham sofrido alteração de informação 
+decorrente do processamento que está sendo enviado. 
+ 
+225.  Caso a operadora não tenha incluído um procedimento ou item assistencial no 
+primeiro lançamento de uma conta, deverá encaminhar um registro de exclusão, 
+
+            
+68 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+considerando a chave de acesso do registro. Em seguida, a operadora deverá enviar 
+um  novo  lançamento  do  tipo  inclusão  com  todos  os  procedimentos  e  itens 
+assistenciais que compõem a conta. 
+ 
+226.  Caso  a  operadora  realize  o  estorno  de  qualquer  pagamento  efetuado  ao 
+prestador, deve enviar um lançamento para a ANS informando um valor negativo 
+no campo de valor pago referente ao valor estornado do prestador. Neste caso 
+deve-se verificar se a soma de todos os valores pagos do item ou da guia não 
+resultará em um total negativo o que será motivo de rejeição do lançamento. 
+ 
+227.  Para guias de consulta e SP/SADT utilizadas em consulta o preenchimento do 
+CBO do prestador executante é obrigatório no envio dos dados do Padrão TISS à 
+ANS. Caso a operadora envie essa informação com o código 999999 o lançamento 
+será rejeitado, pois esse código só deve ser utilizado, na troca entre operadoras e 
+prestadores, quando não for possível para o prestador executante obter o CBO do 
+prestador solicitante. Caso o profissional executante possua mais de um CBO deve 
+ser  informado  aquele  que  refletir  o  atendimento  efetivamente  prestado  pelo 
+profissional, e para o qual ele seja habilitado. Ou seja, deve ser informado apenas o 
+CBO  correspondente  à  natureza  da  consulta  que  está  sendo  informada  pela 
+operadora à ANS (clínica médica, cardiologia, geriatria, etc), ainda que o profissional 
+possua mais de uma especialização ou habilitação. 
+ 
+228.  O campo Indicador de CPF ou CNPJ em guias de resumo de internação deve ser 
+obrigatoriamente igual a 1-CNPJ. Caso contrário o lançamento será rejeitado. 
+229.  O campo Número da guia de solicitação de internação não pode ser preenchido 
+em guias de consulta e nas guias de tratamento odontológico. 
+230.  A  informação  da  Declaração  de  Nascido  Vivo  só  pode  constar  em  guias  de 
+Resumo de Internação. 
+231.  A informação da Declaração de Óbito só pode constar em guias de Resumo de 
+Internação. 
+232.  O campo Data final do período de atendimento ou data do fim do faturamento é 
+de preenchimento obrigatório nas guias de Resumo de Internação. 
+
+            
+69 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+233.  Os  campos:  Diagnóstico  principal  CID,  Diagnóstico  secundário  CID,  Terceiro 
+diagnóstico CID e Quarto diagnóstico CID só podem ser preenchidos em guias de 
+Resumo de Internação e não podem ser códigos repetidos numa mesma guia. 
+234.  O campo Número da guia principal de SP/SADT ou de tratamento odontológico 
+só  pode  ser  informado  em  uma  guia  de  SP/SADT  ou  guia  de  tratamento 
+odontológico. 
+ 
+235.  O campo “Tipo de atendimento por operadora intermediária” deve ser preenchido 
+caso o campo "Registro ANS da operadora intermediária" esteja preenchido, nas 
+guias cujo primeiro lançamento seja de competência posterior a dezembro de 2017. 
+ 
+236.  A partir dos lançamentos incorporados à base de dados do TISS, a ANS estrutura 
+os bancos de guias e eventos de atenção à saúde resultantes dos atendimentos. As 
+informações desses bancos são utilizadas como base para cumprir as finalidades 
+do  Padrão  TISS  quanto  a  subsidiar  as  ações  da  ANS  de  avaliação  e 
+acompanhamento econômico-financeiro e assistencial das operadoras de planos 
+privados de assistência à saúde e compor o registro eletrônico dos dados de atenção 
+à saúde dos beneficiários de planos privados de assistência à saúde. 
+ 
+237.  Para formação das guias é utilizada a lógica descrita abaixo a partir dos campos 
+chave de cada lançamento: 
+1  -  Consideram-se  todos  os  “dados  básicos”  da  guia  enviados  no  primeiro 
+lançamento; 
+2 - Consideram-se todos os itens/procedimentos enviados no primeiro lançamento 
+agregando-se  as  informações  posteriores  (pagamentos  e  glosas)  enviados  nos 
+lançamentos seguintes. 
+ 
+238.  O  Evento  de  Internação  tem  sua  origem  na  Guia  de  Resumo  de  Internação 
+enviada pelo prestador hospitalar onde ocorreu o atendimento. As demais Guias que 
+compõem o evento são vinculadas à esta Guia de Resumo de Internação através 
+do  número  de  solicitação  de  internação.  Caso  esse  número  de  solicitação  de 
+internação não seja informado corretamente pela operadora, o evento pode não 
+conter todas as guias que deveriam fazer parte dele. 
+ 
+
+            
+70 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+239.   Caso a Guia de Resumo de Internação não tenha sido encaminhada para a ANS 
+o evento de internação não será formado. 
+ 
+Abaixo citamos exemplos da situação de envio de dados: 
+1)  Exemplo: 
+ 
+Primeiro processamento da guia na operadora: uma guia que foi recebida pela 
+operadora  em  12/06/2014  e  a  operadora  realizou  o  processo  de  críticas  e 
+apuração de valores em 15/06/2014, mesmo sem realizar o pagamento. Esta 
+informação  será  enviada  a  ANS  até  25  de  agosto  de  2014  (dados  da 
+competência junho de 2014) com a data de processamento igual a 15/06/2014 
+como um registro de inclusão. 
+ 
+Segundo processamento da guia na operadora: a mesma guia foi paga em 
+15/07/2014  e  esta  informação  foi  gravada  no  sistema  da  operadora  nesta 
+mesma data. Esta informação deve ser enviada para a ANS até 25 de setembro 
+de 2014 (dados da competência julho de 2014) como um registro de inclusão. 
+Quadro 6 – Exemplo 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Jun/2014   120    15/06/2014 100,00 100,00 100,00    0,00   0,00 
+ 
+Inclusão 
+Jul/2014   120    15/07/2014 100,00 100,00 100,00    0,00   100,00 15/07/2014 Inclusão 
+Fonte: Elaborado pelos autores. 
+2)  Exemplo: 
+ 
+Primeiro processamento da guia na operadora: uma guia que foi recebida pela 
+operadora  em  20/07/2014  e  a  operadora  realizou  o  processo  de  críticas  e 
+apuração de valores em 21/07/2014, mesmo sem realizar o pagamento. Esta 
+informação  será  enviada  a  ANS  até  25  de  setembro  de  2014  (dados  da 
+competência julho de 2014) com a data de processamento igual a 21/07/2014 
+como um registro de inclusão. 
+ 
+Segundo processamento da guia na operadora: esta guia teve um recurso de 
+glosa  apresentado  pelo  prestador  em  05/08/2014.  A  operadora  acata 
+parcialmente o recurso apresentado em 10/08/2014 e registra esta informação 
+
+            
+71 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+no sistema. Esta informação deve ser enviada para a ANS até 25 de outubro de 
+2014 (dados da competência agosto de 2014) como um registro de inclusão. 
+ 
+Terceiro processamento da guia na operadora: a operadora efetua o pagamento 
+desta guia em 05/09/2014. Esta informação deve ser enviada à ANS até 25 de 
+novembro  de  2014  (dados  da  competência  setembro)  como  um  registro  de 
+inclusão. 
+ 
+Quarto  processamento  da  guia  na  operadora:  em  30/11/2014  a  operadora 
+verifica que cometeu um erro ao registrar a data de pagamento ao prestador 
+que na verdade ocorreu em 10/09/2014 e não em 05/09/2014. Esta informação 
+deve ser enviada à ANS até 25 de janeiro de 2015 (dados da competência 
+novembro)  como  uma  transação  de  alteração  do  registro  enviado 
+anteriormente. Como será um registro de alteração, a chave de acesso deve 
+ser  igual  àquela  enviada  no  registro  de  inclusão,  ou  seja,  data  de 
+processamento igual à 05/09/2014 e não 30/11/2014. 
+Quadro 7 – Exemplo 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Jul/2014   150   21/07/2014 200,00 180,00 180,00    20,00  0,00 
+ 
+Inclusão 
+Ago/2014 150   10/08/2014 200,00 190,00 190,00    10,00  0,00 
+ 
+Inclusão 
+Set/2014  150 05/09/2014 200,00 190,00 190,00    10,00  190,00 05/09/2014 Inclusão 
+Nov/2014 150 05/09/2014 200,00 190,00 190,00    10,00  190,00 10/09/2014 Alteração 
+Fonte: Elaborado pelos autores. 
+3)  Exemplo: 
+ 
+Primeiro processamento da guia na operadora: uma guia que foi recebida pela 
+operadora  em  20/09/2014  e  a  operadora  realizou  o  processo  de  críticas  e 
+apuração de valores em 21/09/2014, mesmo sem realizar o pagamento. Esta 
+informação  será  enviada  a  ANS  até  25  de  novembro  de  2014  (dados  da 
+competência  setembro  de  2014)  com  a  data  de  processamento  igual  a 
+21/09/2014 como um registro de inclusão. 
+ 
+Segundo processamento da guia na operadora: esta guia teve um recurso de 
+glosa  apresentado  pelo  prestador  em  05/10/2014.  A  operadora  acata 
+
+            
+72 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+parcialmente o recurso apresentado em 10/10/2014 e registra esta informação 
+no sistema. Esta informação deve ser enviada para a ANS até 25 de dezembro 
+de 2014 (dados da competência outubro de 2014) como um registro de inclusão. 
+ 
+Terceiro processamento da guia na operadora: a operadora efetua o pagamento 
+desta guia em 15/11/2014. Esta informação deve ser enviada à ANS até 25 de 
+janeiro  de  2015  (dados  da  competência  novembro)  como  um  registro  de 
+inclusão. 
+ 
+Quarto  processamento  da  guia  na  operadora:  ao  registrar  o  pagamento  a 
+operadora verifica que incorreu em um erro enviando um registro de recurso de 
+glosa acatado para a ANS na competência OUT/2014. Esta informação deve ser 
+enviada à ANS até 25 de janeiro de 2015 (dados da competência novembro) 
+como um registro de exclusão do registro enviado anteriormente. Como será um 
+registro  de  exclusão,  a  chave  de  acesso  deve  ser  igual  àquela  enviada  no 
+registro de inclusão, ou seja, data de processamento igual à 10/10/2014 e não 
+15/11/2014. 
+Quadro 8 – Exemplo 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Set/2014  200   21/09/2014 500,00 450,00 450,00    50,00  0,00 
+ 
+Inclusão 
+Out/2014  200 10/10/2014 500,00 480,00 480,00    20,00  0,00 
+ 
+Inclusão 
+Nov/2014 200   15/11/2014 500,00 450,00 450,00    50,00  450,00 15/11/2014 Inclusão 
+Nov/2014 200 10/10/2014 500,00 480,00 480,00    20,00  0,00     Exclusão 
+Fonte: Elaborado pelos autores. 
+240.  O valor pago em cada registro enviado à ANS deve conter somente o valor pago 
+na competência e não um valor acumulado do total pago a determinada guia/evento. 
+O mesmo procedimento deve ser adotado em relação às quantidades e valores dos 
+procedimentos e itens assistenciais das guias/eventos. Por exemplo: caso uma guia 
+seja apresentada por um prestador de serviços com um valor de R$ 1.000,00 e a 
+operadora pague apenas R$ 800,00 glosando R$ 200,00, a informação deve ser 
+encaminhada à ANS exatamente desta forma. Caso em uma competência posterior 
+a operadora reconheça que deve pagar mais R$ 200,00 daquela guia, o registro a 
+ser encaminhado a ANS deverá conter somente o valor pago de R$ 200,00 referente 
+ao pagamento realizado na competência e não o valor acumulado de R$ 1.000,00. 
+
+            
+73 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+1)  Exemplo: 
+Quadro 9 – Exemplo 
+ 
+Fonte: Elaborado pelos autores. 
+241.  Para realizar o estorno de um valor pago, observar o exemplo abaixo: 
+ 
+1)  Exemplo: 
+ 
+Primeiro processamento da guia na operadora: uma guia que foi recebida pela 
+operadora em 10/04/2015 e foi paga em 10/05/2015 no valor R$ 1.000,00. Esta 
+operadora envia as informações até 25/06 e 25/07 respectivamente. 
+ 
+Segundo processamento da guia na operadora: em agosto de 2015 a operadora 
+verificou que realizou o pagamento de valor indevido nesta guia pagando 200,00 
+reais a mais do que deveria. Neste momento a operadora identifica que abaterá 
+os R$ 200,00 do montante a ser pago ao prestador em agosto/2015. A operadora 
+deve então, enviar a informação para a ANS referente a esta guia com um valor 
+negativo de R$ 200,00 de pagamento. Este valor negativo deve figurar também 
+no item da guia a que se refere este abatimento. 
+Quadro 10 – Exemplo 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Abr/2015 200   10/04/2015 1.000,00   1.000,00    1.000,00  0,0    0,00 
+ 
+Inclusão 
+Mai/2015  200   10/05/2015 1.000,00    1.000,00 1.000,00   0,00   1.200,00 10/05/2015 Inclusão 
+Ago/2015 200   15/08/2015 1.000,00    1.000,00 1.000,00   0,00   -200,00   15/08/2015 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Set/2014 500   10/09/2014 1.000,00    800,00 800,00    200,00 800,00 10/09/2014 Inclusão 
+Out/2014 500   10/10/2014 1.000,00    200,00 200,00    0,00    200,00 10/10/2014 Inclusão 
+
+            
+74 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Quadro 11 – Exemplo - Itens enviados no evento/guia (competência abril/2015): 
+Procedimento 
+ 
+Item 
+Quant. 
+Informada 
+Valor 
+Informado 
+Quant. 
+Paga 
+Valor 
+Pago 
+1 1 200,00 0 0,00 
+2 2 800,00 0 0,00 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+Quadro 12 – Exemplo - Itens enviados no evento/guia (competência maio/2015): 
+Procedimento 
+ 
+Item 
+Quant. 
+Informada 
+Valor 
+Informado 
+Quant. 
+Paga 
+Valor 
+Pago 
+1 1 200,00 1 200,00 
+2 2 800,00 2 1.000,00 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+Quadro 12 - Exemplo - Itens enviados no evento/guia (competência agosto/2015): 
+Procedimento 
+ 
+Item 
+Quant. 
+Informada 
+Valor 
+Informado 
+Quant. 
+Paga 
+Valor 
+Pago 
+2 2 800,00 2 -200,00 
+Fonte: Elaborado pelos autores. 
+242.  O envio dos itens assistenciais e procedimentos de um evento/guia deve obedecer 
+ao seguinte critério: o primeiro lançamento deve conter todos os itens assistenciais 
+e procedimentos existentes, tendo sido pagos ou não. 
+1)  Exemplo: 
+Quadro 14 – Exemplo – Evento/Guia enviado 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data Pagto Transação 
+Liberado Glosa Pago 
+Set/2014   500    10/09/2014 1.000,00    1.000,00 800,00    200,00   800,00   10/09/2014   Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro 13 – Exemplo – Itens enviados no Evento/Guia 
+Procedimento 
+ 
+Item 
+Quant. 
+Informada 
+Valor 
+Informado 
+Quant. 
+Paga 
+Valor Pago 
+Valor Pago 
+Fornec. 
+1 5 500,00 5 500,00 0,00 
+2 2 200,00 1 100,00 0,00 
+
+            
+75 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+3 3 300,00 2 200,00 0,00 
+Fonte: Elaborado pelos autores. 
+ 
+Em   um   segundo   lançamento   só   devem   ser   incluídos   aqueles 
+itens/procedimentos que sofreram alguma  alteração  em relação  ao  envio  da 
+competência anterior. 
+ 
+Após recurso de glosa dos itens que não foram pagos em sua totalidade, a 
+operadora reconheceu que deveria pagar mais uma unidade do item 3. Assim 
+teríamos o seguinte envio a ANS: 
+Quadro 16 – Exemplo – Evento/Guia enviado 
+Compet. Guia Data Proc. 
+Valor 
+Informado 
+Valor 
+Processado 
+Valor Valor Valor 
+Data 
+Pagto 
+Transação 
+Liberado Glosa Pago 
+Out/2014 500   10/10/2014 1.000,00    1.000,00 100,00    100,00 100,00 10/10/2014 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro 17 – Exemplo – Itens enviados no Evento/Guia 
+Procedimento 
+Item 
+Quant. 
+Informada 
+Valor 
+Informado 
+Quant. 
+Paga 
+Valor Pago 
+Valor Pago 
+Fornec. 
+3 3 300,00 1 100,00 0,00 
+Fonte: Elaborado pelos autores. 
+243.  O  envio  de  informações  em  pacotes  definidos  por  operadoras  e  prestadores 
+formados por itens identificados como envio individualizado à ANS, conforme tabela 
+TUSS 64, contendo ou não itens identificados como envio consolidado à ANS, na 
+mesma tabela 64, deve seguir a regra: informar o código da tabela de referência do 
+pacote (tabela 90 ou 98), o código do pacote criado pela operadora, os valores e 
+quantidades referentes ao pacote. Nas linhas seguintes devem ser informados os 
+códigos das tabelas de referência dos itens, os códigos dos itens identificados para 
+envio individualizado, previstos na tabela 64-Forma de envio para a ANS, com a 
+quantidade de cada item.  
+244.  O envio de dados em pacotes definidos por operadoras e prestadores formados 
+exclusivamente por itens identificados como envio consolidado na tabela 64-Forma 
+de envio para a ANS, deve seguir a regra: informar na primeira linha o código da 
+tabela de referência do pacote (tabela 90 ou 98), o código do pacote criado pela 
+operadora, os valores e quantidades referentes ao pacote. 
+
+            
+76 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+245.  No exemplo abaixo, temos na primeira linha um lançamento na tabela 98–Tabela 
+Própria  de  Pacotes  do  código  1000,  que  é  o  código  de  um  pacote  criado  pela 
+operadora, os valores e as quantidades informadas e pagas ao prestador. Na linha 
+imediatamente abaixo ao lançamento do pacote, temos o lançamento na tabela 22-
+Procedimentos  e  Eventos  em  Saúde,  do  código  31309054 (cesariana)  com  sua 
+quantidade.  Este  exemplo  está  informando  à  ANS  que  a  operadora  recebeu  a 
+cobrança  e  pagou  ao  prestador  um  pacote  que  tem  em  sua  composição  um 
+procedimento de cesariana, o qual deve ser enviado de forma individualizada para 
+a ANS, conforme descrito na tabela 64-Forma de envio para a ANS. 
+ 
+1)  Exemplo: 
+ 
+ 
+Quadro 18 – Exemplo – Envio de pacotes 
+Tabela 
+referência 
+Código 
+procedimento/item 
+Valor 
+Informado 
+Quant. 
+Informada 
+Quant. 
+Paga 
+Valor 
+Pago 
+98 1000 5.000,00    1 1 5.000,00 
+22 31309054   1  
+Fonte: Elaborado pelos autores. 
+246. Pagamento  a  operadora  intermediária,  nos  casos  de  rede  indireta  ou 
+intercâmbio  eventual:  Atendimento  a  beneficiário  da  operadora  000001,  por 
+prestador  da  operadora  123456,  no  valor  de  R$  90,00  mais  taxa  de 
+administração ou intermediação de R$ 10,00. 
+ 
+1)  Exemplo: 
+Quadro 19 – Exemplo – Pagamento a operadora intermediária  
+Informações do atendimento 
+Compet. 
+Nº Reg. 
+OPS 
+Prestador 
+CNS 
+Benefi
+ciário 
+Guia 
+Data 
+Proc. 
+Nº Reg. OPS 
+Intermediári
+a 
+Id.Vlr 
+Pré 
+Estabel
+. 
+Valor 
+Informad
+o 
+Valo
+r 
+Pag
+o 
+Data do 
+Pagto 
+Operação 
+Jun/17   000001 10 15 120 
+15/06/201
+7 
+123456   100 0 
+  
+Inclusão 
+Jul/17    000001 10 15 120 
+15/07/201
+7 
+123456   100 100 
+15/07/201
+7 
+Inclusão 
+Fonte: Elaborado pelos autores. 
+
+            
+77 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+247. Atendimento em rede própria da operadora com o mesmo CNPJ: Atendimento 
+a beneficiários da operadora 000001, por serviço próprio com o mesmo CNPJ 
+da operadora, com custo de R$ 60,00 por atendimento, calculado conforme o 
+estabelecido no Anexo da RN° 290 e suas atualizações. 
+ 
+Quadro 20 – Exemplo – Atendimento em rede própria da operadora com o mesmo CNPJ 
+Informações do atendimento 
+Compet. 
+Nº Reg. 
+OPS 
+Prestador 
+CNS 
+Beneficiário 
+Guia 
+Data 
+Proc. 
+Nº Reg. OPS 
+Intermediári
+a 
+Id.Vlr 
+Pré 
+Estabe
+l. 
+Valor 
+Informad
+o 
+Valor 
+Pago 
+Data 
+do 
+Pagto 
+Operaçã
+o 
+Set/17   000001 
+CNPJ da 
+operadora 
+000001 
+156 120 
+15/09/20
+17 
+ 
+  60 0 
+  
+Inclusão 
+Set/17   000001 
+CNPJ da 
+operadora 
+000001 
+934 120 
+15/09/20
+17 
+ 
+  60 0 
+  
+Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Regras para informação de contratação por valor pré-estabelecido 
+248.  A  chave  de  acesso  aos  lançamentos  enviados  à  ANS,  referente  ao  bloco 
+“Informações  de  contratação  por  valor  pré-estabelecido”,  é  composta  pelos 
+seguintes campos: 
+-   Número do registro da operadora na ANS; 
+-   Identificação do prestador de serviços: 
+    CNES; 
+    Tipo de identificação (1 para CNPJ ou 2 para CPF); 
+    CNPJ ou CPF. 
+-   Código do município do prestador; 
+-   Registro ANS da operadora intermediária; 
+-   Identificador de contratação por valor pré-estabelecido; 
+- Data de processamento. 
+ 
+249.  Em  cada  arquivo  enviado  todos  os  lançamentos  com  tipo  de  registro  igual  a 
+“inclusão” devem ter o mês/ano da data de processamento igual ao mês/ano da 
+competência do arquivo. 
+250.  O  ano  e  mês  da  data  de  competência  da  cobertura  contratada  informada  no 
+arquivo  devem  corresponder  a  uma  competência  vigente  na  base  de  dados  de 
+competências na data em que o arquivo foi recepcionado na base de dados do PTA. 
+
+            
+78 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+251.  Não deve haver repetição do identificador do valor pré-estabelecido para outra 
+contratação informada à ANS. 
+252.  Caso a operadora solicite a alteração ou exclusão de um lançamento de valor pré-
+estabelecido que não conste na base de dados de valor pré-estabelecido ou esteja 
+inativo, o lançamento enviado será rejeitado. 
+253.  Caso a operadora solicite a inclusão ou exclusão de um lançamento de valor pré-
+estabelecido  e  a  competência  da  cobertura  contratada  não  esteja  de  forma 
+sequencial para o contrato na base de dados da ANS, o lançamento enviado será 
+rejeitado. 
+254.  Não  é  possível  excluir  um  registro  de  identificação  de  valor  pré-estabelecido 
+enquanto houver lançamentos vinculados a ele. 
+255.  Nos casos de operação com outra operadora (operadora intermediária) com valor 
+pré-estabelecido,  o  campo Tipo  de atendimento  por operadora  intermediária,  do 
+bloco  “Informações  do  atendimento”,  deve  ser  preenchido  com  2  (atendimento 
+continuado). 
+ 
+1)  Exemplo: Contratação de outra operadora por valor pré-estabelecido: 
+Contratação  da  operadora  123456  pela  operadora  000001  para 
+atendimento a seus beneficiários, no valor pré-estabelecido de R$ 5.000,00 por 
+mês / ano de competência. 
+ 
+Quadro 21 – Exemplo – Contratação de outra operadora por valor pré-estabelecido 
+Informações de contratação por valor pré-estabelecido 
+Compet. 
+Nº Reg. 
+OPS 
+Prestador Data Proc. 
+Nº Reg. OPS 
+Intermediária 
+Id.Vlr Pré 
+Estabel. 
+Valor Cobertura 
+Contratada 
+Operação 
+Ago/2017   000001  15/08/2017 123456 321 5.000,00 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro 22 – Exemplo – Contratação de outra operadora por valor pré-estabelecido – 
+informações do atendimento 
+Informações do atendimento 
+
+            
+79 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Compet. 
+Nº Reg. 
+OPS 
+Presta
+dor 
+CNS 
+Beneficiári
+o 
+Guia Data Proc. 
+Nº Reg. OPS 
+Intermediári
+a 
+Id.Vlr Pré 
+Estabel. 
+Valor 
+Informad
+o 
+Valor 
+Pago 
+Data 
+do 
+Pagto 
+Operaçã
+o 
+Ago/2017   000001  10 152 120    10/08/2017   123456 321 0,00 0,00 
+ 
+Inclusão 
+Ago/2017   000001  29 235 120    10/08/2017   123456 321 0,00 0,00 
+ 
+Inclusão 
+Fonte: Elaborado pelos autores. 
+2)  Exemplo: Contratação de prestador por valor pré-estabelecido: 
+Contratação do prestador 57 pela operadora 000001 para atendimento a 
+seus beneficiários, com valor pré-estabelecido de R$ 15.000,00 por mês / ano 
+de competência. 
+ 
+Quadro 23 – Exemplo – Contratação de prestador por valor pré-estabelecido  
+Informações de contratação por valor pré-estabelecido 
+Compet. Nº Reg. OPS Prestador Data Proc. 
+Nº Reg. OPS 
+Intermediária 
+Id.Vlr Pré 
+Estabel. 
+Valor Cobertura 
+Contratada 
+Operação 
+Out/17 000001 57 05/10/2017     451 15.000,00 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro  24  –  Exemplo  –  Contratação  de  prestador  por  valor  pré-estabelecido  – 
+informações do atendimento 
+Informações do atendimento 
+Compet. 
+Nº 
+Reg. 
+OPS 
+Prestador 
+CNS 
+Beneficiário 
+Guia Data Proc. 
+Nº Reg. OPS 
+Intermediária 
+Id.Vlr 
+Pré 
+Estabel. 
+Valor 
+Informado 
+Valor 
+Pago 
+Data 
+do 
+Pagto 
+Operação 
+Out/17    000001 57 543 120   05/10/2017   451 0 0 
+  
+Inclusão 
+Out/17    000001 57 723 120   05/10/2017   451 0 0 
+  
+Inclusão 
+Fonte: Elaborado pelos autores. 
+3)  Exemplo: Contratação  de  um  prestador  por  valor  pré-estabelecido,  com 
+bonificação por atendimento: 
+Contratação do prestador 98 pela operadora 000001 para atendimento a 
+seus beneficiários, com valor pré-estabelecido de R$ 12.000,00 por mês / ano 
+de competência, com pagamento de adicional de R$ 10,00 por atendimento, a 
+título de bonificação. 
+ 
+
+            
+80 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Quadro  25  –  Exemplo  –  Contratação  de  prestador  por  valor  pré-estabelecido,  com 
+bonificação por atendimento 
+Informações de contratação por valor pré-estabelecido 
+Competência 
+Nº Reg. 
+OPS 
+Prestador Data Proc. 
+Nº Reg. OPS 
+Intermediária 
+Id.Vlr Pré 
+Estabel. 
+Valor Cobertura 
+Contratada 
+Operação 
+Mai/17 000001 98 12/05/2017   964 12.000,00 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro  26  –  Exemplo  –  Contratação  de  prestador  por  valor  pré-estabelecido,  com 
+bonificação por atendimento – informações do atendimento 
+Informações do atendimento 
+Compet. 
+Nº Reg. 
+OPS 
+Prestador 
+CNS 
+Benef 
+Guia Data Proc. 
+Nº Reg. OPS 
+Intermediária 
+Id.Vlr 
+Pré 
+Estabel. 
+Valor 
+Informado 
+Valor 
+Pago 
+Data do 
+Pagto 
+Operação 
+Mai/17    000001 98 612   120   12/05/2017   964 10 10   12/05/2017 Inclusão 
+Mai/17    000001 98 96    120   12/05/2017   964 10 10   12/05/2017 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Regras  para  informação  de  fornecimento  de  medicamentos  e  materiais 
+diretamente aos beneficiários 
+256.  A  chave  de  acesso  aos  lançamentos  enviados  à  ANS,  referente  ao  bloco 
+“Informações do fornecimento”, é composta pelos seguintes campos: 
+-  Número do registro da operadora na ANS; 
+-  Número de identificação do fornecimento direto; 
+-  Data do fornecimento. 
+ 
+257.  Em  cada  arquivo  enviado  todos  os  lançamentos  com  tipo  de  registro  igual  a 
+“inclusão”  devem  ter  o  mês/ano  da  data  do  fornecimento  igual  ao  mês/ano  da 
+competência do arquivo. 
+258.  O ano e mês da data de fornecimento informada no arquivo devem corresponder 
+a uma competência vigente na base de dados de competências na data em que o 
+arquivo foi recepcionado na base de dados do PTA. 
+259.  Nos  lançamentos  de  alteração  o  código  da  tabela  e  o  código  do  grupo  do 
+procedimento/item  assistencial  ou  código  do  procedimento/item  assistencial 
+informados no arquivo para identificação de um procedimento/item assistencial, já 
+deverão existir na base de dados de procedimentos para o mesmo lançamento em 
+alteração. 
+
+            
+81 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+260.  Não deve haver repetição de identificador de fornecimento direto de materiais e 
+medicamentos. 
+261.  Caso  a  operadora  solicite  a  alteração  ou  exclusão  de  um  lançamento  de 
+fornecimento direto que não conste na base de dados de fornecimento direto ou 
+esteja inativo, o lançamento enviado será rejeitado. 
+262.  Nos lançamentos de alteração o valor total dos itens fornecidos deve ser maior ou 
+igual à soma do valor fornecido dos procedimentos/itens assistenciais informados 
+no arquivo e já existentes na base de dados. 
+ 
+1.  Exemplo: Fornecimento de medicamentos e materiais diretamente aos 
+beneficiários: 
+Fornecimento  de  medicamento  oncológico  de  uso  domiciliar  a 
+beneficiários da operadora 000001. 
+ 
+Quadro 27  –  Exemplo  –  Fornecimento  de medicamentos e  materiais  diretamente aos 
+beneficiários 
+Informações do Fornecimento 
+Competência Nº Reg. OPS 
+Data 
+Fornecimento 
+CNS do 
+Beneficiário 
+Id. 
+Fornecimeto 
+Valor Total dos 
+itens fornecidos 
+Operação 
+ago/17 1 15/08/2017 125 321 2.000,00 Inclusão 
+Fonte: Elaborado pelos autores. 
+ 
+Quadro 28  –  Exemplo  –  Fornecimento  de medicamentos e  materiais  diretamente aos 
+beneficiários – itens fornecidos 
+Informações dos itens Fornecidos 
+Tabela de 
+Referência 
+Código do item 
+Qtde 
+Informada  
+Valor Item 
+fornecido 
+20 20105037 5 200 
+20 20104430 3 150 
+Fonte: Elaborado pelos autores. 
+ 
+
+            
+82 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Regras para informação de despesas assistenciais referentes a outras formas 
+de remuneração 
+263.  A  chave  de  acesso  aos  lançamentos  enviados  à  ANS,  referente  ao  bloco 
+“Informação de despesas assistenciais referentes a outras formas de remuneração”, 
+é composta pelos seguintes campos: 
+-  Número do registro da operadora na ANS; 
+-  Data do processamento; 
+- Tipo de identificação do recebedor; 
+- Número de cadastro do recebedor na Receita Federal (CNPJ ou CPF). 
+ 
+264.  Em  cada  arquivo  enviado  todos  os  lançamentos  com  tipo  de  registro  igual  a 
+“inclusão” devem ter o mês/ano da data do processamento igual ao mês/ano da 
+competência do arquivo. 
+265.  O  ano  e  mês  da  data  de  processamento  informada  no  arquivo  devem 
+corresponder a uma competência vigente na base de dados de competências na 
+data em que o arquivo foi recepcionado na base de dados do PTA. 
+266.  Caso a operadora solicite a inclusão de um lançamento de outra remuneração que 
+já conste na base de dados de outra remuneração e esteja ativo, o lançamento 
+enviado será rejeitado. 
+267.  Caso a operadora solicite a alteração ou exclusão de um lançamento de outra 
+remuneração que não conste na base de dados de outra remuneração ou esteja 
+inativo, o lançamento enviado será rejeitado. 
+2.  Exemplo: Despesas assistenciais referentes a outras formas de remuneração: 
+Contratação  de  equipe  multidisciplinar  para  orientação  a  grupo  de 
+beneficiários participante de programa de promoção de envelhecimento ativo. 
+ 
+Quadro  29  –  Exemplo  –  Despesas  assistenciais  referentes  a  outras  formas  de 
+remuneração 
+Despesas assistencias de outras formas de remuneração 
+Competência 
+Nr.Reg 
+Operadora 
+Data Proc. Id.Recebedor 
+Valor total 
+informado 
+Valor total pago Operação 
+nov/17 1 02/11/2017 762 6.000,00 6.000,00 Inclusão 
+nov/17 1 02/11/2017 321 16.000,00 16.000,00 Inclusão 
+
+            
+83 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Fonte: Elaborado pelos autores. 
+ 
+XIII.   Acompanhamento dos dados enviados à ANS pelas operadoras 
+268.  Além do acompanhamento do processamento dos arquivos enviados, a operadora 
+poderá consultar o Relatório de incorporação dos dados do padrão TISS na ANS e 
+a relação das guias pendentes de inclusão na aplicação do Padrão TISS.  
+269.  Para  fins  de  entendimento,  a  guia  pendente  de  inclusão  ocorre  quando  um 
+lançamento de inclusão enviado pela operadora não é incorporado ao banco de 
+dados e não existe nenhum outro lançamento para a mesma guia que tenha sido 
+incorporado. A ANS considera que, se houve a tentativa de envio, é porque existe 
+um  lançamento  que  deve  ser  informado.  Ao  deixar  de  enviá-lo  corretamente,  a 
+operadora fica devendo essa informação, enquadrada na categoria “guia pendente 
+de inclusão”. 
+270.  A operadora poderá acompanhar, ainda, a Relação de Guias em Aberto (Valor 
+Informado diferente de Valor Pago + Valor da Glosa) e o Relatório de Batimento 
+TISS x DIOPS, na Central de Relatórios no endereço eletrônico www.ans.gov.br em 
+área de acesso restrito à operadora. 
+ 
+XIV.   Prazos 
+271.  As  versões  dos  Componentes  de  Conteúdo  e  Estrutura  e  de  Comunicação 
+1.00.00, têm data de fim de implantação em 01/06/2019. A versão do Componente 
+de Comunicação 03.04.00 tem data de fim de implantação em 29/02/2020. 
+272.  No Componente de Representação de Conceitos em Saúde (TUSS), as datas de 
+início de vigência e fim de implantação são estabelecidas para cada código TUSS. 
+ 
+273.  O  envio  obrigatório  dos  dados  do  padrão  TISS  para  a  ANS  é  devido  pela 
+operadora  de  plano  privado  de  assistência  à  saúde,  mensalmente  e  de  forma 
+eletrônica, a partir da competência setembro de 2014. O cronograma de envio é 
+definido  pela  DIDES  e  divulgado  no  endereço  eletrônico  da  ANS  na  internet 
+www.ans.gov.br. 
+ 
+
+            
+84 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+274.  As operadoras só poderão enviar os arquivos para a ANS na versão 01.00.00 a 
+partir  de  01/06/2019.  A  partir  desta  data  as  versões  anteriores  não  serão  mais 
+aceitas. 
+ 
+275.  As versões do Padrão TISS identificam os prazos referentes ao início da vigência, 
+limite para implantação e de fim de vigência, de cada item do padrão TISS. (RN 305) 
+ 
+276.  O prazo limite de implantação das atualizações do Padrão TISS não será inferior 
+a três meses e não superior a doze meses após a o início da vigência da respectiva 
+versão. (RN 305) 
+ 
+XV.   Penalidades 
+ 
+277.  O  não  cumprimento  dos  prazos  de  envio  dos  dados  do  Padrão  TISS  à  ANS 
+configurará infração administrativa prevista no artigo 35 da RN 124, de 30 de março 
+de 2006. (RN 305) 
+ 
+278.  O  não  cumprimento  de  regras  relativas  ao  padrão  configurará  infração 
+administrativa prevista no artigo 44 da RN 124, de 30 de março de 2006 (RN 305) 
+ 
+XVI.   Atualização do Padrão TISS 
+ 
+279.  Fica mantido o Comitê de Padronização das Informações em Saúde Suplementar 
+-  COPISS,  de  caráter  consultivo  para  o  aprimoramento  do  Padrão  TISS  e  sob 
+coordenação da DIDES. (RN 305) 
+ 
+280.  Compete à DIDES, por meio de Instrução Normativa, indicar as entidades com 
+representação no COPISS e seu estatuto. (RN 305) 
+Regras de solicitação de alteração do Padrão TISS 
+281.  A alteração do Padrão TISS deve ser solicitada à entidade de representação da 
+Operadora,  Prestador  de  Serviços  de  Saúde  ou  solicitante  no  COPISS  ou 
+diretamente à ANS. 
+ 
+282.   Antes de formalizar o pedido de alteração do Padrão TISS, o solicitante deve 
+verificar se sua demanda já existe perante a ANS, através de consulta ao controle 
+
+            
+85 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Padrão TISS_Solicitações de aprimoramento, disponibilizada na página do Padrão 
+TISS no site da ANS. 
+ 
+283.  A entidade de representação da Operadora, Prestador de Serviços de Saúde ou 
+solicitante no COPISS é responsável por verificar a pertinência da solicitação de 
+aprimoramento e posterior encaminhamento à ANS. 
+ 
+284.  Caso a entidade de representação verifique que a demanda é pertinente, formaliza 
+o pedido para a ANS através de envio de Ofício (modelo disponível na página do 
+Padrão TISS, no site da ANS) e Documento de Solicitação de Alteração do Padrão 
+TISS (disponível na página do Padrão TISS, no site da ANS), em mídia digital (CD, 
+DVD, etc.). O Ofício deve ser impresso e assinado pelo demandante/responsável. 
+285.  É  facultado  às  operadoras  de  planos  privados  de  assistência  à  saúde  o 
+encaminhamento  do  ofício  em  formato  PDF,  juntamente  com  o  documento  de 
+Solicitação de Alteração do Padrão TISS em formato XLS ou XLSX à ANS, por meio 
+do  aplicativo  Programa  Transmissor  de  Arquivos  –  PTA,  conforme  Instrução 
+Normativa – IN/DIDES nº 65, de 10 de fevereiro de 2017. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+            
+86 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+ 
+  
+
+            
+87 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Figura 3 – Modelo de Ofício de solicitação de aprimoramento do Padrão TISS 
+ 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+ 
+
+            
+88 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Figura 4 – Modelo de Documento de Solicitação de Alteração do Padrão TISS 
+ 
+
+            
+ 
+89 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Regras de preenchimento do Documento de Solicitação de Alteração do 
+Padrão TISS 
+286.  O formulário de solicitação "Documento de Solicitação de Alteração do Padrão 
+TISS" deverá ser utilizado para pedidos referentes a todas as categorias do Padrão 
+TISS. 
+ 
+287.  As informações de preenchimento obrigatório estão identificadas com (*) e devem 
+ser preenchidas pelo demandante. 
+ 
+288.  A solicitação sem as informações obrigatórias não será avaliada. 
+ 
+ 
+289.  As  informações  de  preenchimento  obrigatório  para  solicitações  referentes  a 
+Órteses, Próteses e Materiais Especiais – OPME estão indicadas com (**). 
+ 
+290.  Não alterar o formato do Documento de Solicitação de Alteração do Padrão TISS. 
+ 
+291.  Não "mesclar" as células do Documento de Solicitação de Alteração do Padrão 
+TISS. 
+ 
+292.  O  Documento  de  Solicitação  de  Alteração  do  Padrão  TISS  deverá  ser 
+encaminhado em mídia digital (CD, DVD, etc.) acompanhado do ofício com pedido 
+de aprimoramento do Padrão TISS. 
+Preenchimento  dos  campos  do  Documento  de  Solicitação  de  Alteração 
+do Padrão TISS 
+293. Dados do Demandante 
+   Nome (*): Deve ser preenchido com o nome do demandante que está solicitando 
+a alteração; 
+   Tipo de Demandante (*): Deve ser preenchido conforme “Tabela de Tipo de 
+Demandante”: 
+ 
+
+            
+ 
+90 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Quadro 30 – Tabela de tipo de demandante 
+Tabela de Tipo do Demandante 
+Código 
+Descrição da categoria 
+1 Operadora 
+2 Prestador de serviço 
+3 Consumidor 
+4 Gestor 
+5 ANS 
+Fonte: Elaborado pelos autores. 
+   CPF/CNPJ (*): Informar o CPF ou CNPJ do demandante; 
+   Telefone (*): Informar o telefone do demandante; 
+   E-mail (*): Informar o e-mail do demandante; 
+   Empresa ou Instituição (*): Informar a empresa ou instituição onde o demandante 
+trabalha; 
+   Endereço (*): Informar o endereço do demandante; 
+   Cidade (*): Informar a cidade do demandante; 
+   UF (*): Informar a unidade da federação do demandante; 
+   CEP (*): Informar o código de endereçamento postal do demandante. 
+ 
+294. Dados da Solicitação 
+   Código da categoria (*): Informar o número da categoria em que está sendo 
+solicitada  a  alteração  conforme  Tabela  de  domínio  "Tabela  de  Categoria  do 
+Padrão TISS"; 
+   Descrição da Categoria (*): Informar a descrição da categoria em que está sendo 
+solicitada  a  alteração  conforme  tabela  de  domínio  “Tabela  de  Categoria  do 
+Padrão TISS": 
+Quadro 31 – Tabela de categoria do Padrão TISS 
+Tabela de Categoria do Padrão TISS 
+Código Descrição da categoria 
+1 Componente Organizacional 
+2 Componente de Conteúdo e Estrutura 
+3 Componente de Representação de Conceitos em Saúde 
+
+            
+ 
+91 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+4 Componente de Comunicação 
+5 Componente de Segurança e Privacidade 
+18 Terminologia de diárias, taxas e gases medicinais 
+19 Terminologia de materiais e OPME 
+20 Terminologia de medicamentos 
+22 Terminologia de procedimentos e eventos em saúde 
+23 Terminologia de caráter do atendimento 
+24 Terminologia de Classificação Brasileira de Ocupações (CBO) 
+25 Terminologia de código da despesa 
+26 Terminologia de conselho profissional 
+27 Terminologia de débitos e créditos 
+28 Terminologia de dentes 
+29 Terminologia de diagnóstico por imagem 
+30 Terminologia de Escala de capacidade funcional (ECOG - Escala de Zubrod) 
+31 Terminologia de estadiamento do tumor 
+32 Terminologia de faces do dente 
+33 Terminologia de finalidade do tratamento 
+34 Terminologia de forma de pagamento 
+35 Terminologia de grau de participação 
+36 Terminologia de indicador de acidente 
+37 Terminologia de Indicador de débito ou crédito 
+38 Terminologia de mensagens (glosas, negativas e outras) 
+39 Terminologia de motivo de encerramento 
+40 Terminologia de origem do evento de atenção à saúde 
+41 Terminologia de regime de internação 
+42 Terminologia de regiões da boca 
+43 Terminologia de sexo 
+
+            
+ 
+92 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+44 Terminologia de situação inicial do dente 
+45 Terminologia de status da solicitação 
+46 Terminologia de status do cancelamento 
+47 Terminologia de status do protocolo 
+48 Terminologia de técnica utilizada 
+49 Terminologia de tipo de acomodação 
+50 Terminologia de tipo de atendimento 
+51 Terminologia de tipo de atendimento em odontologia 
+52 Terminologia de tipo de consulta 
+53 Terminologia de tipo de demonstrativo 
+54 Terminologia de tipo de guia 
+55 Terminologia de tipo de faturamento  
+56 Terminologia de natureza da guia 
+57 Terminologia de tipo de internação 
+58 Terminologia de tipo de quimioterapia 
+59 Terminologia de unidade da federação 
+60 Terminologia de unidade de medida 
+61 Terminologia de via de acesso 
+62 Terminologia de via de administração 
+63 Terminologia de grupos de procedimentos e itens assistenciais para envio para ANS 
+64 Terminologia de forma de envio de procedimentos e itens assistenciais para ANS 
+65 Terminologia de metástases 
+66 Terminologia de nódulo 
+67 Terminologia de tumor 
+68 Terminologia de categoria de despesa 
+69 Terminologia de versão do padrão 
+70 Terminologia de forma de envio do padrão 
+
+            
+ 
+93 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+71 Terminologia de tipo de atendimento por operadora intermediária 
+72 Terminologia de tipo de identificação de beneficiário 
+73 Terminologia de etapas de autorização 
+74 Terminologia de motivos de ausência do código de validação 
+87 Terminologia de tabelas de domínio 
+100 Legenda da mensagem de verificação de elegibilidade 
+101 Legenda da mensagem de resposta à verificação de elegibilidade 
+102 
+Legenda da mensagem de solicitação de autorização para realização de 
+procedimentos 
+103 Legenda da mensagem de autorização para realização de procedimentos 
+104 Legenda da mensagem de envio de lote de anexos 
+105 Legenda da mensagem de recebimento de lote de anexos 
+106 Legenda da mensagem de solicitação de status de autorização 
+107 Legenda da mensagem de situação do status de autorização 
+108 Legenda da mensagem de envio de lote de guias para cobrança 
+109 Legenda da mensagem de recebimento de lote de guias de cobrança 
+110 Legenda da mensagem de solicitação de status do protocolo 
+111 Legenda da mensagem de situação do protocolo de cobrança 
+112 Legenda da mensagem de recurso de glosa 
+113 Legenda da mensagem de recebimento do recurso de glosa 
+114 Legenda da mensagem de resposta ao recurso de glosa 
+115 Legenda da mensagem de solicitação de status do recurso de glosa 
+116 Legenda da mensagem de solicitação de demonstrativos de retorno 
+117 Legenda da mensagem de demonstrativos de retorno para o prestador 
+118 Legenda da mensagem de comunicação de internação ou alta do beneficiário 
+119 
+Legenda da mensagem de resposta à comunicação de internação ou alta do 
+beneficiário 
+120 Legenda da mensagem de solicitação de cancelamento de guia 
+
+            
+ 
+94 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+121 Legenda da mensagem de resposta a solicitação de cancelamento da guia 
+122 Legenda da mensagem de informação acerca da negativa de autorização 
+123 Legenda da mensagem de informações sobre partos 
+124 Legenda da mensagem de envio de dados para ANS 
+125 Legenda da mensagem de utilização de serviços 
+126 Legenda da mensagem de negativa de autorização 
+127 Legenda da mensagem de informação sobre partos 
+128 Mensagem de verificação de elegibilidade (verificaElegibilidade) 
+129 Mensagem de resposta à verificação de elegibilidade (respostaElegibilidade) 
+130 
+Mensagem de solicitação de autorização para realização de procedimentos 
+(solicitacaoProcedimento) 
+131 
+Mensagem de autorização para realização de procedimentos (autorizaçãoServiços) 
+132 Mensagem de envio de lote de anexos (LoteAnexos) 
+133 Mensagem de recebimento de lote de anexos (recebimentoAnexo) 
+134 
+Mensagem de solicitação de status de autorização (solicitaStatusAutorização) 
+135 Mensagem de situação do status de autorização (situaçãoAutorização) 
+136 Mensagem de envio de lote de guias para cobrança (Loteguias) 
+137 Mensagem de recebimento de lote de guias de cobrança (recebimentoLote) 
+138 Mensagem de solicitação de status do protocolo (solicitacaoStatusProtocolo) 
+139 Mensagem de situação do protocolo de cobrança (situacaoProtocolo) 
+140 Mensagem de recurso de glosa (recursoGlosa) 
+141 Mensagem de recebimento do recurso de glosa (recebimentoRecursoGlosa) 
+142 Mensagem de resposta ao recurso de glosa (respostaRecursoGlosa) 
+143 
+Mensagem de solicitação de status do recurso de glosa 
+(solicitaçãoStatusRecursoGlosa) 
+144 
+Mensagem de solicitação de demonstrativos de retorno 
+(solicitaçãoDemonstrativoRetorno) 
+145 
+Mensagem de demonstrativos de retorno para o prestador (demonstrativosretorno) 
+
+            
+ 
+95 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+146 
+Mensagem de comunicação de internação ou alta do beneficiário 
+(comunicacaoInternacao) 
+147 
+Mensagem de resposta à comunicação de internação ou alta do beneficiário 
+(reciboComunicacao) 
+148 Mensagem de solicitação de cancelamento de guia (cancelaGuia) 
+149 
+Mensagem de resposta a solicitação de cancelamento da guia (reciboCancelaGuia) 
+150 Mensagem de envio de dados para ANS (envioOperadorasANS) 
+151 Anexo de outras despesas 
+152 Anexo de solicitação de quimioterapia 
+153 Anexo de solicitação de radioterapia 
+154 Anexo de solicitação OPME 
+155 Anexo tratamento odontológico - situação inicial 
+156 Guia de comprovante presencial 
+157 Guia de consulta 
+158 Guia de demonstrativo de análise da conta 
+159 Guia de demonstrativo de pagamento 
+160 Guia de demonstrativo de pagamento - tratamento odontológico 
+161 Guia de honorários 
+162 Guia de recurso de glosa 
+163 Guia de recurso de glosa odontológica 
+164 Guia de resumo de internação 
+165 Guia de serviços profissionais/serviço auxiliar de diagnóstico e terapia 
+166 Guia de solicitação de internação 
+167 Guia de solicitação de prorrogação de internação ou complementação do tratamento 
+168 Guia de tratamento odontológico 
+Fonte: Elaborado pelos autores. 
+   Tipo de solicitação (*): Informar o tipo de solicitação conforme tabela de domínio 
+abaixo: 
+
+            
+ 
+96 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Quadro 32 – Tabela de tipo de solicitação 
+ 
+ 
+ 
+ 
+ 
+Fonte: Elaborado pelos autores. 
+   Descrição  da  solicitação  (*):  Descrever  detalhadamente  a  solicitação.  Se  a 
+solicitação se referir a alteração de TUSS preencher conforme abaixo: 
+   Se (1) Alteração ou (2) Inclusão, informar proposta de nome para o termo a ser 
+incluído na TUSS; 
+   Se (3) Exclusão, informar o nome do termo, na TUSS, a ser excluído. 
+   Código  na TUSS:  Informar código  do  item na TUSS (casos de alteração  ou 
+exclusão de itens). A TUSS está disponível para consulta e download na página 
+do Padrão TISS no site da ANS. 
+   Registro  na  ANVISA  (Órteses,  Próteses  e  Materiais  Especiais  –  OPME  e 
+Medicamentos) (*): Informar número do registro na ANVISA. 
+   Se  a  OPME  ou  medicamento  não  possuir  número  de  registro  ou for  isento, 
+informar no próprio campo. 
+   Modelo na ANVISA (**): Informar modelo da OPME na ANVISA. 
+   Nome comercial do produto (Órteses, Próteses e Materiais Especiais – OPME) 
+(**):  Informar  nome  comercial  do  produto  e/ou  dados  de  rotulagem  do 
+fornecedor/produto e/ou instruções de uso vinculadas ao registro da OPME. 
+   CNPJ  da  Empresa  /  Laboratório  detentora  do  registro  (*):  Informar  CNPJ 
+detentor do registro. 
+   Razão Social da Empresa / Laboratório detentora do registro (*): Informar razão 
+social detentora do registro. 
+   Justificativa:  Informar  resumidamente  a  necessidade  do  aprimoramento  do 
+Padrão TISS. 
+   Data da Solicitação: Informar data de solicitação de aprimoramento do Padrão 
+TISS. 
+Processo de Alteração do Padrão TISS 
+ 
+Tabela de Tipo de Solicitação 
+Código 
+Descrição da categoria 
+1 Alteração 
+2 Inclusão 
+3 Exclusão 
+
+            
+ 
+97 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Solicitar Alteração do Padrão TISS – Demandante 
+295.  Acessar  o  site  da  ANS  em  Prestadores  >  TISS  >  Padrão  TISS  Versão 
+fevereiro/2019; 
+ 
+296.  Consultar a TUSS em questão para evitar pedidos de termos já contemplados ou 
+equivalentes; 
+ 
+297.  Consultar o controle de Solicitações de Aprimoramento do Padrão, para evitar 
+pedidos já realizados; 
+ 
+298.  Realizar download do modelo de Ofício (documento de texto) e Documento de 
+Solicitação de Alteração do Padrão TISS (planilha eletrônica); 
+ 
+299.  Preencher os dados do modelo de Ofício conforme descrito no item “Ofício de 
+solicitação de aprimoramento do Padrão TISS”; 
+ 
+300.  O Ofício deverá ser impresso e assinado pelo demandante responsável; 
+ 
+301.  Preencher os dados do Documento de Solicitação de Alteração do Padrão TISS 
+conforme  descrito  no  item  “Preenchimento  dos  campos  do  Documento  de 
+Solicitação de Alteração do Padrão TISS”; 
+ 
+302.  O Documento de Solicitação de Alteração do Padrão TISS deverá ser gravado em 
+mídia digital (CD, DVD, etc.) visando maior celeridade do processo de análise das 
+solicitações; 
+Analisar  pedido  de  Alteração  do  Padrão  TISS  –  Entidade  de 
+representação no COPISS 
+303.  Analisar a pertinência da solicitação de alteração do Padrão TISS quanto a: 
+-    Utilização  do  item  na  troca  de  informações  entre  os  agentes  da  saúde 
+suplementar; 
+-    Preenchimento correto dos dados da solicitação; 
+
+            
+ 
+98 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+-    Regras específicas em relação à Terminologia de Materiais e OPME. 
+304.  Informar ao demandante a procedência ou improcedência de sua solicitação, bem 
+como as devidas orientações. 
+ 
+305.  Caso procedente, formalizar o pedido de aprimoramento à ANS através de envio 
+de  Ofício  (modelo  disponível  na  página  do  Padrão  TISS  no  site  da  ANS)  e 
+Documento de Solicitação de Alteração do Padrão TISS (disponível na página do 
+Padrão TISS no site da ANS), em mídia digital (CD, DVD, etc.). 
+Consolidar pedidos de Alteração do Padrão TISS – ANS 
+306.  As demandas enviadas diretamente à ANS, via ofício e documento de solicitação 
+de  alteração  do  Padrão  TISS,  serão  registradas  no  controle  Padrão 
+TISS_Solicitações  de  aprimoramento,  disponível  para  consulta  no  site,  e 
+devidamente respondidas aos solicitantes. 
+ 
+307.  As solicitações avaliadas como pertinentes pela entidade de representação no 
+COPISS serão consolidadas para avaliação do respectivo Grupo Técnico. 
+Realizar análise– Grupos Técnicos 
+308.  Registrar a análise para cada solicitação conforme modelo utilizado no respectivo 
+Grupo Técnico, com os pareceres: 
+-    Acatar; 
+-    Não acatar; ou 
+-    Acatar Parcialmente (informando a proposta de encaminhamento). 
+309.  Encaminhar  análise  finalizada  à  ANS,  para  avaliação  e  posterior  inserção  na 
+TUSS. 
+ 
+ 
+ 
+
+            
+ 
+99 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Quadro 33 – Análise das Solicitações – Grupo Técnico responsável 
+ 
+Fonte: Elaborado pelos autores. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Análise Técnica - GT
+Forma de Análise
+Data da 
+Análise
+AnáliseJustificativaEncaminhamento
+Padrão COPISS5/8/2014Acatar
+Atender o processo de 
+trabalho entre 
+operadoras e 
+prestadores
+APEX MONORAIL - CATETER BALAO DE 
+DILATACAO PARA PTCA -  
+H7493895908500
+
+            
+ 
+100 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Fluxo do processo de solicitação de alteração do padrão TISS 
+ 
+ 
+Fonte: Elaborado pelos autores. 
+ 
+
+            
+ 
+101 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+Divulgação de novas versões 
+ 
+310.  A ANS divulgará no endereço eletrônico www.ans.gov.br, pelo Sistema Padrão 
+TISS,  os  arquivos  dos  componentes  do  Padrão  TISS  a  cada  nova  versão.  (IN 
+51/DIDES) 
+ 
+311.  Em contingência ao Sistema Padrão TISS a ANS disponibilizará o Padrão TISS 
+em arquivos, no endereço eletrônico www.ans.gov.br. (IN 51/DIDES) 
+ 
+312.  A ANS divulgará aos coordenadores TISS o lançamento de uma nova versão do 
+Padrão TISS. 
+ 
+313.  A identificação da versão vigente é feita no quadro “Padrão TISS – identificação 
+da  versão  vigente”,  disponibilizado  pela  ANS  no  endereço  eletrônico 
+www.ans.gov.br, no formato estabelecido no “Versionamento do Padrão TISS”. 
+Quadro 34 – Exemplo da divulgação das versões vigentes 
+Arquivos do Padrão TISS Versão vigente 
+Componente Organizacional 201606 
+Componente de Conteúdo e Estrutura 201605 
+Componente de Representação de Conceitos em Saúde (Terminologia 
+Unificada da Saúde Suplementar) 
+201606 
+Componente de Segurança e Privacidade 201311 
+Componente de Comunicação 03.03.00 
+Fonte: Elaborado pelos autores. 
+314.  De acordo com o exemplo acima, temos a seguinte situação: 
+ 
+-   Na competência de 06/2016, o Padrão TISS vigente é composto por: 
+    Componente Organizacional: versão 201606 
+    Componente de Conteúdo e Estrutura: versão 201605 
+    Componente de Representação de Conceitos em Saúde: versão 201606 
+    Componente de Segurança e Privacidade: versão 201311 
+    Componente de Comunicação: versão 03.03.00 
+
+            
+ 
+102 
+Padrão TISS - Componente Organizacional – fevereiro de 2019 
+XVII.  Disposições Transitórias 
+ 
+315.  As trocas de informações do Padrão TISS realizadas com base na Resolução 
+Normativa  -  RN  nº  153,  de  28  de  maio  de  2007,  continuam  produzindo  seus 
+regulares efeitos até a data limite. (RN 305) 
+ 
+316.  As trocas de dados de atenção à saúde realizadas com base na RN nº 153, de 28 
+de maio de 2007, antes da obrigatoriedade da utilização do Padrão TISS tratado 
+neste componente, e que estiverem em desacordo com aquela RN e com as demais 
+normas  expedidas  pela  Agência  Nacional  de  Saúde  Suplementar,  permanecem 
+sujeitos à aplicação das penalidades cabíveis. (RN 305) 
+XVIII.  Glossário 
+ 
+-   Arquitetura dos dados: é a forma de organização do conjunto de termos do 
+Padrão TISS; 
+-   Atributos do termo: itens que qualificam o termo no processo em que é utilizado; 
+-   COPISS: Comitê de Padronização de Informações na Saúde Suplementar; 
+-   DIDES: Diretoria de Desenvolvimento Setorial da Agência Nacional de Saúde 
+Suplementar; 
+-   Legenda: é a lista de termos, com seus atributos, que compõe determinado 
+processo de troca de informações; 
+-   OPME: sigla que significa Órtese, Prótese e Materiais Especiais; 
+-   DMI: sigla que significa dispositivo médico implantável 
+-   Termo: texto que identifica a menor unidade do padrão; 
+-   Troca de informações no padrão TISS: é o envio de informações de um agente 
+para outro agente da Saúde Suplementar. 
+ 
+
