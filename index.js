@@ -3,10 +3,11 @@ const fs = require('fs');
 const pdf = require('pdf-parse');
 
 const fileURL = 'http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/tiss/Padrao_tiss/tiss3/padrao_tiss_componente_organizacional_201902.pdf';
+const tmpFilename = 'tmp_tiss.pdf';
 
 const FIRST = 0, WHITE = 1, SKIPPED = 2, OK = 3;
 
-download(fileURL, './tmp_tiss.pdf', processFile);
+download(fileURL, tmpFilename, processFile);
 
 
 function processFile(file) {
@@ -21,23 +22,23 @@ function processFile(file) {
 
         let lastStatus = FIRST;
 
-        let startString = 'Quadro 31';
-        let endString = 'Fonte: Elaborado pelos autores.';
+        let startString = /Quadro 31/;
+        let endString = /Fonte: Elaborado pelos autores./;
 
         for(rowIndex in splittedText){
             let row = splittedText[rowIndex];
 
             // Localizar fator de início de transcrição
-            if (row.match(startString)){ started = true; console.log(row); }
+            if (row.match(startString)){ started = true;}
 
             // Apenas após iniciar a transcrição
             else if(started) {
 
                 // Linha de encerramento
-                if (row.match(endString)){ console.log(endString); break;  }
+                if (endString.test(row)){ break; }
 
                 // Linha em branco - sinalizador de quebra de página iminente
-                if (row.match(/^\s+$/)) { lastStatus = WHITE; console.log(row);}
+                if (/^\s+$/.test(row)) { lastStatus = WHITE;}
 
                 // Linha anterior em branco. Irrelevante.
                 else if (lastStatus == WHITE) {lastStatus = SKIPPED; continue;}
@@ -49,15 +50,16 @@ function processFile(file) {
                 }
 
                 // Linha residual do registro anterior
-                else if(row.match(/(.+)/) && lastStatus === OK) {
+                else if(/(.+)/.test(row) && lastStatus === OK) {
                     output[output.length - 1] = output[output.length - 1] + ' ' + row;
                 }
             }
         }
 
-        fs.writeFile('./file.txt', exportedText, () => {});
+        // fs.writeFile('./file.txt', exportedText, () => {});
         fs.writeFile('./finalFile.txt', output.join("\r\n"), () => {});
-        console.log(`${output.length} registros encontrados`);        
+        console.log(`${output.length} registros encontrados`); 
+        fs.unlink(tmpFilename, ()=>{});
     });
     
 }
