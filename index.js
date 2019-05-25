@@ -57,16 +57,15 @@ function processFile(file) {
 
                 // Linha residual do registro anterior
                 else if(/(.+)/.test(row) && lastStatus === OK) {
-                    output[output.length - 1] = output[output.length - 1] + ' ' + row;
+                    output[output.length - 1] = output[output.length - 1] + ' ' + row.trim();
                 }
             }
         }
         
-        fs.writeFile(tmpCsvFilename, output.join("\n"), saveInDatabase);
+        fs.writeFile(tmpCsvFilename, output.map((value) => value.replace('; ', ';')).join("\n"), saveInDatabase);
         console.log(`${output.length} registros encontrados`);
 
         fs.unlink(tmpPdfFilename, ()=>{});
-        fs.unlink(tmpCsvFilename, ()=>{});
     });
     
 }
@@ -102,9 +101,10 @@ function saveInDatabase(dataArray){
         if (error) throw error;
 
         connection.query(`LOAD DATA LOCAL INFILE ? INTO TABLE quadro31 FIELDS TERMINATED BY ';'`, [tmpCsvFilename], function (error, results, fields) {
+            //fs.unlink(tmpCsvFilename, ()=>{});
             if (error) throw error;
         });
 
-        connection.end();
+        connection.end();        
     });
 }
