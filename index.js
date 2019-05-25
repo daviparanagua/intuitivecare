@@ -3,12 +3,17 @@ const fs = require('fs');
 const pdf = require('pdf-parse');
 
 const fileURL = 'http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/tiss/Padrao_tiss/tiss3/padrao_tiss_componente_organizacional_201902.pdf';
-const tmpFilename = 'tmp_tiss.pdf';
+const tmpPdfFilename = 'tmp_tiss.pdf';
+const tmpCsvFilename = 'tmp_tiss.csv';
+
+const mySQL_host = 'daviparanagua.com.br';
+const mySQL_user = 'intuitive';
+const mySQL_pass = 'LM0Zd96cpKjdwKmO';
+const mySQL_database = 'intuitive';
 
 const FIRST = 0, WHITE = 1, SKIPPED = 2, OK = 3;
 
-download(fileURL, tmpFilename, processFile);
-
+download(fileURL, tmpPdfFilename, processFile);
 
 function processFile(file) {
     console.log('Processando arquivo...');
@@ -44,8 +49,9 @@ function processFile(file) {
                 else if (lastStatus == WHITE) {lastStatus = SKIPPED; continue;}
 
                 // Linha completa. OK
-                else if(row.match(/^([0-9]+) (.*)/)) {
-                    output.push(row);
+                else if(/^([0-9]+) (.*)/.test(row) ) {
+                    matched = row.match(/^([0-9]+) (.*)/);
+                    output.push(`${matched[1]};${matched[2].trim()}`);
                     lastStatus = OK;
                 }
 
@@ -55,11 +61,12 @@ function processFile(file) {
                 }
             }
         }
+        
+        fs.writeFile(tmpCsvFilename, output.join("\n"), saveInDatabase);
+        console.log(`${output.length} registros encontrados`);
 
-        // fs.writeFile('./file.txt', exportedText, () => {});
-        fs.writeFile('./finalFile.txt', output.join("\r\n"), () => {});
-        console.log(`${output.length} registros encontrados`); 
-        fs.unlink(tmpFilename, ()=>{});
+        fs.unlink(tmpPdfFilename, ()=>{});
+        fs.unlink(tmpCsvFilename, ()=>{});
     });
     
 }
@@ -78,3 +85,26 @@ function download(url, dest, cb) {
     if (cb) cb(err.message);
   });
 };
+
+function saveInDatabase(dataArray){
+    var mysql = require('mysql');
+    const connection = mysql.createConnection({
+        host     : mySQL_host,
+        user     : mySQL_user,
+        password : mySQL_pass,
+        database : mySQL_database,
+        charset: "utf8_general_ci"
+    });
+
+    connection.connect();
+
+    connection.query(`TRUNCATE TABLE quadro31`, function (error, results, fields) {
+        if (error) throw error;
+
+        connection.query(`LOAD DATA LOCAL INFILE ? INTO TABLE quadro31 FIELDS TERMINATED BY ';'`, [tmpCsvFilename], function (error, results, fields) {
+            if (error) throw error;
+        });
+
+        connection.end();
+    });
+}
