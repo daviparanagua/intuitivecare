@@ -2,12 +2,11 @@ const express = require('express');
 const app = express();
 const runScript = require('./helpers/run-script');
 
-
-// CONEXÃO
+// CONEXÃO - TODO: MOVER CREDENCIAIS DO ARQUIVO PARA .env
 
 const mySQL_host = 'daviparanagua.com.br';
 const mySQL_user = 'intuitive';
-const mySQL_pass = 'LM0Zd96cpKjdwKmO';
+const mySQL_pass = 'LEM3hi2ij3Y4';
 const mySQL_database = 'intuitive';
 
 const pool = require('./helpers/database').connect(mySQL_host, mySQL_user, mySQL_pass, mySQL_database);
