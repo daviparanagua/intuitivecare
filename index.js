@@ -1,6 +1,9 @@
 const express = require('express');
+var cors = require('cors')
 const app = express();
 const runScript = require('./helpers/run-script');
+
+app.use(cors());
 
 // CONEXÃO - TODO: MOVER CREDENCIAIS DO ARQUIVO PARA .env
 
@@ -13,12 +16,25 @@ const pool = require('./helpers/database').connect(mySQL_host, mySQL_user, mySQL
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function(req, res) {
-  res.send('Servidor está ativo');
+  res.send('Bem-vindo!');
 });
 
 app.get('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
-        runScript(connection, 'quadro31').then( () => res.send('Dados Enviados'));
+        runScript(connection, 'quadro31').then( () => res.json({
+            status: 'OK'
+        }));
+    });
+});
+
+app.get('/status', function(req, res) {
+    pool.getConnection(function(err, connection) {
+        connection.query('SELECT "OK" as status', function (error, results, fields) {
+            res.send({
+                server: 'OK',
+                database: results[0].status
+            });
+        } )
     });
 });
 
