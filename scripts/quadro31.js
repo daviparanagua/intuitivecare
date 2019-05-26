@@ -1,9 +1,7 @@
 module.exports = function(connection, moduleCB) {
     return new Promise((resolve, reject) => {
-        const http = require('http');
         const fs = require('fs');
         const pdf = require('pdf-parse');
-        const uuid = require('uuid/v4');
 
         const download = require('../helpers/download');
 
