@@ -16,16 +16,6 @@ module.exports = function(connection, moduleCB) {
         .then(parseFile)
         .then((file) => saveInDatabase(file, 'quadro31'))
         .then(resolve);
-        
-
-        /**
-         * Loga o início do script e o executa
-         * 
-         * @param {*} script 
-         */
-        function logStep(pid, message){
-            connection.query(`INSERT INTO log (pid, message) VALUES (?, ?)`, [pid, message], function (error, results, fields) { });
-        }
 
         /**
          * Parses a file, extracting relevant data from PDF downloaded
@@ -34,7 +24,7 @@ module.exports = function(connection, moduleCB) {
          */
         function parseFile(file) {
             return new Promise((resolve, reject) => {
-                logStep('Processando arquivo...');
+                console.log('Processando arquivo...');
                 let dataBuffer = fs.readFileSync(file);
 
                 pdf(dataBuffer).then(function(data) {

@@ -19,12 +19,30 @@ app.get('/', function(req, res) {
   res.send('Bem-vindo!');
 });
 
-app.get('/q31', function(req, res) {
+app.post('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
         runScript(connection, 'quadro31').then( (pid) => {
-            res.json({ pid, status: 'OK'});
+            res.json({ pid, script:'quadro31', status: 'OK'});
             connection.release();
         });
+    });
+});
+
+app.post('/s31', function(req, res) {
+    pool.getConnection(function(err, connection) {
+        runScript(connection, 'sabotar31').then( (pid) => {
+            res.json({ pid, script: 'sabotar31', status: 'OK'});
+            connection.release();
+        });
+    });
+});
+
+app.get('/q31', function(req, res) {
+    pool.getConnection(function(err, connection) {
+        connection.query('SELECT * FROM quadro31', function (error, results, fields) {
+            res.json(results);
+        });
+        connection.release();
     });
 });
 
