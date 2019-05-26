@@ -21,9 +21,10 @@ app.get('/', function(req, res) {
 
 app.get('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
-        runScript(connection, 'quadro31').then( () => res.json({
-            status: 'OK'
-        }));
+        runScript(connection, 'quadro31').then( () => {
+            res.json({ status: 'OK'});
+            connection.release();
+        });
     });
 });
 
@@ -34,7 +35,8 @@ app.get('/status', function(req, res) {
                 server: 'OK',
                 database: results[0].status
             });
-        } )
+        } );
+        connection.release();
     });
 });
 
