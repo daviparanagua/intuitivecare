@@ -4,6 +4,8 @@ module.exports = function(moduleCB) {
     const pdf = require('pdf-parse');
     const uuid = require('uuid/v4');
 
+    const download = require('./helpers/download');
+
     const fileURL = 'http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/tiss/Padrao_tiss/tiss3/padrao_tiss_componente_organizacional_201902.pdf';
     const tmpPdfFilename = 'tmp_tiss.pdf';
     const tmpCsvFilename = 'tmp_tiss.csv';
@@ -63,27 +65,6 @@ module.exports = function(moduleCB) {
     function logStep(pid, message){
         connection.query(`INSERT INTO log (pid, message) VALUES (?, ?)`, [pid, message], function (error, results, fields) { });
     }
-
-    /**
-     * Download a file and save it to dest
-     * @param {*} url File to be downloaded
-     * @param {*} dest Local path to save file
-     */
-    function download(url, dest) {
-        return new Promise ((resolve, reject) => {
-            var file = fs.createWriteStream(dest);
-            console.log('Obtendo arquivo...');
-            http.get(url, function(response) {
-                response.pipe(file);
-                file.on('finish', function() {
-                    file.close( () => resolve(dest) );
-                });
-            }).on('error', function(err) { // Handle errors
-                fs.unlink(dest);                
-                reject(false);
-            });
-        });
-    };
 
     /**
      * Parses a file, extracting relevant data from PDF downloaded
