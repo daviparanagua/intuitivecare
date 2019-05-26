@@ -14,7 +14,7 @@ module.exports = function runScript(connection, name){
         require('../scripts/' + name)(connection)
         .then( () => {
             connection.query(`UPDATE runs SET finished = CURRENT_TIMESTAMP() WHERE pid = ?`, [pid], function (error, results, fields) { });            
-            resolve();
+            resolve(pid);
         });
     });
 }

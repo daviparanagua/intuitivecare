@@ -21,8 +21,8 @@ app.get('/', function(req, res) {
 
 app.get('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
-        runScript(connection, 'quadro31').then( () => {
-            res.json({ status: 'OK'});
+        runScript(connection, 'quadro31').then( (pid) => {
+            res.json({ pid, status: 'OK'});
             connection.release();
         });
     });
@@ -30,7 +30,7 @@ app.get('/q31', function(req, res) {
 
 app.get('/logs', function(req, res) {
     pool.getConnection(function(err, connection) {
-        connection.query('SELECT * FROM runs ORDER BY started DESC LIMIT 15', function (error, results, fields) {
+        connection.query('SELECT * FROM runs ORDER BY started DESC LIMIT 100', function (error, results, fields) {
             res.json(results);
         });
         connection.release();
