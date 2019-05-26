@@ -28,6 +28,15 @@ app.get('/q31', function(req, res) {
     });
 });
 
+app.get('/logs', function(req, res) {
+    pool.getConnection(function(err, connection) {
+        connection.query('SELECT * FROM runs ORDER BY started DESC LIMIT 15', function (error, results, fields) {
+            res.json(results);
+        });
+        connection.release();
+    });
+});
+
 app.get('/status', function(req, res) {
     pool.getConnection(function(err, connection) {
         connection.query('SELECT "OK" as status', function (error, results, fields) {
