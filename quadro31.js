@@ -2,6 +2,7 @@ module.exports = function(moduleCB) {
     const http = require('http');
     const fs = require('fs');
     const pdf = require('pdf-parse');
+    const uuid = require('uuid/v4');
 
     const fileURL = 'http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/tiss/Padrao_tiss/tiss3/padrao_tiss_componente_organizacional_201902.pdf';
     const tmpPdfFilename = 'tmp_tiss.pdf';
@@ -27,9 +28,41 @@ module.exports = function(moduleCB) {
 
     connection.connect();
 
-    download(fileURL, tmpPdfFilename)
+    // SCRIPT
+
+    runScript('quadro31', () => { 
+        return download(fileURL, tmpPdfFilename)
         .then(parseFile)
-        .then((file) => saveInDatabase(file, 'quadro31') );
+        .then((file) => saveInDatabase(file, 'quadro31'));
+    });
+
+    // FUNÇÕES
+
+    /**
+     * Loga o início do script e o executa
+     * 
+     * @param {*} script 
+     */
+    function runScript(name, script){
+        let pid = uuid();
+
+        connection.query(`INSERT INTO runs (pid, script) VALUES (?, ?)`, [pid, name], function (error, results, fields) { });
+
+        script()
+        .then( () => {
+            connection.query(`UPDATE runs SET finished = CURRENT_TIMESTAMP() WHERE pid = ?`, [pid], function (error, results, fields) { });
+            connection.end();
+        });
+    }
+
+    /**
+     * Loga o início do script e o executa
+     * 
+     * @param {*} script 
+     */
+    function logStep(pid, message){
+        connection.query(`INSERT INTO log (pid, message) VALUES (?, ?)`, [pid, message], function (error, results, fields) { });
+    }
 
     /**
      * Download a file and save it to dest
@@ -59,7 +92,7 @@ module.exports = function(moduleCB) {
      */
     function parseFile(file) {
         return new Promise((resolve, reject) => {
-            console.log('Processando arquivo...');
+            logStep('Processando arquivo...');
             let dataBuffer = fs.readFileSync(file);
 
             pdf(dataBuffer).then(function(data) {
@@ -129,7 +162,6 @@ module.exports = function(moduleCB) {
                     if(moduleCB) { moduleCB(); }
                 });
 
-                connection.end();
                 resolve();
             });
         });
