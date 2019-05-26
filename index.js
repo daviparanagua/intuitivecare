@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const runScript = require('./helpers/run-script');
 
 
 // CONEXÃO
@@ -18,9 +19,7 @@ app.get('/', function(req, res) {
 
 app.get('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
-        require('./quadro31')(connection, () => {
-            res.send('Dados enviados');
-        });
+        runScript(connection, 'quadro31').then( () => res.send('Dados Enviados'));
     });
 });
 
