@@ -1,0 +1,27 @@
+{
+  "name": "intutitivecare",
+  "version": "0.0.1",
+  "description": "Intuitive care - backend",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviparanagua/intuitivecare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviparanagua/intuitivecare/issues"
+  },
+  "homepage": "https://github.com/daviparanagua/intuitivecare#readme"
+}
