@@ -1,4 +1,4 @@
-module.exports = function(moduleCB) {
+module.exports = function(connection, moduleCB) {
     const http = require('http');
     const fs = require('fs');
     const pdf = require('pdf-parse');
@@ -10,25 +10,7 @@ module.exports = function(moduleCB) {
     const tmpPdfFilename = 'tmp_tiss.pdf';
     const tmpCsvFilename = 'tmp_tiss.csv';
 
-    const mySQL_host = 'daviparanagua.com.br';
-    const mySQL_user = 'intuitive';
-    const mySQL_pass = 'LM0Zd96cpKjdwKmO';
-    const mySQL_database = 'intuitive';
-
     const FIRST = 0, WHITE = 1, SKIPPED = 2, OK = 3;
-
-    // CONEXÃO
-
-    var mysql = require('mysql');
-    const connection = mysql.createConnection({
-        host     : mySQL_host,
-        user     : mySQL_user,
-        password : mySQL_pass,
-        database : mySQL_database,
-        charset: "utf8_general_ci"
-    });
-
-    connection.connect();
 
     // SCRIPT
 
@@ -53,7 +35,7 @@ module.exports = function(moduleCB) {
         script()
         .then( () => {
             connection.query(`UPDATE runs SET finished = CURRENT_TIMESTAMP() WHERE pid = ?`, [pid], function (error, results, fields) { });
-            connection.end();
+            connection.release();
         });
     }
 
