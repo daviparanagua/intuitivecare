@@ -1,12 +1,28 @@
 const express = require('express');
-var cors = require('cors')
+const cors = require('cors')
+const fs = require('fs')
 const app = express();
 const runScript = require('./helpers/run-script');
+const https = require('https')
 require('dotenv').config()
 
 app.use(cors());
 
-// CONEXÃO - TODO: MOVER CREDENCIAIS DO ARQUIVO PARA .env
+const truePort = 3000;
+
+// SSL
+
+const privateKey = fs.readFileSync(process.env.SSL_PRIVATE_KEY, 'utf8')
+const certificate = fs.readFileSync(process.env.SSL_CERTIFICATE, 'utf8')
+const ca = fs.readFileSync(process.env.SSL_CA, 'utf8')
+
+credentials = {
+    key: privateKey,
+    cert: certificate,
+    ca: ca
+}
+
+// CONEXÃO
 
 const mySQL_host = process.env.mySQL_host;
 const mySQL_user = process.env.mySQL_user;
@@ -15,11 +31,13 @@ const mySQL_database = process.env.mySQL_database;
 
 const pool = require('./helpers/database').connect(mySQL_host, mySQL_user, mySQL_pass, mySQL_database);
 
-// respond with "hello world" when a GET request is made to the homepage
+// Home
 app.get('/', function(req, res) {
   res.send('Bem-vindo!');
 });
 
+
+// Script q31 - TODO: Unificar rota de scripts
 app.post('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
         runScript(connection, 'quadro31').then( (pid) => {
@@ -29,6 +47,7 @@ app.post('/q31', function(req, res) {
     });
 });
 
+// Script s31 - TODO: Unificar rota de scripts
 app.post('/s31', function(req, res) {
     pool.getConnection(function(err, connection) {
         runScript(connection, 'sabotar31').then( (pid) => {
@@ -38,6 +57,7 @@ app.post('/s31', function(req, res) {
     });
 });
 
+// Obtém dados da tabela
 app.get('/q31', function(req, res) {
     pool.getConnection(function(err, connection) {
         connection.query('SELECT * FROM quadro31', function (error, results, fields) {
@@ -47,6 +67,7 @@ app.get('/q31', function(req, res) {
     });
 });
 
+// Obtém logs
 app.get('/logs', function(req, res) {
     pool.getConnection(function(err, connection) {
         connection.query('SELECT * FROM runs ORDER BY started DESC LIMIT 100', function (error, results, fields) {
@@ -56,6 +77,7 @@ app.get('/logs', function(req, res) {
     });
 });
 
+// Obtém status
 app.get('/status', function(req, res) {
     pool.getConnection(function(err, connection) {
         connection.query('SELECT "OK" as status', function (error, results, fields) {
@@ -68,6 +90,9 @@ app.get('/status', function(req, res) {
     });
 });
 
-app.listen(3000, function () {
-    console.log('Aberto na porta 3000');
-});
+// Start true server
+const trueServer = https.createServer(credentials, app);
+
+trueServer.listen(truePort, () => {
+  console.log(`App Server running on port ${truePort}`)
+})
