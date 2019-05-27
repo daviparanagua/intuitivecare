@@ -2,15 +2,16 @@ const express = require('express');
 var cors = require('cors')
 const app = express();
 const runScript = require('./helpers/run-script');
+require('dotenv').config()
 
 app.use(cors());
 
 // CONEXÃO - TODO: MOVER CREDENCIAIS DO ARQUIVO PARA .env
 
-const mySQL_host = 'daviparanagua.com.br';
-const mySQL_user = 'intuitive';
-const mySQL_pass = 'LEM3hi2ij3Y4';
-const mySQL_database = 'intuitive';
+const mySQL_host = process.env.mySQL_host;
+const mySQL_user = process.env.mySQL_user;
+const mySQL_pass = process.env.mySQL_pass;
+const mySQL_database = process.env.mySQL_database;
 
 const pool = require('./helpers/database').connect(mySQL_host, mySQL_user, mySQL_pass, mySQL_database);
 
